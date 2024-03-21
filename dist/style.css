@@ -1,0 +1,119 @@
+/* ----- INITIALIZAION ----- */
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.btn {
+  border: none;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.header {
+  flex: 0 0 auto;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: auto;
+}
+
+.main {
+  flex: 1 0 auto;
+}
+
+.footer {
+  flex: 0 0 auto;
+}
+
+/* ----- H E A D E R ----- */
+.container {
+  max-width: 1440px;
+  width: 100%;
+  padding: 0 80px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+}
+
+.header__top-row {
+  padding-top: 24px;
+  padding-bottom: 16px;
+}
+
+.header__top-list {
+  width: 70%;
+  justify-content: space-between;
+}
+
+.header__top-logo {
+  margin-left: auto;
+}
+
+.header__top-phoneNumber {
+  font-size: 42px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo__image {
+  width: 66px;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.logo__image img {
+  max-width: 100%;
+}
+
+.logo__desc {
+  font-size: 16px;
+  max-width: 179px;
+  width: 100%;
+}
+
+.callBack {
+  width: 217px;
+  height: 48px;
+  background: #017AC3;
+  color: #fff;
+  font-size: 18px;
+}
+
+.header__menu-list {
+  justify-content: space-between;
+  background: #004495;
+  padding-top: 14px;
+  padding-bottom: 24px;
+}
+.header__menu-list a {
+  color: #fff;
+  font-size: 22px;
+}
