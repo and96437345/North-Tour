@@ -13,6 +13,10 @@ body {
   height: 100%;
   display: flex;
   flex-direction: column;
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  line-height: normal;
+  color: rgb(51, 51, 51);
 }
 
 ul {
@@ -59,61 +63,215 @@ a {
   display: flex;
 }
 
+.header__top-emailIcon {
+  margin-right: 8px;
+}
+.header__top-whatsAppIcon, .header__top-telegramIcon {
+  margin-right: 12px;
+  margin-top: 3px;
+}
+.header__top-whatsAppLink, .header__top-telegramLink {
+  display: flex;
+  align-items: center;
+}
+.header__top-whatsAppLink {
+  margin-bottom: 11px;
+}
+.header__top-phoneIcon {
+  margin-right: 5px;
+}
+.header__top-phoneLink {
+  display: flex;
+  align-items: center;
+  padding-top: 17px;
+}
 .header__top-row {
   padding-top: 24px;
   padding-bottom: 16px;
 }
-
 .header__top-list {
-  width: 70%;
+  width: 79%;
   justify-content: space-between;
 }
-
+.header__top-listItem:first-child {
+  padding-right: 67px;
+}
+.header__top-listItem:last-child {
+  padding-right: 30px;
+}
 .header__top-logo {
   margin-left: auto;
 }
-
+.header__top-emailAdress {
+  color: rgb(5, 135, 214);
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: 0%;
+}
+.header__top-whatsAppNumber, .header__top-telegramNumber {
+  border-bottom: 1px dashed rgb(51, 51, 51);
+  box-sizing: border-box;
+  color: rgb(51, 51, 51);
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 110%;
+}
 .header__top-phoneNumber {
+  color: rgb(51, 51, 51);
   font-size: 42px;
+  font-weight: 500;
+  line-height: 41px;
+  border-bottom: 1px dashed rgb(51, 51, 51);
+  box-sizing: border-box;
 }
 
 .logo {
   display: flex;
   align-items: center;
 }
-
 .logo__image {
   width: 66px;
   display: flex;
   align-items: center;
   flex-shrink: 0;
 }
-
 .logo__image img {
-  max-width: 100%;
+  min-width: 100%;
 }
-
 .logo__desc {
-  font-size: 16px;
-  max-width: 179px;
+  max-width: 66px;
   width: 100%;
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 90%;
+  text-transform: uppercase;
+  margin-top: 32px;
+  text-align: end;
 }
 
 .callBack {
   width: 217px;
   height: 48px;
   background: #017AC3;
-  color: #fff;
+  color: rgb(255, 255, 255);
   font-size: 18px;
+  font-weight: 700;
+  line-height: 160%;
+  letter-spacing: 0%;
+  border-radius: 8px;
+  background: linear-gradient(-39.89deg, rgb(1, 122, 195) -45.517%, rgb(101, 207, 240) 114.502%), rgb(1, 122, 195);
+  margin-bottom: 8px;
+  color: rgb(255, 255, 255);
+  transition: 0.5s;
 }
 
+.callBack:hover {
+  background: rgb(0, 68, 149);
+}
+
+.header__menu {
+  background: #004495;
+}
 .header__menu-list {
   justify-content: space-between;
-  background: #004495;
-  padding-top: 14px;
-  padding-bottom: 24px;
+  padding: 14px 35px 24px 28px;
 }
 .header__menu-list a {
   color: #fff;
   font-size: 22px;
+}
+.header__menu-link {
+  color: rgb(255, 255, 255);
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+/* ----- F O O T E R ----- */
+.footer {
+  border-top: rgb(220, 219, 219);
+}
+.footer__icon {
+  height: 23px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+.footer__icon img {
+  max-width: 100%;
+}
+.footer__top {
+  padding-top: 26px;
+}
+.footer__top-inner {
+  display: flex;
+  border-bottom: 1px solid rgb(220, 219, 219);
+}
+.footer__top-logo__desc {
+  width: 66px;
+}
+.footer__top-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.footer__top-content {
+  width: 69.5%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 130px;
+}
+.footer__top-content__row {
+  justify-content: space-between;
+}
+.footer__top-content__link {
+  display: flex;
+  align-items: center;
+  color: rgb(68, 68, 68);
+}
+.footer__top-content__desc {
+  display: flex;
+  margin: 0 auto;
+  max-width: 430px;
+  text-align: center;
+}
+.footer__top-content__number {
+  border-bottom: 1px dashed rgb(68, 68, 68);
+  box-sizing: border-box;
+  color: rgb(68, 68, 68);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 160%;
+}
+.footer__menu .title--link {
+  color: rgb(68, 68, 68);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+.footer__menu-item__subtitle {
+  margin-top: 11px;
+}
+.footer__menu .subtitle--link {
+  color: rgb(5, 135, 214);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  text-transform: uppercase;
+}
+.footer__menu-list {
+  justify-content: space-between;
+  padding: 15px 58px 46px 58px;
+}
+.footer__bottom {
+  background: rgb(0, 68, 149);
+  padding-top: 6px;
+  padding-bottom: 6px;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
 }
