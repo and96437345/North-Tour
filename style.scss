@@ -75,8 +75,9 @@ input[type="checkbox"] {
 }
 
 .header__top {
-    // padding-top: 24px;
-    // padding-bottom: 4px;
+    &-burger {
+        display: none;
+    }
 
     &-emailIcon {
         margin-right: 8px;
@@ -99,7 +100,7 @@ input[type="checkbox"] {
         align-items: center;
     }
     &-whatsAppLink {
-        margin-bottom: 11px;
+        margin-bottom: 18px;
     }
     &-phoneIcon {
         height: 34px;
@@ -122,14 +123,14 @@ input[type="checkbox"] {
         padding-bottom: 16px;
     }
     &-list {
-        width: 79%;
+        width: 76.9%;
         justify-content: space-between;
     }
     &-listItem:first-child {
-        padding-right: 67px;
+        // padding-left: 13px;
     }
     &-listItem:last-child {
-        padding-right: 30px;
+        padding-right: 60px;
     }
     &-logo {
         margin-left: auto;
@@ -180,7 +181,7 @@ input[type="checkbox"] {
         line-height: 90%;
         text-transform: uppercase;
         margin-top: 32px;
-        text-align: end;
+        text-align: start;
     }
 }
 
@@ -273,6 +274,7 @@ input[type="checkbox"] {
     &__item {
         width: 17%;
         padding: 0 10px;
+        box-sizing: border-box;
         &-container {
             padding-bottom: 3px;
             display: flex;
@@ -325,6 +327,7 @@ input[type="checkbox"] {
         &-container {
             width: 50%;
             padding: 0 10px;
+            box-sizing: border-box;
         }
         & img {
             display: block;
@@ -374,6 +377,10 @@ input[type="checkbox"] {
         }
     }
 
+    &__slider {
+        position: relative;
+    }
+
     &__slide {
         position: relative;
         height: 288px;
@@ -403,8 +410,8 @@ input[type="checkbox"] {
         }
         &-desc {
             position: absolute;
-            left: 88px;
-            top: 112px;
+            right: 20px;
+            bottom: 10px;
             z-index: 2;
         }
         &-destination {
@@ -460,13 +467,14 @@ input[type="checkbox"] {
 
 .swiper-button-next,
 .swiper-button-prev {
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 48px;
     height: 48px;
     border-radius: 50%;
-    box-shadow: 0px 0px 5.73px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 5.73px 0px rgba(0, 0, 0, 0.3);
     background: rgb(255, 255, 255);
     &:after {
         display: none;
@@ -477,10 +485,15 @@ input[type="checkbox"] {
 }
 
 .swiper-button-next {
-    margin-left: -24px;
+    right: calc(100% - 24px);
+    // margin-left: -24px;
 }
 .swiper-button-prev {
-    margin-right: -24px; 
+    right: -24px;
+    // margin-right: -24px; 
+}
+.button--position {
+    top: 140px;
 }
 
 
@@ -510,6 +523,7 @@ input[type="checkbox"] {
         &-container {
             width: 50%;
             padding: 0 10px;
+            box-sizing: border-box;
         }
         & img {
             display: block;
@@ -559,6 +573,10 @@ input[type="checkbox"] {
         }
     }
 
+    &__slider {
+        position: relative;
+    }
+
     &__slide {
         position: relative;
         height: 416px;
@@ -591,8 +609,8 @@ input[type="checkbox"] {
         }
         &-desc {
             position: absolute;
-            left: 20px;
-            top: 220px;
+            right: 20px;
+            bottom: 20px;
             z-index: 2;
             width: 90%;
         }
@@ -920,6 +938,10 @@ input[type="checkbox"]:checked + .send__label-input span::before {
         }
     }
 
+    &__slider {
+        position: relative;
+    }
+
     &__slide {
         position: relative;
         height: 416px;
@@ -952,8 +974,8 @@ input[type="checkbox"]:checked + .send__label-input span::before {
         }
         &-desc {
             position: absolute;
-            left: 20px;
-            top: 288px;
+            right: 20px;
+            bottom: 0;
             z-index: 2;
             width: 90%;
         }
@@ -1034,6 +1056,7 @@ input[type="checkbox"]:checked + .send__label-input span::before {
         &-container {
             width: 50%;
             padding: 0 10px;
+            box-sizing: border-box;
         }
         & img {
             display: block;
@@ -1056,9 +1079,9 @@ input[type="checkbox"]:checked + .send__label-input span::before {
         }
         &-desc {
             // position: absolute;
-            left: 244px;
-            top: 240px;
-            z-index: 2;
+            // left: 244px;
+            // top: 240px;
+            // z-index: 2;
         }
         &-destination {
             color: rgb(255, 255, 255);
@@ -1083,13 +1106,22 @@ input[type="checkbox"]:checked + .send__label-input span::before {
         }
     }
 
+    &__slider {
+        position: relative;
+    }
+
     &__slide {
         position: relative;
         height: 297px;
         border-radius: 10px;
         &-container {
-        
             padding: 0 10px;
+        }
+        &-content {
+            box-sizing: border-box;
+            border: 1px solid rgb(206, 229, 255);
+            border-radius: 10px;
+            background: rgb(255, 255, 255);
         }
         & img {
             display: block;
@@ -1107,11 +1139,11 @@ input[type="checkbox"]:checked + .send__label-input span::before {
             height: 100%;
             width: 100%;
             z-index: 1;
-            border-radius: 10px;
+            border-radius: 10px 10px 0 0;
             background: linear-gradient(180.00deg, rgba(131, 128, 128, 0) 2.86%,rgba(0, 0, 0, 0.7) 107.945%),rgb(194, 194, 194, 0.2);
         }
         &-desc {
-            max-width: 350px;
+            
             padding: 24px 20px 0 20px;
         }
         &-title {
@@ -1157,6 +1189,11 @@ input[type="checkbox"]:checked + .send__label-input span::before {
         max-width: 280px;
         margin-bottom: 40px;
     }
+
+    &__slider {
+        position: relative;
+    }
+
     &__slide {
         position: relative;
         height: 182px;
@@ -1186,8 +1223,8 @@ input[type="checkbox"]:checked + .send__label-input span::before {
         }
         &-desc {
             position: absolute;
-            left: 20px;
-            top: 134px;
+            right: 20px;
+            bottom: 20px;
             z-index: 2;
             width: 85%;
         }
@@ -1212,6 +1249,7 @@ input[type="checkbox"]:checked + .send__label-input span::before {
     &__item {
         width: 25%;
         padding: 0 10px;
+        box-sizing: border-box;
         &-container {
             padding-bottom: 3px;
             display: flex;
@@ -1329,9 +1367,20 @@ input[type="checkbox"]:checked + .send__label-input span::before {
                 font-weight: 500;
                 line-height: 160%;
             }
+            &__email {
+                color: rgb(5, 135, 214);
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 160%;
+                text-align: right;
+            }
+
         }
     }
     &__menu {
+        &-item__list {
+            flex-wrap: wrap;
+        }
         & .title--link {
             color: rgb(68, 68, 68);
             font-size: 20px;
@@ -1363,7 +1412,7 @@ input[type="checkbox"]:checked + .send__label-input span::before {
         font-weight: 400;
         line-height: 20px;
         text-align: center;
-        // margin-bottom: 192px;
+        // margin-bottom: 292px;
     }
 }
 
@@ -1382,3 +1431,212 @@ input[type="checkbox"]:checked + .send__label-input span::before {
 //   padding: 0;
 // }
 
+
+@media (max-width: 1319.8px) {
+    .send {
+        &__row {
+            padding: 32px 40px 0 40px;
+        }
+        &__desc-image img {
+            object-position: left;
+        }
+    }
+    .footer {
+        &__top-content {
+            padding-left: 0;
+            width: 93%;
+        }
+    }
+}
+
+@media (max-width: 1279.8px) {
+    .header__top {
+        &-whatsAppNumber,
+        &-telegramNumber {
+            font-size: 20px;
+        }
+        &-phoneNumber {
+            font-size: 32px;
+        }
+        &-whatsAppIcon,
+        &-telegramIcon {
+            margin-right: 5px;
+        }
+        &-list {
+            width: 82.5%;
+        }
+        &-listItem:last-child {
+            padding-right: 0;
+        }
+    }
+    .header__menu {
+        &-list a {
+            font-size: 18px;
+        }
+    }
+    .tours {
+        &__image-desc {
+            right: 10%;
+            width: 80%;
+        }
+        &__slide-name {
+            font-size: 28px;
+        }
+        &__slide-property {
+            font-size: 28px;
+        }
+    }
+    .hotels {
+
+        &__slide-name {
+            font-size: 28px;
+        }
+        &__slide-property {
+            font-size: 28px;
+        }
+        &__stars-icon,
+        &__options-icon {
+            height: 20px;
+        }
+        &__options {
+            &-icon + &-icon {
+                margin-right: 6px;
+            }
+        }
+    }
+    .companies {
+        &__item {
+            &-desc {
+            font-size: 12px;
+            }
+            &-image img {
+                width: 80%;
+            }
+        }
+    }
+
+    .footer {
+        &__top {
+            &-content__number,
+            &-content__link {
+                font-size: 16px;
+            }
+        }
+        &__icon {
+            margin-right: 2px;
+        }
+        &__menu {
+            font-size: 16px;
+            & .title--link {
+                font-size: 18px;
+            }
+        }
+        &__menu-list {
+            padding: 15px 0 54px 0;
+        }
+        
+    }
+}
+
+
+/* ----- M O B I L E ----- */
+
+@media (max-width: 991.8px) {
+    .container {
+        max-width: 960px;
+        padding: 0 15px;
+    }
+    .header {
+        &__top {
+            &-logo {
+                justify-content: space-between;
+                align-items: center;
+                margin-left: 0;
+                padding-bottom: 10px;
+                border-bottom: 1px solid rgb(194, 194, 194); 
+            }
+            &-burger {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 60px;
+                height: 60px;
+                border-radius: 7px;
+                background: linear-gradient(-39.89deg, rgb(1, 122, 195) -55.022%,rgb(101, 207, 240) 119.933%);
+                & img {
+                    width: 50%;
+                }
+            }
+            &-list {
+                padding-top: 20px;
+                width: 100%;
+            }
+            &-row {
+                flex-direction: column;
+            }
+            &-phoneNumber {
+                font-size: 26px;
+            }
+            &-whatsAppNumber,
+            &-telegramNumber {
+                font-size: 18px;
+            }
+
+        }
+        &__menu-list {
+            display: none;
+        }
+    }
+
+    .hero__title {
+        font-size: 48px;
+    }
+
+    .swiper-button-next {
+        right: calc(100% - 54px);
+        // margin-left: -24px;
+    }
+    .swiper-button-prev {
+        right: 6px;
+    }
+
+    .service {
+        &__row {
+            flex-wrap: wrap;
+        }
+        &__item {
+            width: 33.3%;
+            padding: 20px 10px;
+        }
+    }
+    .travel {
+        &__item + &__item {
+            margin: 0;
+        }
+    }
+    .tours,
+    .hotels,
+    .travel,
+    .send,
+    .activities,
+    .articles,
+    .regions,
+    .companies {
+        padding: 20px 0;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

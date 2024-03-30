@@ -15,61 +15,68 @@
 </head>
 <body>
     <header>
-        <div class="header__top">
+        <div class="header__top" dir="rtl">
             <div class="container">
                 <div class="header__top-row row">
                     
+                    <div class="header__top-logo row">
+                        <a href="#" class="logo">
+                            <div class="logo__image">
+                                <img src="images/logo.png" alt="">
+                            </div>
+                            <div class="logo__desc">شمال تور</div>
+                        </a>
+                        <button class="header__top-burger btn">
+                            <img src="images/burger.svg" alt="">
+                        </button>
+                    </div>
                     <ul class="header__top-list row">
-                        <li class="header__top-listItem">
-                            <button class="callBack btn" dir="rtl">
-                                درخواست تماس
-                            </button>
-                            <a href="#" class="header__top-emailLink row">
-                                <div class="header__top-emailIcon">
-                                    <img src="images/email.svg" alt="">
-                                </div>
-                                <div class="header__top-emailAdress">
-                                    infoshomoltour.com
+                        
+                        <li class="header__top-listItem list--phone">
+                            <a href="#" class="header__top-phoneLink row">
+                                <div class="header__top-phoneNumber" dir="ltr">+98 211373</div>
+                                <div class="header__top-phoneIcon">
+                                    <img src="images/phone.svg" alt="">
                                 </div>
                             </a>
                         </li>
                         <li class="header__top-listItem list--massangers">
                             <a href="#" class="header__top-whatsAppLink row">
+                                <div class="header__top-whatsAppNumber" dir="ltr">+98 1343425970</div>
                                 <div class="header__top-whatsAppIcon">
                                     <img src="images/whatsapp.svg" alt="">
                                 </div>
-                                <div class="header__top-whatsAppNumber">+98 1343425970</div>
                             </a>
                             <a href="#" class="header__top-telegramLink row">
+                                <div class="header__top-telegramNumber" dir="ltr">+98 1343425970</div>
                                 <div class="header__top-telegramIcon">
                                     <img src="images/telegram.svg" alt="">
                                 </div>
-                                <div class="header__top-telegramNumber">+98 1343425970</div>
                             </a>
                         </li>
-                        <li class="header__top-listItem list--phone">
-                            <a href="#" class="header__top-phoneLink row">
-                                <div class="header__top-phoneIcon">
-                                    <img src="images/phone.svg" alt="">
+                        
+                        <li class="header__top-listItem">
+                            <button class="callBack btn">
+                                <span>تماس</span>
+                                <span>درخواست</span>
+                                
+                            </button>
+                            <a href="#" class="header__top-emailLink row">
+                                <div class="header__top-emailAdress">
+                                    info&#64;shomoltour.com
                                 </div>
-                                <div class="header__top-phoneNumber">+98 211373</div>
+                                <div class="header__top-emailIcon">
+                                    <img src="images/email.svg" alt="">
+                                </div>
                             </a>
                         </li>
                     </ul>
-                    <div class="header__top-logo">
-                        <a href="#" class="logo">
-                            <div class="logo__desc">شمال تور</div>
-                            <div class="logo__image">
-                                <img src="images/logo.png" alt="">
-                            </div>
-                        </a>
-                    </div>
                 </div>
             </div>
         </div>
-        <nav class="header__menu">
+        <nav class="header__menu" dir="rtl">
             <div class="container">
-                <ul class="header__menu-list row" dir="rtl">
+                <ul class="header__menu-list row">
                     <li>
                         <a href="#" class="header__menu-link">
                             ویزا روسیه
@@ -203,7 +210,7 @@
                     <p>تورهای روسیه</p>
                 </div>
 
-                <div class="tours__row row">
+                <div class="tours__row row"> 
                     <div class="tours__image-container">
                         <div class="tours__image">
                             <img src="images/tours_1.jpg" alt="">
@@ -244,123 +251,126 @@
                     </div>
                 </div>
 
-                 <!-- Swiper -->
-                <div class="swiper">
-                    <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="tours__slide-container">
-                            <div class="tours__slide">
-                                <img src="images/slider_3.jpg" alt="">
-                                <div class="tours__slide-desc">
-                                    <div class="tours__slide-destination">
-                                        <p>منطقه کالینینگراد</p>
-                                    </div>
-                                    <div class="tours__slide-name">
-                                        <p>تور شهر کالینینگراد</p>
-                                    </div>
-                                    <div class="tours__slide-property">
-                                        <p>30.000.000 تومان</p>
-                                    </div>
-                                    <div class="tours__slide-destination">
-                                        <p>5 اسفند 1403</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="tours__slide-container">
-                            <div class="tours__slide">
-                                <img src="images/slider_1.jpg" alt="">
-                                <div class="tours__slide-desc">
-                                    <div class="tours__slide-destination">
-                                        <p>منطقه کالینینگراد</p>
-                                    </div>
-                                    <div class="tours__slide-name">
-                                        <p>تور شهر کالینینگراد</p>
-                                    </div>
-                                    <div class="tours__slide-property">
-                                        <p>20.000.000 تومان</p>
-                                    </div>
-                                    <div class="tours__slide-destination">
-                                        <p>5 اسفند 1403</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="tours__slide-container">
-                            <div class="tours__slide">
-                                <img src="images/slider_2.jpg" alt="">
-                                <div class="tours__slide-desc">
-                                    <div class="tours__slide-destination">
-                                        <p>منطقه کالینینگراد</p>
-                                    </div>
-                                    <div class="tours__slide-name">
-                                        <p>تور شهر کالینینگراد</p>
-                                    </div>
-                                    <div class="tours__slide-property">
-                                        <p>20.000.000 تومان</p>
-                                    </div>
-                                    <div class="tours__slide-destination">
-                                        <p>5 اسفند 1403</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="tours__slide-container">
-                            <div class="tours__slide">
-                                <img src="images/slider_3.jpg" alt="">
-                                <div class="tours__slide-desc">
-                                    <div class="tours__slide-destination">
-                                        <p>منطقه کالینینگراد</p>
-                                    </div>
-                                    <div class="tours__slide-name">
-                                        <p>تور شهر کالینینگراد</p>
-                                    </div>
-                                    <div class="tours__slide-property">
-                                        <p>20.000.000 تومان</p>
-                                    </div>
-                                    <div class="tours__slide-destination">
-                                        <p>5 اسفند 1403</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="tours__slide-container">
-                            <div class="tours__slide">
-                                <img src="images/slider_1.jpg" alt="">
-                                <div class="tours__slide-desc">
-                                    <div class="tours__slide-destination">
-                                        <p>منطقه کالینینگراد</p>
-                                    </div>
-                                    <div class="tours__slide-name">
-                                        <p>تور شهر کالینینگراد</p>
-                                    </div>
-                                    <div class="tours__slide-property">
-                                        <p>20.000.000 تومان</p>
-                                    </div>
-                                    <div class="tours__slide-destination">
-                                        <p>5 اسفند 1403</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    </div>
-                    <div class="swiper-button-next">
-                        <img src="images/left-arrow.svg" alt="">
-                    </div>
-                    <div class="swiper-button-prev">
-                        <img src="images/right-arrow.svg" alt="">
-                    </div>
-                </div>
+                <div class="tours__slider">
 
+                    <!-- Swiper -->
+                   <div class="swiper tours--swiper">
+                       <div class="swiper-wrapper">
+                       <div class="swiper-slide">
+                           <div class="tours__slide-container">
+                               <div class="tours__slide">
+                                   <img src="images/slider_3.jpg" alt="">
+                                   <div class="tours__slide-desc">
+                                       <div class="tours__slide-destination">
+                                           <p>منطقه کالینینگراد</p>
+                                       </div>
+                                       <div class="tours__slide-name">
+                                           <p>تور شهر کالینینگراد</p>
+                                       </div>
+                                       <div class="tours__slide-property">
+                                           <p>30.000.000 تومان</p>
+                                       </div>
+                                       <div class="tours__slide-destination">
+                                           <p>5 اسفند 1403</p>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="swiper-slide">
+                           <div class="tours__slide-container">
+                               <div class="tours__slide">
+                                   <img src="images/slider_1.jpg" alt="">
+                                   <div class="tours__slide-desc">
+                                       <div class="tours__slide-destination">
+                                           <p>منطقه کالینینگراد</p>
+                                       </div>
+                                       <div class="tours__slide-name">
+                                           <p>تور شهر کالینینگراد</p>
+                                       </div>
+                                       <div class="tours__slide-property">
+                                           <p>20.000.000 تومان</p>
+                                       </div>
+                                       <div class="tours__slide-destination">
+                                           <p>5 اسفند 1403</p>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="swiper-slide">
+                           <div class="tours__slide-container">
+                               <div class="tours__slide">
+                                   <img src="images/slider_2.jpg" alt="">
+                                   <div class="tours__slide-desc">
+                                       <div class="tours__slide-destination">
+                                           <p>منطقه کالینینگراد</p>
+                                       </div>
+                                       <div class="tours__slide-name">
+                                           <p>تور شهر کالینینگراد</p>
+                                       </div>
+                                       <div class="tours__slide-property">
+                                           <p>20.000.000 تومان</p>
+                                       </div>
+                                       <div class="tours__slide-destination">
+                                           <p>5 اسفند 1403</p>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="swiper-slide">
+                           <div class="tours__slide-container">
+                               <div class="tours__slide">
+                                   <img src="images/slider_3.jpg" alt="">
+                                   <div class="tours__slide-desc">
+                                       <div class="tours__slide-destination">
+                                           <p>منطقه کالینینگراد</p>
+                                       </div>
+                                       <div class="tours__slide-name">
+                                           <p>تور شهر کالینینگراد</p>
+                                       </div>
+                                       <div class="tours__slide-property">
+                                           <p>20.000.000 تومان</p>
+                                       </div>
+                                       <div class="tours__slide-destination">
+                                           <p>5 اسفند 1403</p>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="swiper-slide">
+                           <div class="tours__slide-container">
+                               <div class="tours__slide">
+                                   <img src="images/slider_1.jpg" alt="">
+                                   <div class="tours__slide-desc">
+                                       <div class="tours__slide-destination">
+                                           <p>منطقه کالینینگراد</p>
+                                       </div>
+                                       <div class="tours__slide-name">
+                                           <p>تور شهر کالینینگراد</p>
+                                       </div>
+                                       <div class="tours__slide-property">
+                                           <p>20.000.000 تومان</p>
+                                       </div>
+                                       <div class="tours__slide-destination">
+                                           <p>5 اسفند 1403</p>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                       </div>
+                   </div>
+                   
+                   <div class="swiper-button-next tours--next">
+                       <img src="images/left-arrow.svg" alt="">
+                   </div>
+                   <div class="swiper-button-prev tours--prev">
+                       <img src="images/right-arrow.svg" alt="">
+                   </div>
+                </div>
             </div>
         </div>
 
@@ -370,300 +380,303 @@
                     <p>هتل های روسیه</p>
                 </div>
 
+                <div class="hotels__slider">
 
-                 <!-- Swiper -->
-                <div class="swiper">
-                    <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="hotels__slide-container">
-                            <div class="hotels__slide">
-                                <img src="images/hotels_1.jpg" alt="">
-                                <div class="hotels__slide-desc">
-                                    <!-- <div class="hotels__slide-destination">
-                                        <p>منطقه کالینینگراد</p>
-                                    </div> -->
-                                    <div class="hotels__slide-name">
-                                        <p>تور شهر کالینینگراد</p>
-                                    </div>
-                                    <div class="hotels__slide-property">
-                                        <p>30.000.000 تومان</p>
-                                    </div>
-                                    <!-- <div class="hotels__slide-destination">
-                                        <p>5 اسفند 1403</p>
-                                    </div> -->
-                                    <div class="hotels__icons row">
-                                        <div class="hotels__stars row">
-                                            <div class="hotels__stars-icon">
-                                                <img src="images/star-unactive.svg" alt="">
-                                            </div>
-                                            <div class="hotels__stars-icon">
-                                                <img src="images/star-unactive.svg" alt="">
-                                            </div>
-                                            <div class="hotels__stars-icon">
-                                                <img src="images/star-active.svg" alt="">
-                                            </div>
-                                            <div class="hotels__stars-icon">
-                                                <img src="images/star-active.svg" alt="">
-                                            </div>
-                                            <div class="hotels__stars-icon">
-                                                <img src="images/star-active.svg" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="hotels__options row">
-                                            <div class="hotels__options-icon">
-                                                <img src="images/pool.svg" alt="">
-                                            </div>
-                                            <div class="hotels__options-icon">
-                                                <img src="images/wireless.svg" alt="">
-                                            </div>
-                                            <div class="hotels__options-icon">
-                                                <img src="images/hotel.svg" alt="">
-                                            </div>
-                                            <div class="hotels__options-icon">
-                                                <img src="images/tea.svg" alt="">
-                                            </div>
-                                            <div class="hotels__options-icon">
-                                                <img src="images/cook.svg" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <!-- Swiper -->
+                   <div class="swiper hotels--swiper">
+                       <div class="swiper-wrapper">
+                       <div class="swiper-slide">
+                           <div class="hotels__slide-container">
+                               <div class="hotels__slide">
+                                   <img src="images/hotels_1.jpg" alt="">
+                                   <div class="hotels__slide-desc">
+                                       <!-- <div class="hotels__slide-destination">
+                                           <p>منطقه کالینینگراد</p>
+                                       </div> -->
+                                       <div class="hotels__slide-name">
+                                           <p>تور شهر کالینینگراد</p>
+                                       </div>
+                                       <div class="hotels__slide-property">
+                                           <p>30.000.000 تومان</p>
+                                       </div>
+                                       <!-- <div class="hotels__slide-destination">
+                                           <p>5 اسفند 1403</p>
+                                       </div> -->
+                                       <div class="hotels__icons row">
+                                           <div class="hotels__stars row">
+                                               <div class="hotels__stars-icon">
+                                                   <img src="images/star-unactive.svg" alt="">
+                                               </div>
+                                               <div class="hotels__stars-icon">
+                                                   <img src="images/star-unactive.svg" alt="">
+                                               </div>
+                                               <div class="hotels__stars-icon">
+                                                   <img src="images/star-active.svg" alt="">
+                                               </div>
+                                               <div class="hotels__stars-icon">
+                                                   <img src="images/star-active.svg" alt="">
+                                               </div>
+                                               <div class="hotels__stars-icon">
+                                                   <img src="images/star-active.svg" alt="">
+                                               </div>
+                                           </div>
+                                           <div class="hotels__options row">
+                                               <div class="hotels__options-icon">
+                                                   <img src="images/pool.svg" alt="">
+                                               </div>
+                                               <div class="hotels__options-icon">
+                                                   <img src="images/wireless.svg" alt="">
+                                               </div>
+                                               <div class="hotels__options-icon">
+                                                   <img src="images/hotel.svg" alt="">
+                                               </div>
+                                               <div class="hotels__options-icon">
+                                                   <img src="images/tea.svg" alt="">
+                                               </div>
+                                               <div class="hotels__options-icon">
+                                                   <img src="images/cook.svg" alt="">
+                                               </div>
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="swiper-slide">
+                           <div class="hotels__slide-container">
+                               <div class="hotels__slide">
+                                   <img src="images/hotels_3.jpg" alt="">
+                                   <div class="hotels__slide-desc">
+                                       <!-- <div class="hotels__slide-destination">
+                                           <p>منطقه کالینینگراد</p>
+                                       </div> -->
+                                       <div class="hotels__slide-name">
+                                           <p>تور شهر کالینینگراد</p>
+                                       </div>
+                                       <div class="hotels__slide-property">
+                                           <p>30.000.000 تومان</p>
+                                       </div>
+                                       <!-- <div class="hotels__slide-destination">
+                                           <p>5 اسفند 1403</p>
+                                       </div> -->
+                                       <div class="hotels__icons row">
+                                           <div class="hotels__stars row">
+                                               <div class="hotels__stars-icon">
+                                                   <img src="images/star-unactive.svg" alt="">
+                                               </div>
+                                               <div class="hotels__stars-icon">
+                                                   <img src="images/star-unactive.svg" alt="">
+                                               </div>
+                                               <div class="hotels__stars-icon">
+                                                   <img src="images/star-active.svg" alt="">
+                                               </div>
+                                               <div class="hotels__stars-icon">
+                                                   <img src="images/star-active.svg" alt="">
+                                               </div>
+                                               <div class="hotels__stars-icon">
+                                                   <img src="images/star-active.svg" alt="">
+                                               </div>
+                                           </div>
+                                           <div class="hotels__options row">
+                                               <div class="hotels__options-icon">
+                                                   <img src="images/pool.svg" alt="">
+                                               </div>
+                                               <div class="hotels__options-icon">
+                                                   <img src="images/wireless.svg" alt="">
+                                               </div>
+                                               <div class="hotels__options-icon">
+                                                   <img src="images/hotel.svg" alt="">
+                                               </div>
+                                               <div class="hotels__options-icon">
+                                                   <img src="images/tea.svg" alt="">
+                                               </div>
+                                               <div class="hotels__options-icon">
+                                                   <img src="images/cook.svg" alt="">
+                                               </div>
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="swiper-slide">
+                           <div class="hotels__slide-container">
+                               <div class="hotels__slide">
+                                   <img src="images/hotels_2.jpg" alt="">
+                                   <div class="hotels__slide-desc">
+                                       <!-- <div class="hotels__slide-destination">
+                                           <p>منطقه کالینینگراد</p>
+                                       </div> -->
+                                       <div class="hotels__slide-name">
+                                           <p>هتل مسکو</p>
+                                       </div>
+                                       <div class="hotels__slide-property">
+                                           <p>30.000.000 تومان</p>
+                                       </div>
+                                       <!-- <div class="hotels__slide-destination">
+                                           <p>5 اسفند 1403</p>
+                                       </div> -->
+                                       <div class="hotels__icons row">
+                                           <div class="hotels__stars row">
+                                               <div class="hotels__stars-icon">
+                                                   <img src="images/star-unactive.svg" alt="">
+                                               </div>
+                                               <div class="hotels__stars-icon">
+                                                   <img src="images/star-unactive.svg" alt="">
+                                               </div>
+                                               <div class="hotels__stars-icon">
+                                                   <img src="images/star-active.svg" alt="">
+                                               </div>
+                                               <div class="hotels__stars-icon">
+                                                   <img src="images/star-active.svg" alt="">
+                                               </div>
+                                               <div class="hotels__stars-icon">
+                                                   <img src="images/star-active.svg" alt="">
+                                               </div>
+                                           </div>
+                                           <div class="hotels__options row">
+                                               <div class="hotels__options-icon">
+                                                   <img src="images/pool.svg" alt="">
+                                               </div>
+                                               <div class="hotels__options-icon">
+                                                   <img src="images/wireless.svg" alt="">
+                                               </div>
+                                               <div class="hotels__options-icon">
+                                                   <img src="images/hotel.svg" alt="">
+                                               </div>
+                                               <div class="hotels__options-icon">
+                                                   <img src="images/tea.svg" alt="">
+                                               </div>
+                                               <div class="hotels__options-icon">
+                                                   <img src="images/cook.svg" alt="">
+                                               </div>
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="swiper-slide">
+                           <div class="hotels__slide-container">
+                               <div class="hotels__slide">
+                                   <img src="images/hotels_1.jpg" alt="">
+                                   <div class="hotels__slide-desc">
+                                       <!-- <div class="hotels__slide-destination">
+                                           <p>منطقه کالینینگراد</p>
+                                       </div> -->
+                                       <div class="hotels__slide-name">
+                                           <p>کیهان سن پترزبورگ المپیا</p>
+                                       </div>
+                                       <div class="hotels__slide-property">
+                                           <p>30.000.000 تومان</p>
+                                       </div>
+                                       <!-- <div class="hotels__slide-destination">
+                                           <p>5 اسفند 1403</p>
+                                       </div> -->
+                                       <div class="hotels__icons row">
+                                           <div class="hotels__stars row">
+                                               <div class="hotels__stars-icon">
+                                                   <img src="images/star-unactive.svg" alt="">
+                                               </div>
+                                               <div class="hotels__stars-icon">
+                                                   <img src="images/star-unactive.svg" alt="">
+                                               </div>
+                                               <div class="hotels__stars-icon">
+                                                   <img src="images/star-active.svg" alt="">
+                                               </div>
+                                               <div class="hotels__stars-icon">
+                                                   <img src="images/star-active.svg" alt="">
+                                               </div>
+                                               <div class="hotels__stars-icon">
+                                                   <img src="images/star-active.svg" alt="">
+                                               </div>
+                                           </div>
+                                           <div class="hotels__options row">
+                                               <div class="hotels__options-icon">
+                                                   <img src="images/pool.svg" alt="">
+                                               </div>
+                                               <div class="hotels__options-icon">
+                                                   <img src="images/wireless.svg" alt="">
+                                               </div>
+                                               <div class="hotels__options-icon">
+                                                   <img src="images/hotel.svg" alt="">
+                                               </div>
+                                               <div class="hotels__options-icon">
+                                                   <img src="images/tea.svg" alt="">
+                                               </div>
+                                               <div class="hotels__options-icon">
+                                                   <img src="images/cook.svg" alt="">
+                                               </div>
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="swiper-slide">
+                           <div class="hotels__slide-container">
+                               <div class="hotels__slide">
+                                   <img src="images/hotels_2.jpg" alt="">
+                                   <div class="hotels__slide-desc">
+                                       <!-- <div class="hotels__slide-destination">
+                                           <p>منطقه کالینینگراد</p>
+                                       </div> -->
+                                       <div class="hotels__slide-name">
+                                           <p>هتل مسکو</p>
+                                       </div>
+                                       <div class="hotels__slide-property">
+                                           <p>30.000.000 تومان</p>
+                                       </div>
+                                       <!-- <div class="hotels__slide-destination">
+                                           <p>5 اسفند 1403</p>
+                                       </div> -->
+                                       <div class="hotels__icons row">
+                                           <div class="hotels__stars row">
+                                               <div class="hotels__stars-icon">
+                                                   <img src="images/star-unactive.svg" alt="">
+                                               </div>
+                                               <div class="hotels__stars-icon">
+                                                   <img src="images/star-unactive.svg" alt="">
+                                               </div>
+                                               <div class="hotels__stars-icon">
+                                                   <img src="images/star-active.svg" alt="">
+                                               </div>
+                                               <div class="hotels__stars-icon">
+                                                   <img src="images/star-active.svg" alt="">
+                                               </div>
+                                               <div class="hotels__stars-icon">
+                                                   <img src="images/star-active.svg" alt="">
+                                               </div>
+                                           </div>
+                                           <div class="hotels__options row">
+                                               <div class="hotels__options-icon">
+                                                   <img src="images/pool.svg" alt="">
+                                               </div>
+                                               <div class="hotels__options-icon">
+                                                   <img src="images/wireless.svg" alt="">
+                                               </div>
+                                               <div class="hotels__options-icon">
+                                                   <img src="images/hotel.svg" alt="">
+                                               </div>
+                                               <div class="hotels__options-icon">
+                                                   <img src="images/tea.svg" alt="">
+                                               </div>
+                                               <div class="hotels__options-icon">
+                                                   <img src="images/cook.svg" alt="">
+                                               </div>
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                       </div>
                     </div>
-                    <div class="swiper-slide">
-                        <div class="hotels__slide-container">
-                            <div class="hotels__slide">
-                                <img src="images/hotels_3.jpg" alt="">
-                                <div class="hotels__slide-desc">
-                                    <!-- <div class="hotels__slide-destination">
-                                        <p>منطقه کالینینگراد</p>
-                                    </div> -->
-                                    <div class="hotels__slide-name">
-                                        <p>تور شهر کالینینگراد</p>
-                                    </div>
-                                    <div class="hotels__slide-property">
-                                        <p>30.000.000 تومان</p>
-                                    </div>
-                                    <!-- <div class="hotels__slide-destination">
-                                        <p>5 اسفند 1403</p>
-                                    </div> -->
-                                    <div class="hotels__icons row">
-                                        <div class="hotels__stars row">
-                                            <div class="hotels__stars-icon">
-                                                <img src="images/star-unactive.svg" alt="">
-                                            </div>
-                                            <div class="hotels__stars-icon">
-                                                <img src="images/star-unactive.svg" alt="">
-                                            </div>
-                                            <div class="hotels__stars-icon">
-                                                <img src="images/star-active.svg" alt="">
-                                            </div>
-                                            <div class="hotels__stars-icon">
-                                                <img src="images/star-active.svg" alt="">
-                                            </div>
-                                            <div class="hotels__stars-icon">
-                                                <img src="images/star-active.svg" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="hotels__options row">
-                                            <div class="hotels__options-icon">
-                                                <img src="images/pool.svg" alt="">
-                                            </div>
-                                            <div class="hotels__options-icon">
-                                                <img src="images/wireless.svg" alt="">
-                                            </div>
-                                            <div class="hotels__options-icon">
-                                                <img src="images/hotel.svg" alt="">
-                                            </div>
-                                            <div class="hotels__options-icon">
-                                                <img src="images/tea.svg" alt="">
-                                            </div>
-                                            <div class="hotels__options-icon">
-                                                <img src="images/cook.svg" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="hotels__slide-container">
-                            <div class="hotels__slide">
-                                <img src="images/hotels_2.jpg" alt="">
-                                <div class="hotels__slide-desc">
-                                    <!-- <div class="hotels__slide-destination">
-                                        <p>منطقه کالینینگراد</p>
-                                    </div> -->
-                                    <div class="hotels__slide-name">
-                                        <p>هتل مسکو</p>
-                                    </div>
-                                    <div class="hotels__slide-property">
-                                        <p>30.000.000 تومان</p>
-                                    </div>
-                                    <!-- <div class="hotels__slide-destination">
-                                        <p>5 اسفند 1403</p>
-                                    </div> -->
-                                    <div class="hotels__icons row">
-                                        <div class="hotels__stars row">
-                                            <div class="hotels__stars-icon">
-                                                <img src="images/star-unactive.svg" alt="">
-                                            </div>
-                                            <div class="hotels__stars-icon">
-                                                <img src="images/star-unactive.svg" alt="">
-                                            </div>
-                                            <div class="hotels__stars-icon">
-                                                <img src="images/star-active.svg" alt="">
-                                            </div>
-                                            <div class="hotels__stars-icon">
-                                                <img src="images/star-active.svg" alt="">
-                                            </div>
-                                            <div class="hotels__stars-icon">
-                                                <img src="images/star-active.svg" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="hotels__options row">
-                                            <div class="hotels__options-icon">
-                                                <img src="images/pool.svg" alt="">
-                                            </div>
-                                            <div class="hotels__options-icon">
-                                                <img src="images/wireless.svg" alt="">
-                                            </div>
-                                            <div class="hotels__options-icon">
-                                                <img src="images/hotel.svg" alt="">
-                                            </div>
-                                            <div class="hotels__options-icon">
-                                                <img src="images/tea.svg" alt="">
-                                            </div>
-                                            <div class="hotels__options-icon">
-                                                <img src="images/cook.svg" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="hotels__slide-container">
-                            <div class="hotels__slide">
-                                <img src="images/hotels_1.jpg" alt="">
-                                <div class="hotels__slide-desc">
-                                    <!-- <div class="hotels__slide-destination">
-                                        <p>منطقه کالینینگراد</p>
-                                    </div> -->
-                                    <div class="hotels__slide-name">
-                                        <p>کیهان سن پترزبورگ المپیا</p>
-                                    </div>
-                                    <div class="hotels__slide-property">
-                                        <p>30.000.000 تومان</p>
-                                    </div>
-                                    <!-- <div class="hotels__slide-destination">
-                                        <p>5 اسفند 1403</p>
-                                    </div> -->
-                                    <div class="hotels__icons row">
-                                        <div class="hotels__stars row">
-                                            <div class="hotels__stars-icon">
-                                                <img src="images/star-unactive.svg" alt="">
-                                            </div>
-                                            <div class="hotels__stars-icon">
-                                                <img src="images/star-unactive.svg" alt="">
-                                            </div>
-                                            <div class="hotels__stars-icon">
-                                                <img src="images/star-active.svg" alt="">
-                                            </div>
-                                            <div class="hotels__stars-icon">
-                                                <img src="images/star-active.svg" alt="">
-                                            </div>
-                                            <div class="hotels__stars-icon">
-                                                <img src="images/star-active.svg" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="hotels__options row">
-                                            <div class="hotels__options-icon">
-                                                <img src="images/pool.svg" alt="">
-                                            </div>
-                                            <div class="hotels__options-icon">
-                                                <img src="images/wireless.svg" alt="">
-                                            </div>
-                                            <div class="hotels__options-icon">
-                                                <img src="images/hotel.svg" alt="">
-                                            </div>
-                                            <div class="hotels__options-icon">
-                                                <img src="images/tea.svg" alt="">
-                                            </div>
-                                            <div class="hotels__options-icon">
-                                                <img src="images/cook.svg" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="hotels__slide-container">
-                            <div class="hotels__slide">
-                                <img src="images/hotels_2.jpg" alt="">
-                                <div class="hotels__slide-desc">
-                                    <!-- <div class="hotels__slide-destination">
-                                        <p>منطقه کالینینگراد</p>
-                                    </div> -->
-                                    <div class="hotels__slide-name">
-                                        <p>هتل مسکو</p>
-                                    </div>
-                                    <div class="hotels__slide-property">
-                                        <p>30.000.000 تومان</p>
-                                    </div>
-                                    <!-- <div class="hotels__slide-destination">
-                                        <p>5 اسفند 1403</p>
-                                    </div> -->
-                                    <div class="hotels__icons row">
-                                        <div class="hotels__stars row">
-                                            <div class="hotels__stars-icon">
-                                                <img src="images/star-unactive.svg" alt="">
-                                            </div>
-                                            <div class="hotels__stars-icon">
-                                                <img src="images/star-unactive.svg" alt="">
-                                            </div>
-                                            <div class="hotels__stars-icon">
-                                                <img src="images/star-active.svg" alt="">
-                                            </div>
-                                            <div class="hotels__stars-icon">
-                                                <img src="images/star-active.svg" alt="">
-                                            </div>
-                                            <div class="hotels__stars-icon">
-                                                <img src="images/star-active.svg" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="hotels__options row">
-                                            <div class="hotels__options-icon">
-                                                <img src="images/pool.svg" alt="">
-                                            </div>
-                                            <div class="hotels__options-icon">
-                                                <img src="images/wireless.svg" alt="">
-                                            </div>
-                                            <div class="hotels__options-icon">
-                                                <img src="images/hotel.svg" alt="">
-                                            </div>
-                                            <div class="hotels__options-icon">
-                                                <img src="images/tea.svg" alt="">
-                                            </div>
-                                            <div class="hotels__options-icon">
-                                                <img src="images/cook.svg" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    </div>
-                    <div class="swiper-button-next">
+
+                    <div class="swiper-button-next hotels--next">
                         <img src="images/left-arrow.svg" alt="">
                     </div>
-                    <div class="swiper-button-prev">
+                    <div class="swiper-button-prev hotels--prev">
                         <img src="images/right-arrow.svg" alt="">
                     </div>
                 </div>
@@ -704,9 +717,9 @@
             <div class="container">
                 <div class="send__row row">
                     <div class="send__content">
-                        <label for="name" class="send__label">نام و نام خانوادگی *</label>
+                        <label for="name" class="send__label"><span style="color: rgb(255, 106, 0);">*</span>نام و نام خانوادگی</label>
                         <input type="text" class="send__input" name="name" placeholder="یوسف اجیروف">
-                        <label for="phone" class="send__label">شماره تماس *</label>
+                        <label for="phone" class="send__label"><span style="color: rgb(255, 106, 0);">*</span>شماره تماس</label>
                         <input type="text" class="send__input" name="phone" placeholder="+98" dir="ltr">
                         <label for="request" class="send__label">درخواست</label>
                         <input type="text" class="send__input send__request" name="request" placeholder="ترجیحات و خواسته های شما">
@@ -745,126 +758,128 @@
                     <p>فعالیت ها</p>
                 </div>
 
+                <div class="activities__slider">
 
-                 <!-- Swiper -->
-                <div class="swiper">
-                    <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="activities__slide-container">
-                            <div class="activities__slide">
-                                <img src="images/activities_2.jpg" alt="">
-                                <div class="activities__slide-desc">
-                                    <!-- <div class="activities__slide-destination">
-                                        <p>منطقه کالینینگراد</p>
-                                    </div> -->
-                                    <div class="activities__slide-name">
-                                        <p>تور شهر کالینینگراد</p>
-                                    </div>
-                                    <div class="activities__slide-property">
-                                        <p>30.000.000 تومان</p>
-                                    </div>
-                                    <!-- <div class="activities__slide-destination">
-                                        <p>5 اسفند 1403</p>
-                                    </div> -->
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="activities__slide-container">
-                            <div class="activities__slide">
-                                <img src="images/activities_3.jpg" alt="">
-                                <div class="activities__slide-desc">
-                                    <!-- <div class="activities__slide-destination">
-                                        <p>منطقه کالینینگراد</p>
-                                    </div> -->
-                                    <div class="activities__slide-name">
-                                        <p>تور شهر کالینینگراد</p>
-                                    </div>
-                                    <div class="activities__slide-property">
-                                        <p>30.000.000 تومان</p>
-                                    </div>
-                                    <!-- <div class="activities__slide-destination">
-                                        <p>5 اسفند 1403</p>
-                                    </div> -->
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="activities__slide-container">
-                            <div class="activities__slide">
-                                <img src="images/activities_2.jpg" alt="">
-                                <div class="activities__slide-desc">
-                                    <!-- <div class="activities__slide-destination">
-                                        <p>منطقه کالینینگراد</p>
-                                    </div> -->
-                                    <div class="activities__slide-name">
-                                        <p>هتل مسکو</p>
-                                    </div>
-                                    <div class="activities__slide-property">
-                                        <p>30.000.000 تومان</p>
-                                    </div>
-                                    <!-- <div class="activities__slide-destination">
-                                        <p>5 اسفند 1403</p>
-                                    </div> -->
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="activities__slide-container">
-                            <div class="activities__slide">
-                                <img src="images/activities_1.jpg" alt="">
-                                <div class="activities__slide-desc">
-                                    <!-- <div class="activities__slide-destination">
-                                        <p>منطقه کالینینگراد</p>
-                                    </div> -->
-                                    <div class="activities__slide-name">
-                                        <p>کیهان سن پترزبورگ المپیا</p>
-                                    </div>
-                                    <div class="activities__slide-property">
-                                        <p>30.000.000 تومان</p>
-                                    </div>
-                                    <!-- <div class="activities__slide-destination">
-                                        <p>5 اسفند 1403</p>
-                                    </div> -->
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="activities__slide-container">
-                            <div class="activities__slide">
-                                <img src="images/activities_2.jpg" alt="">
-                                <div class="activities__slide-desc">
-                                    <!-- <div class="activities__slide-destination">
-                                        <p>منطقه کالینینگراد</p>
-                                    </div> -->
-                                    <div class="activities__slide-name">
-                                        <p>هتل مسکو</p>
-                                    </div>
-                                    <div class="activities__slide-property">
-                                        <p>30.000.000 تومان</p>
-                                    </div>
-                                    <!-- <div class="activities__slide-destination">
-                                        <p>5 اسفند 1403</p>
-                                    </div> -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    </div>
-                    <div class="swiper-button-next">
-                        <img src="images/left-arrow.svg" alt="">
-                    </div>
-                    <div class="swiper-button-prev">
-                        <img src="images/right-arrow.svg" alt="">
-                    </div>
+                    <!-- Swiper -->
+                   <div class="swiper activities--swiper">
+                       <div class="swiper-wrapper">
+                       <div class="swiper-slide">
+                           <div class="activities__slide-container">
+                               <div class="activities__slide">
+                                   <img src="images/activities_2.jpg" alt="">
+                                   <div class="activities__slide-desc">
+                                       <!-- <div class="activities__slide-destination">
+                                           <p>منطقه کالینینگراد</p>
+                                       </div> -->
+                                       <div class="activities__slide-name">
+                                           <p>تور شهر کالینینگراد</p>
+                                       </div>
+                                       <div class="activities__slide-property">
+                                           <p>30.000.000 تومان</p>
+                                       </div>
+                                       <!-- <div class="activities__slide-destination">
+                                           <p>5 اسفند 1403</p>
+                                       </div> -->
+   
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="swiper-slide">
+                           <div class="activities__slide-container">
+                               <div class="activities__slide">
+                                   <img src="images/activities_3.jpg" alt="">
+                                   <div class="activities__slide-desc">
+                                       <!-- <div class="activities__slide-destination">
+                                           <p>منطقه کالینینگراد</p>
+                                       </div> -->
+                                       <div class="activities__slide-name">
+                                           <p>تور شهر کالینینگراد</p>
+                                       </div>
+                                       <div class="activities__slide-property">
+                                           <p>30.000.000 تومان</p>
+                                       </div>
+                                       <!-- <div class="activities__slide-destination">
+                                           <p>5 اسفند 1403</p>
+                                       </div> -->
+   
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="swiper-slide">
+                           <div class="activities__slide-container">
+                               <div class="activities__slide">
+                                   <img src="images/activities_2.jpg" alt="">
+                                   <div class="activities__slide-desc">
+                                       <!-- <div class="activities__slide-destination">
+                                           <p>منطقه کالینینگراد</p>
+                                       </div> -->
+                                       <div class="activities__slide-name">
+                                           <p>هتل مسکو</p>
+                                       </div>
+                                       <div class="activities__slide-property">
+                                           <p>30.000.000 تومان</p>
+                                       </div>
+                                       <!-- <div class="activities__slide-destination">
+                                           <p>5 اسفند 1403</p>
+                                       </div> -->
+   
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="swiper-slide">
+                           <div class="activities__slide-container">
+                               <div class="activities__slide">
+                                   <img src="images/activities_1.jpg" alt="">
+                                   <div class="activities__slide-desc">
+                                       <!-- <div class="activities__slide-destination">
+                                           <p>منطقه کالینینگراد</p>
+                                       </div> -->
+                                       <div class="activities__slide-name">
+                                           <p>کیهان سن پترزبورگ المپیا</p>
+                                       </div>
+                                       <div class="activities__slide-property">
+                                           <p>30.000.000 تومان</p>
+                                       </div>
+                                       <!-- <div class="activities__slide-destination">
+                                           <p>5 اسفند 1403</p>
+                                       </div> -->
+   
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="swiper-slide">
+                           <div class="activities__slide-container">
+                               <div class="activities__slide">
+                                   <img src="images/activities_2.jpg" alt="">
+                                   <div class="activities__slide-desc">
+                                       <!-- <div class="activities__slide-destination">
+                                           <p>منطقه کالینینگراد</p>
+                                       </div> -->
+                                       <div class="activities__slide-name">
+                                           <p>هتل مسکو</p>
+                                       </div>
+                                       <div class="activities__slide-property">
+                                           <p>30.000.000 تومان</p>
+                                       </div>
+                                       <!-- <div class="activities__slide-destination">
+                                           <p>5 اسفند 1403</p>
+                                       </div> -->
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                       </div>
+                   </div>
+                   <div class="swiper-button-next activities--next">
+                       <img src="images/left-arrow.svg" alt="">
+                   </div>
+                   <div class="swiper-button-prev activities--prev">
+                       <img src="images/right-arrow.svg" alt="">
+                   </div>
                 </div>
 
             </div>
@@ -875,100 +890,117 @@
                 <div class="articles__title">
                     <p>مقالات ما</p>
                 </div>
+                <div class="articles__slider">
 
+                    <!-- Swiper -->
+                   <div class="swiper articles--swiper">
+                       <div class="swiper-wrapper">
+                       <div class="swiper-slide">
+                           <div class="articles__slide-container">
+                                <div class="articles__slide-content">
 
-                 <!-- Swiper -->
-                <div class="swiper">
-                    <div class="swiper-wrapper">
-                    <div class="swiper-slide">
+                                    <div class="articles__slide">
+                                        <img src="images/slider_3.jpg" alt="">
+                                    </div>
+                                    <div class="articles__slide-desc">
+                                        <div class="articles__slide-title">
+                                            <p>منطقه کالینینگراد</p>
+                                        </div>
+                                        <div class="articles__slide-subtitle">
+                                            <p>در اینجا خلاصه ای از متن مقاله آمده است. در اینجا خلاصه ای از متن مقاله آمده است. در اینجا خلاصه ای از متن مقاله آمده است. در اینجا خلاصه ای از متن مقاله آمده است</p>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                           </div>
+                       </div>
+                       <div class="swiper-slide">
                         <div class="articles__slide-container">
-                            <div class="articles__slide">
-                                <img src="images/slider_3.jpg" alt="">
-                            </div>
-                            <div class="articles__slide-desc">
-                                <div class="articles__slide-title">
-                                    <p>منطقه کالینینگراد</p>
-                                </div>
-                                <div class="articles__slide-subtitle">
-                                    <p>در اینجا خلاصه ای از متن مقاله آمده است. در اینجا خلاصه ای از متن مقاله آمده است. در اینجا خلاصه ای از متن مقاله آمده است. در اینجا خلاصه ای از متن مقاله آمده است</p>
-                                </div>
-                                
+                             <div class="articles__slide-content">
+
+                                 <div class="articles__slide">
+                                     <img src="images/slider_2.jpg" alt="">
+                                 </div>
+                                 <div class="articles__slide-desc">
+                                     <div class="articles__slide-title">
+                                         <p>منطقه کالینینگراد</p>
+                                     </div>
+                                     <div class="articles__slide-subtitle">
+                                         <p>در اینجا خلاصه ای از متن مقاله آمده است. در اینجا خلاصه ای از متن مقاله آمده است. در اینجا خلاصه ای از متن مقاله آمده است. در اینجا خلاصه ای از متن مقاله آمده است</p>
+                                     </div>
+                                     
+                                 </div>
+                             </div>
+                        </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="articles__slide-container">
+                                 <div class="articles__slide-content">
+ 
+                                     <div class="articles__slide">
+                                         <img src="images/slider_1.jpg" alt="">
+                                     </div>
+                                     <div class="articles__slide-desc">
+                                         <div class="articles__slide-title">
+                                             <p>منطقه کالینینگراد</p>
+                                         </div>
+                                         <div class="articles__slide-subtitle">
+                                             <p>در اینجا خلاصه ای از متن مقاله آمده است. در اینجا خلاصه ای از متن مقاله آمده است. در اینجا خلاصه ای از متن مقاله آمده است. در اینجا خلاصه ای از متن مقاله آمده است</p>
+                                         </div>
+                                         
+                                     </div>
+                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="articles__slide-container">
-                            <div class="articles__slide">
-                                <img src="images/slider_2.jpg" alt="">
-                            </div>
-                            <div class="articles__slide-desc">
-                                <div class="articles__slide-title">
-                                    <p>منطقه کالینینگراد</p>
-                                </div>
-                                <div class="articles__slide-subtitle">
-                                    <p>در اینجا خلاصه ای از متن مقاله آمده است. در اینجا خلاصه ای از متن مقاله آمده است. در اینجا خلاصه ای از متن مقاله آمده است. در اینجا خلاصه ای از متن مقاله آمده است</p>
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="articles__slide-container">
-                            <div class="articles__slide">
-                                <img src="images/slider_1.jpg" alt="">
-                            </div>
-                            <div class="articles__slide-desc">
-                                <div class="articles__slide-title">
-                                    <p>منطقه کالینینگراد</p>
-                                </div>
-                                <div class="articles__slide-subtitle">
-                                    <p>در اینجا خلاصه ای از متن مقاله آمده است. در اینجا خلاصه ای از متن مقاله آمده است. در اینجا خلاصه ای از متن مقاله آمده است. در اینجا خلاصه ای از متن مقاله آمده است</p>
-                                </div>
-                                
+                        <div class="swiper-slide">
+                            <div class="articles__slide-container">
+                                 <div class="articles__slide-content">
+ 
+                                     <div class="articles__slide">
+                                         <img src="images/slider_2.jpg" alt="">
+                                     </div>
+                                     <div class="articles__slide-desc">
+                                         <div class="articles__slide-title">
+                                             <p>منطقه کالینینگراد</p>
+                                         </div>
+                                         <div class="articles__slide-subtitle">
+                                             <p>در اینجا خلاصه ای از متن مقاله آمده است. در اینجا خلاصه ای از متن مقاله آمده است. در اینجا خلاصه ای از متن مقاله آمده است. در اینجا خلاصه ای از متن مقاله آمده است</p>
+                                         </div>
+                                         
+                                     </div>
+                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="articles__slide-container">
-                            <div class="articles__slide">
-                                <img src="images/slider_3.jpg" alt="">
-                            </div>
-                            <div class="articles__slide-desc">
-                                <div class="articles__slide-title">
-                                    <p>منطقه کالینینگراد</p>
-                                </div>
-                                <div class="articles__slide-subtitle">
-                                    <p>در اینجا خلاصه ای از متن مقاله آمده است. در اینجا خلاصه ای از متن مقاله آمده است. در اینجا خلاصه ای از متن مقاله آمده است. در اینجا خلاصه ای از متن مقاله آمده است</p>
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="articles__slide-container">
-                            <div class="articles__slide">
-                                <img src="images/slider_2.jpg" alt="">
-                            </div>
-                            <div class="articles__slide-desc">
-                                <div class="articles__slide-title">
-                                    <p>منطقه کالینینگراد</p>
-                                </div>
-                                <div class="articles__slide-subtitle">
-                                    <p>در اینجا خلاصه ای از متن مقاله آمده است. در اینجا خلاصه ای از متن مقاله آمده است. در اینجا خلاصه ای از متن مقاله آمده است. در اینجا خلاصه ای از متن مقاله آمده است</p>
-                                </div>
-                                
+                        <div class="swiper-slide">
+                            <div class="articles__slide-container">
+                                 <div class="articles__slide-content">
+ 
+                                     <div class="articles__slide">
+                                         <img src="images/slider_3.jpg" alt="">
+                                     </div>
+                                     <div class="articles__slide-desc">
+                                         <div class="articles__slide-title">
+                                             <p>منطقه کالینینگراد</p>
+                                         </div>
+                                         <div class="articles__slide-subtitle">
+                                             <p>در اینجا خلاصه ای از متن مقاله آمده است. در اینجا خلاصه ای از متن مقاله آمده است. در اینجا خلاصه ای از متن مقاله آمده است. در اینجا خلاصه ای از متن مقاله آمده است</p>
+                                         </div>
+                                         
+                                     </div>
+                                 </div>
                             </div>
                         </div>
-                    </div>
-                
-                    </div>
-                    <div class="swiper-button-next">
-                        <img src="images/left-arrow.svg" alt="">
-                    </div>
-                    <div class="swiper-button-prev">
-                        <img src="images/right-arrow.svg" alt="">
-                    </div>
+                   
+                       </div>
+                   </div>
+                   <div class="swiper-button-next articles--next button--position">
+                       <img src="images/left-arrow.svg" alt="">
+                   </div>
+                   <div class="swiper-button-prev articles--prev button--position">
+                       <img src="images/right-arrow.svg" alt="">
+                   </div>
                 </div>
+
 
             </div>
         </div>
@@ -979,99 +1011,98 @@
                     <p>مناطق روسیه</p>
                 </div>
 
+                <div class="regions__slider">
 
-                 <!-- Swiper -->
-                <div class="swiper">
-                    <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="regions__slide-container">
-                            <div class="regions__slide">
-                                <img src="images/regions_1.jpg" alt="">
-                                <div class="regions__slide-desc">
-                                    <div class="regions__slide-title">
-                                        <p>منطقه کالینینگراد</p>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="regions__slide-container">
-                            <div class="regions__slide">
-                                <img src="images/regions_1.jpg" alt="">
-                                <div class="regions__slide-desc">
-                                    <div class="regions__slide-title">
-                                        <p>سفر به مورمانسک</p>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="regions__slide-container">
-                            <div class="regions__slide">
-                                <img src="images/regions_2.jpg" alt="">
-                                <div class="regions__slide-desc">
-                                    <div class="regions__slide-title">
-                                        <p>سفر به مورمانسک</p>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="regions__slide-container">
-                            <div class="regions__slide">
-                                <img src="images/regions_3.jpg" alt="">
-                                <div class="regions__slide-desc">
-                                    <div class="regions__slide-title">
-                                        <p>سفر به مورمانسک</p>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="regions__slide-container">
-                            <div class="regions__slide">
-                                <img src="images/regions_1.jpg" alt="">
-                                <div class="regions__slide-desc">
-                                    <div class="regions__slide-title">
-                                        <p>سفر به مورمانسک</p>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="regions__slide-container">
-                            <div class="regions__slide">
-                                <img src="images/regions_2.jpg" alt="">
-                                <div class="regions__slide-desc">
-                                    <div class="regions__slide-title">
-                                        <p>سفر به مورمانسک</p>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    
-                    
-                   
-                    </div>
-                    <div class="swiper-button-next">
-                        <img src="images/left-arrow.svg" alt="">
-                    </div>
-                    <div class="swiper-button-prev">
-                        <img src="images/right-arrow.svg" alt="">
-                    </div>
+                    <!-- Swiper -->
+                   <div class="swiper regions--swiper">
+                       <div class="swiper-wrapper">
+                       <div class="swiper-slide">
+                           <div class="regions__slide-container">
+                               <div class="regions__slide">
+                                   <img src="images/regions_1.jpg" alt="">
+                                   <div class="regions__slide-desc">
+                                       <div class="regions__slide-title">
+                                           <p>منطقه کالینینگراد</p>
+                                       </div>
+   
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="swiper-slide">
+                           <div class="regions__slide-container">
+                               <div class="regions__slide">
+                                   <img src="images/regions_1.jpg" alt="">
+                                   <div class="regions__slide-desc">
+                                       <div class="regions__slide-title">
+                                           <p>سفر به مورمانسک</p>
+                                       </div>
+   
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="swiper-slide">
+                           <div class="regions__slide-container">
+                               <div class="regions__slide">
+                                   <img src="images/regions_2.jpg" alt="">
+                                   <div class="regions__slide-desc">
+                                       <div class="regions__slide-title">
+                                           <p>سفر به مورمانسک</p>
+                                       </div>
+   
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="swiper-slide">
+                           <div class="regions__slide-container">
+                               <div class="regions__slide">
+                                   <img src="images/regions_3.jpg" alt="">
+                                   <div class="regions__slide-desc">
+                                       <div class="regions__slide-title">
+                                           <p>سفر به مورمانسک</p>
+                                       </div>
+   
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="swiper-slide">
+                           <div class="regions__slide-container">
+                               <div class="regions__slide">
+                                   <img src="images/regions_1.jpg" alt="">
+                                   <div class="regions__slide-desc">
+                                       <div class="regions__slide-title">
+                                           <p>سفر به مورمانسک</p>
+                                       </div>
+   
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="swiper-slide">
+                           <div class="regions__slide-container">
+                               <div class="regions__slide">
+                                   <img src="images/regions_2.jpg" alt="">
+                                   <div class="regions__slide-desc">
+                                       <div class="regions__slide-title">
+                                           <p>سفر به مورمانسک</p>
+                                       </div>
+   
+                                   </div>
+                               </div>
+                           </div>
+                       </div>                   
+                       </div>
+   
+                   </div>
+                   <div class="swiper-button-next regions--next">
+                       <img src="images/left-arrow.svg" alt="">
+                   </div>
+                   <div class="swiper-button-prev regions--prev">
+                       <img src="images/right-arrow.svg" alt="">
+                   </div>
                 </div>
 
             </div>
@@ -1084,7 +1115,7 @@
                         <a class="companies__item-container row">
                             <div class="companies__item-image">
                                 <img src="images/spbu.svg" alt="">
-                                <div class="companies__item-desc">
+                                <div class="companies__item-desc" dir="ltr">
                                     Центр изучения Исламской республики Иран СПбГУ «Collegium Iranicum»
                                 </div>
                             </div>
@@ -1150,7 +1181,7 @@
                                         <div class="footer__icon">
                                             <img src="images/email.svg" alt="">
                                         </div>
-                                        <div class="footer__top-content__number">infoshomaltour.com</div>
+                                        <div class="footer__top-content__email">info&#64;shomaltour.com</div>
                                     </a>
                                 </div>
                                 <div class="footer__top-content__desc" dir="rtl">
@@ -1308,16 +1339,72 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
      <!-- Initialize Swiper -->
   <script>
-    var swiper = new Swiper('.swiper', {
+    var swiperTours = new Swiper('.tours--swiper', {
       slidesPerView: 3,
       direction: getDirection(),
       navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.tours--next',
+        prevEl: '.tours--prev',
       },
       on: {
         resize: function () {
-          swiper.changeDirection(getDirection());
+          swiperTours.changeDirection(getDirection());
+        },
+      },
+    });
+
+    var swiperHotels = new Swiper('.hotels--swiper', {
+      slidesPerView: 3,
+      direction: getDirection(),
+      navigation: {
+        nextEl: '.hotels--next',
+        prevEl: '.hotels--prev',
+      },
+      on: {
+        resize: function () {
+          swiperHotels.changeDirection(getDirection());
+        },
+      },
+    });
+
+    var swiperActivities = new Swiper('.activities--swiper', {
+      slidesPerView: 3,
+      direction: getDirection(),
+      navigation: {
+        nextEl: '.activities--next',
+        prevEl: '.activities--prev',
+      },
+      on: {
+        resize: function () {
+          swiperActivities.changeDirection(getDirection());
+        },
+      },
+    });
+
+    var swiperArticles = new Swiper('.articles--swiper', {
+      slidesPerView: 3,
+      direction: getDirection(),
+      navigation: {
+        nextEl: '.articles--next',
+        prevEl: '.articles--prev',
+      },
+      on: {
+        resize: function () {
+          swiperArticles.changeDirection(getDirection());
+        },
+      },
+    });
+
+    var swiperRegions = new Swiper('.regions--swiper', {
+      slidesPerView: 4,
+      direction: getDirection(),
+      navigation: {
+        nextEl: '.regions--next',
+        prevEl: '.regions--prev',
+      },
+      on: {
+        resize: function () {
+          swiperRegions.changeDirection(getDirection());
         },
       },
     });
