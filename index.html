@@ -717,6 +717,13 @@
             <div class="container">
                 <div class="send__row row">
                     <div class="send__content">
+                        <div class="send__desc-title mobile">
+                            <p>به ما درخواست بفرستید</p>
+                        </div>
+                        <div class="send__desc-subtitle mobile">
+                            <p>ما با شما تماس میگیریم 
+                            </p>
+                        </div>
                         <label for="name" class="send__label"><span style="color: rgb(255, 106, 0);">*</span>نام و نام خانوادگی</label>
                         <input type="text" class="send__input" name="name" placeholder="یوسف اجیروف">
                         <label for="phone" class="send__label"><span style="color: rgb(255, 106, 0);">*</span>شماره تماس</label>
@@ -733,10 +740,10 @@
                         <button class="send__button btn">ارسال درخواست</button>
                     </div>
                     <div class="send__desc">
-                        <div class="send__desc-title">
+                        <div class="send__desc-title desktop">
                             <p>به ما درخواست بفرستید</p>
                         </div>
-                        <div class="send__desc-subtitle">
+                        <div class="send__desc-subtitle desktop">
                             <p>ما با شما تماس میگیریم 
                             </p>
                         </div>
@@ -1155,8 +1162,16 @@
             <div class="footer__top">
                 <div class="footer__top-line"></div>
                 <div class="container">
-                    <div class="footer__top-inner">
-                        <div class="footer__top-container">
+                    <div class="footer__top-inner" dir="rtl">
+                        <div class="footer__top-logo">
+                            <a href="#" class="logo">
+                                <div class="logo__image">
+                                    <img src="images/logo.png" alt="">
+                                </div>
+                                <div class="logo__desc">شمال تور</div>
+                            </a>
+                        </div>
+                        <div class="footer__top-container" dir="ltr">
                             <div class="footer__top-content">
                                 <div class="footer__top-content__row row">
                                     <a href="#" class="footer__top-content__link">
@@ -1169,13 +1184,13 @@
                                         <div class="footer__icon">
                                             <img src="images/whatsapp.svg" alt="">
                                         </div>
-                                        <div class="footer__top-content__number">+98 1343425970</div>
+                                        <div class="footer__top-content__number footer--small">+98 1343425970</div>
                                     </a>
                                     <a href="#" class="footer__top-content__link">
                                         <div class="footer__icon">
                                             <img src="images/telegram.svg" alt="">
                                         </div>
-                                        <div class="footer__top-content__number">+98 1343425970</div>
+                                        <div class="footer__top-content__number footer--small">+98 1343425970</div>
                                     </a>
                                     <a href="#" class="footer__top-content__link">
                                         <div class="footer__icon">
@@ -1191,14 +1206,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="footer__top-logo">
-                            <a href="#" class="logo">
-                                <div class="logo__desc">شمال تور</div>
-                                <div class="logo__image">
-                                    <img src="images/logo.png" alt="">
-                                </div>
-                            </a>
-                        </div>
+                        
                     </div>
                 </div>
 
