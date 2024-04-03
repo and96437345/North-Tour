@@ -336,7 +336,7 @@ input[type="checkbox"] {
             display: block;
             height: 100%;
             width: 100%;
-            object-fit: cover;
+            object-fit: contain;
             object-position: center;
             border-radius: 10px;
         }
@@ -1435,7 +1435,7 @@ input[type="checkbox"]:checked + .send__label-input span::before {
 // }
 
 
-@media (max-width: 1319.8px) {
+@media (max-width: 1320px) {
     .send {
         &__row {
             padding: 32px 40px 0 40px;
@@ -1452,7 +1452,7 @@ input[type="checkbox"]:checked + .send__label-input span::before {
     }
 }
 
-@media (max-width: 1279.8px) {
+@media (max-width: 1280px) {
     .header__top {
         &-whatsAppNumber,
         &-telegramNumber {
@@ -1544,7 +1544,17 @@ input[type="checkbox"]:checked + .send__label-input span::before {
 
 /* ----- M O B I L E ----- */
 
-@media (max-width: 991.8px) {
+@media (max-width: 1024px) {
+    .swiper-button-next {
+        right: calc(100% - 54px);
+    
+    }
+    .swiper-button-prev {
+        right: 6px;
+    }
+}
+
+@media (max-width: 992px) {
     .container {
         max-width: 960px;
         padding: 0 16px;
@@ -1595,13 +1605,6 @@ input[type="checkbox"]:checked + .send__label-input span::before {
         font-size: 48px;
     }
 
-    .swiper-button-next {
-        right: calc(100% - 54px);
-    
-    }
-    .swiper-button-prev {
-        right: 6px;
-    }
 
     .service {
         &__row {
@@ -1661,11 +1664,7 @@ input[type="checkbox"]:checked + .send__label-input span::before {
 }
 
 @media (max-width: 767.8px) {
-// -----------------------------------------------------------
-    .swiper {
-        display: none;
-    }
-// -----------------------------------------------------------
+
     .callBack {
         width: 297px;
         margin: 0 auto;

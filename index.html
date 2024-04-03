@@ -1347,12 +1347,23 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
      <!-- Initialize Swiper -->
   <script>
+    
     var swiperTours = new Swiper('.tours--swiper', {
-      slidesPerView: 3,
+      slidesPerView: 1,
       direction: getDirection(),
       navigation: {
         nextEl: '.tours--next',
         prevEl: '.tours--prev',
+      },
+      breakpoints: {
+        768: {
+        slidesPerView: 2,
+        // spaceBetween: 30
+        },
+        1024: {
+        slidesPerView: 3,
+        // spaceBetween: 40
+        }
       },
       on: {
         resize: function () {
@@ -1362,11 +1373,21 @@
     });
 
     var swiperHotels = new Swiper('.hotels--swiper', {
-      slidesPerView: 3,
+      slidesPerView: 1,
       direction: getDirection(),
       navigation: {
         nextEl: '.hotels--next',
         prevEl: '.hotels--prev',
+      },
+      breakpoints: {
+        768: {
+        slidesPerView: 2,
+        // spaceBetween: 30
+        },
+        1024: {
+        slidesPerView: 3,
+        // spaceBetween: 40
+        }
       },
       on: {
         resize: function () {
@@ -1376,11 +1397,21 @@
     });
 
     var swiperActivities = new Swiper('.activities--swiper', {
-      slidesPerView: 3,
+      slidesPerView: 1,
       direction: getDirection(),
       navigation: {
         nextEl: '.activities--next',
         prevEl: '.activities--prev',
+      },
+      breakpoints: {
+        768: {
+        slidesPerView: 2,
+        // spaceBetween: 30
+        },
+        1024: {
+        slidesPerView: 3,
+        // spaceBetween: 40
+        }
       },
       on: {
         resize: function () {
@@ -1390,11 +1421,21 @@
     });
 
     var swiperArticles = new Swiper('.articles--swiper', {
-      slidesPerView: 3,
+      slidesPerView: 1,
       direction: getDirection(),
       navigation: {
         nextEl: '.articles--next',
         prevEl: '.articles--prev',
+      },
+      breakpoints: {
+        768: {
+        slidesPerView: 2,
+        // spaceBetween: 30
+        },
+        1024: {
+        slidesPerView: 3,
+        // spaceBetween: 40
+        }
       },
       on: {
         resize: function () {
@@ -1404,11 +1445,25 @@
     });
 
     var swiperRegions = new Swiper('.regions--swiper', {
-      slidesPerView: 4,
+      slidesPerView: 1,
       direction: getDirection(),
       navigation: {
         nextEl: '.regions--next',
         prevEl: '.regions--prev',
+      },
+      breakpoints: {
+        421: {
+        slidesPerView: 2,
+        // spaceBetween: 40
+        },
+        768: {
+        slidesPerView: 3,
+        // spaceBetween: 30
+        },
+        1024: {
+        slidesPerView: 4,
+        // spaceBetween: 40
+        }
       },
       on: {
         resize: function () {
@@ -1419,7 +1474,8 @@
 
     function getDirection() {
       var windowWidth = window.innerWidth;
-      var direction = window.innerWidth <= 760 ? 'vertical' : 'horizontal';
+    //   var direction = window.innerWidth <= 760 ? 'vertical' : 'horizontal';
+      var direction = 'horizontal';
 
       return direction;
     }
