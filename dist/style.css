@@ -556,11 +556,38 @@ input[type=checkbox] {
 .detail {
   padding: 40px 0;
 }
+.detail-row {
+  justify-content: space-between;
+}
+.detail__left-section {
+  margin-top: -185px;
+  z-index: 2;
+}
+.detail__left-sectionContainer {
+  width: 412px;
+  box-sizing: border-box;
+  border: 2px solid rgb(206, 229, 255);
+  border-radius: 10px;
+  background: rgb(255, 255, 255);
+}
+.detail__left-sectionContainer:hover {
+  box-sizing: border-box;
+  border: 2px solid rgb(206, 229, 255);
+  border-radius: 10px;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
+  background: rgb(255, 255, 255);
+}
+.detail .change__discount-container {
+  padding: 40px 0 20px;
+}
 .detail__item-booking {
+  flex-direction: column;
   background: rgb(231, 242, 255);
   padding: 12px 24px;
   box-sizing: border-box;
   justify-content: space-between;
+  box-sizing: border-box;
+  border-bottom: 1px solid rgb(206, 229, 255);
 }
 .detail__item-price {
   color: rgb(5, 135, 214);
@@ -568,7 +595,13 @@ input[type=checkbox] {
   font-weight: 700;
   line-height: 28px;
   text-align: right;
-  margin-bottom: 4px;
+  margin-bottom: 8px;
+}
+.detail__item-desc {
+  margin-bottom: 8px;
+}
+.detail__item-duration {
+  margin-bottom: 8px;
 }
 .detail__item-days, .detail__item-nights {
   color: rgb(68, 68, 68);
@@ -590,12 +623,53 @@ input[type=checkbox] {
 .detail__item-icon img {
   max-width: 100%;
 }
+.detail__calendarChange {
+  background: #fff;
+  margin-bottom: 8px;
+}
 .detail__change {
-  padding: 0 0px 41px;
-  box-sizing: border-box;
+  border-radius: 10px;
+}
+.detail__change-class {
+  padding: 20px 30px 23px 30px;
+  border-bottom: 1px solid rgb(206, 229, 255);
+}
+.detail__change-ticketItem {
+  margin-bottom: 11px;
+}
+.detail__change-ticketsList {
+  padding: 20px 30px 24px 30px;
+  border-bottom: 1px solid rgb(206, 229, 255);
+}
+.detail__change-ticketsList img {
+  margin-left: 12px;
+}
+.detail__change-backTickets {
+  padding: 20px 30px 30px 30px;
+}
+.detail__change-backTickets img {
+  margin-left: 12px;
 }
 .detail__class-desc {
   display: flex;
+}
+.detail__class-desc img {
+  margin-left: 12px;
+}
+.detail__class-descText {
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: right;
+}
+.detail__class-title {
+  color: rgb(36, 36, 64);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: right;
+  margin-bottom: 13px;
 }
 .detail__change-ticketItem {
   display: flex;
@@ -606,6 +680,232 @@ input[type=checkbox] {
 .detail__change-discount {
   border-radius: 10px;
   background: rgb(255, 122, 0);
+}
+.detail__change-discountContent {
+  padding: 10px 17px;
+  box-sizing: border-box;
+}
+.detail .discount__change-desc {
+  color: rgb(0, 0, 0);
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: right;
+}
+.detail .discount__change-value {
+  color: rgb(255, 255, 255);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 140%;
+  text-align: center;
+  max-width: 60px;
+}
+.detail .service__item-container {
+  flex-direction: row;
+  padding: 35px 60px;
+  box-sizing: border-box;
+}
+.detail .service__icon {
+  display: flex;
+  align-items: center;
+  margin-right: 12px;
+}
+.detail .service__numbers-content__row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.detail .service__numbers-content__number {
+  color: rgb(51, 51, 51);
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 47px;
+  letter-spacing: 1%;
+  text-align: left;
+}
+.detail .service__numbers-content__link:last-child {
+  margin-top: 14px;
+}
+.detail .service__numbers-content__email {
+  color: rgb(1, 122, 195);
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: left;
+}
+.detail .service__numbers-container {
+  padding: 40px 0;
+}
+.detail .service--small {
+  font-size: 28px;
+}
+.detail .service__row {
+  border-bottom: 1px solid rgb(206, 229, 255);
+}
+.detail .service__item {
+  width: 100%;
+  padding: 0;
+  margin-bottom: 24px;
+}
+.detail .service__item-container {
+  flex-direction: row;
+}
+.detail .service__item-image {
+  height: 77px;
+  margin-bottom: 0;
+}
+.detail .service__item img {
+  height: 100%;
+}
+.detail__main-section {
+  width: 57.7%;
+}
+.detail .tour__description {
+  padding: 0 0 40px 0;
+}
+.detail .tour__desc {
+  color: rgb(68, 68, 68);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 170%;
+  text-align: right;
+  margin-bottom: 40px;
+}
+.detail .tour__question {
+  color: rgb(36, 36, 64);
+  font-family: Rubik;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 47px;
+  text-align: right;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+.detail .tour__answers-item {
+  color: rgb(68, 68, 68);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: right;
+}
+.detail .tour__images {
+  padding: 0 0 27px;
+}
+.detail__activities-title {
+  color: rgb(36, 36, 64);
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 47px;
+  text-align: right;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+.detail__activities-cart {
+  box-sizing: border-box;
+  border: 1px solid rgb(206, 229, 255);
+  border-radius: 10px;
+  background: rgb(255, 255, 255);
+}
+.detail__activities-image {
+  position: relative;
+  height: 297px;
+  border-radius: 10px 10px 0 0;
+}
+.detail__activities-image img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px 10px 0 0;
+}
+.detail__activities-image::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  content: "";
+  background: rgba(194, 194, 194, 0.2);
+}
+.detail__activities-content {
+  padding: 24px 20px 52px 24px;
+}
+.detail__activities-subtitle {
+  color: rgb(5, 135, 214);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 120%;
+  text-align: right;
+  margin-bottom: 15px;
+}
+.detail__activities-desc {
+  color: rgb(68, 68, 68);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 140%;
+  text-align: right;
+}
+.detail .tour__bigImage {
+  position: relative;
+  height: 240px;
+  border-radius: 10px;
+}
+.detail .tour__bigImage-row {
+  margin: 4px -5px;
+}
+.detail .tour__bigImage-container {
+  width: 50%;
+  padding: 4px 5px;
+}
+.detail .tour__bigImage img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+}
+.detail .tour__bigImage::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  content: "";
+  background: rgba(194, 194, 194, 0.2);
+}
+.detail .tour__smallImage {
+  position: relative;
+  height: 120px;
+  border-radius: 10px;
+}
+.detail .tour__smallImage-row {
+  margin: 0 -5px;
+}
+.detail .tour__smallImage-container {
+  width: 25%;
+  padding: 0 5px;
+}
+.detail .tour__smallImage img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+}
+.detail .tour__smallImage::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  content: "";
+  background: rgba(194, 194, 194, 0.2);
 }
 
 .booking__button {

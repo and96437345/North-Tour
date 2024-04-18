@@ -594,12 +594,40 @@ input[type="checkbox"] {
 
 .detail {
     padding: 40px 0;
+    &-row {
+        justify-content: space-between;
+    }
+    &__left-section {
+        margin-top: -185px;
+        z-index: 2;
+    }
+    &__left-sectionContainer {
+        width: 412px;
+        box-sizing: border-box;
+        border: 2px solid rgb(206, 229, 255);
+        border-radius: 10px;
+        background: rgb(255, 255, 255);
+
+        &:hover {
+            box-sizing: border-box;
+            border: 2px solid rgb(206, 229, 255);
+            border-radius: 10px;
+            box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
+            background: rgb(255, 255, 255);
+        }
+    }
+    .change__discount-container {
+        padding: 40px 0 20px;
+    }
     &__item {
         &-booking {
+            flex-direction: column;
             background: rgb(231, 242, 255);
             padding: 12px 24px;
             box-sizing: border-box;
             justify-content: space-between;
+            box-sizing: border-box;
+            border-bottom: 1px solid rgb(206, 229, 255);
         }
         &-price {
             color: rgb(5, 135, 214);
@@ -607,7 +635,13 @@ input[type="checkbox"] {
             font-weight: 700;
             line-height: 28px;
             text-align: right;
-            margin-bottom: 4px;
+            margin-bottom: 8px;
+        }
+        &-desc {
+            margin-bottom: 8px;
+        }
+        &-duration {
+            margin-bottom: 8px;
         }
         &-days,
         &-nights {
@@ -631,13 +665,56 @@ input[type="checkbox"] {
             }
         }
     }
+    &__calendarChange {
+
+        background: #fff;
+        margin-bottom: 8px;
+    }
     &__change {
-        padding: 0 0px 41px;
-        box-sizing: border-box;
+        border-radius: 10px;
+        &-class {
+            padding: 20px 30px 23px 30px;
+            border-bottom: 1px solid rgb(206, 229, 255);
+        }
+        &-ticketItem {
+            margin-bottom: 11px;
+        }
+        &-ticketsList {
+            padding: 20px 30px 24px 30px;
+            border-bottom: 1px solid rgb(206, 229, 255);
+            img {
+                margin-left: 12px;
+            }
+        }
+        &-backTickets {
+            padding: 20px 30px 30px 30px;
+            img {
+                margin-left: 12px;
+            }
+        }
     }
     &__class {
+        
         &-desc {
             display: flex;
+            img {
+                margin-left: 12px;
+            }
+        }
+        &-descText {
+            color: rgb(0, 0, 0);
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 24px;
+            text-align: right;
+        }
+        &-title {
+            color: rgb(36, 36, 64);
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 24px;
+            text-align: right;
+            margin-bottom: 13px;
         }
     }
     &__change-ticketItem {
@@ -650,6 +727,240 @@ input[type="checkbox"] {
         border-radius: 10px;
         background: rgb(255, 122, 0);
     }
+    &__change-discountContent {
+        padding: 10px 17px;
+        box-sizing: border-box;
+    }
+    .discount__change-desc {
+        color: rgb(0, 0, 0);
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 26px;
+        text-align: right;
+    }
+    .discount__change-value {
+        color: rgb(255, 255, 255);
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 140%;
+        text-align: center;
+        max-width: 60px;
+    }
+    .service__item-container {
+        flex-direction: row;
+        padding: 35px 60px;
+        box-sizing: border-box;
+    }
+    .service__icon {
+        display: flex;
+        align-items: center;
+        margin-right: 12px;
+    }
+    .service__numbers-content__row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .service__numbers-content__number {
+        color: rgb(51, 51, 51);
+        font-size: 40px;
+        font-weight: 500;
+        line-height: 47px;
+        letter-spacing: 1%;
+        text-align: left;
+    }
+    .service__numbers-content__link:last-child {
+        margin-top: 14px;
+    }
+    .service__numbers-content__email {
+        color: rgb(1, 122, 195);
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 26px;
+        text-align: left;
+    } 
+    .service__numbers-container {
+        padding: 40px 0;
+    }
+    .service--small {
+        font-size: 28px;
+    }
+    .service__row {
+        border-bottom: 1px solid rgb(206, 229, 255);
+        
+    }
+    .service__item {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 24px;
+        &-container {
+            flex-direction: row;
+        }
+        &-image {
+            height: 77px;
+            margin-bottom: 0;
+        }
+        & img {
+            height: 100%;
+        }
+    }
+
+    &__main-section {
+        width: 57.7%;
+    }
+    .tour {
+        &__description {
+            padding: 0 0 40px 0;
+        }
+        &__desc {
+        color: rgb(68, 68, 68);
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 170%;
+        text-align: right;
+        margin-bottom: 40px;
+        }
+        &__question {
+            color: rgb(36, 36, 64);
+            font-family: Rubik;
+            font-size: 40px;
+            font-weight: 600;
+            line-height: 47px;
+            text-align: right;
+            text-transform: uppercase;
+            margin-bottom: 32px;
+        }
+        &__answers-item {
+            color: rgb(68, 68, 68);
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 24px;
+            text-align: right;
+        }
+        &__images {
+            padding: 0 0 27px;
+        }
+    }
+
+    &__activities {
+        &-title {
+            color: rgb(36, 36, 64);
+            font-size: 40px;
+            font-weight: 600;
+            line-height: 47px;
+            text-align: right;
+            text-transform: uppercase;
+            margin-bottom: 32px;
+        }
+        &-cart {
+            box-sizing: border-box;
+            border: 1px solid rgb(206, 229, 255);
+            border-radius: 10px;
+            background: rgb(255, 255, 255);
+        }
+        &-image {
+            position: relative;
+            height: 297px;
+            border-radius: 10px 10px 0 0;
+            img {
+                display: block;
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                object-position: center;
+                border-radius: 10px 10px 0 0;
+            }
+            &::after {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                z-index: 1;
+                content: '';
+                background: rgb(194, 194, 194, 0.2);
+            }
+        }
+        &-content {
+            padding: 24px 20px 52px 24px;
+        }
+        &-subtitle {
+            color: rgb(5, 135, 214);
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 120%;
+        text-align: right;
+        margin-bottom: 15px;
+        }
+        &-desc {
+            color: rgb(68, 68, 68);
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 140%;
+            text-align: right;
+        }
+    }
+    .tour__bigImage {
+        position: relative;
+        height: 240px;
+        border-radius: 10px;
+        &-row {
+            margin: 4px -5px;
+        }
+        &-container {
+            width: 50%;
+            padding: 4px 5px;
+        }
+        img {
+            display: block;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 10px;
+        }
+        &::after {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            z-index: 1;
+            content: '';
+            background: rgb(194, 194, 194, 0.2);
+        }
+    }
+    .tour__smallImage {
+        position: relative;
+        height: 120px;
+        border-radius: 10px;
+        &-row {
+            margin: 0 -5px;
+        }
+        &-container {
+            width: 25%;
+            padding: 0 5px;
+        }
+        img {
+            display: block;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 10px;
+        }
+        &::after {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            z-index: 1;
+            content: '';
+            background: rgb(194, 194, 194, 0.2);
+        }
+    }
+        
 }
 
 
