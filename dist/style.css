@@ -32,6 +32,7 @@ p {
 .btn {
   border: none;
   cursor: pointer;
+  background: transparent;
 }
 
 a {
@@ -554,7 +555,7 @@ input[type=checkbox] {
 }
 
 .detail {
-  padding: 40px 0;
+  padding: 40px 0 28px;
 }
 .detail-row {
   justify-content: space-between;
@@ -578,27 +579,27 @@ input[type=checkbox] {
   background: rgb(255, 255, 255);
 }
 .detail .change__discount-container {
-  padding: 40px 0 20px;
+  padding: 36px 0 20px;
 }
 .detail__item-booking {
   flex-direction: column;
   background: rgb(231, 242, 255);
-  padding: 12px 24px;
+  padding: 32px 24px 19px;
   box-sizing: border-box;
   justify-content: space-between;
-  box-sizing: border-box;
+  border-radius: 10px;
   border-bottom: 1px solid rgb(206, 229, 255);
 }
 .detail__item-price {
   color: rgb(5, 135, 214);
-  font-size: 24px;
+  font-size: 36px;
   font-weight: 700;
   line-height: 28px;
   text-align: right;
-  margin-bottom: 8px;
+  margin-bottom: 22px;
 }
 .detail__item-desc {
-  margin-bottom: 8px;
+  margin-bottom: 21px;
 }
 .detail__item-duration {
   margin-bottom: 8px;
@@ -624,8 +625,11 @@ input[type=checkbox] {
   max-width: 100%;
 }
 .detail__calendarChange {
+  justify-content: space-between;
+  padding: 12px 27px 12px 12px;
+  border-radius: 10px;
   background: #fff;
-  margin-bottom: 8px;
+  margin-bottom: 17px;
 }
 .detail__change {
   border-radius: 10px;
@@ -635,10 +639,10 @@ input[type=checkbox] {
   border-bottom: 1px solid rgb(206, 229, 255);
 }
 .detail__change-ticketItem {
-  margin-bottom: 11px;
+  margin-bottom: 17px;
 }
 .detail__change-ticketsList {
-  padding: 20px 30px 24px 30px;
+  padding: 20px 30px 10px 30px;
   border-bottom: 1px solid rgb(206, 229, 255);
 }
 .detail__change-ticketsList img {
@@ -669,7 +673,7 @@ input[type=checkbox] {
   font-weight: 700;
   line-height: 24px;
   text-align: right;
-  margin-bottom: 13px;
+  margin-bottom: 22px;
 }
 .detail__change-ticketItem {
   display: flex;
@@ -761,7 +765,7 @@ input[type=checkbox] {
   width: 57.7%;
 }
 .detail .tour__description {
-  padding: 0 0 40px 0;
+  padding: 0 0 17px 0;
 }
 .detail .tour__desc {
   color: rgb(68, 68, 68);
@@ -769,7 +773,7 @@ input[type=checkbox] {
   font-weight: 400;
   line-height: 170%;
   text-align: right;
-  margin-bottom: 40px;
+  margin-bottom: 17px;
 }
 .detail .tour__question {
   color: rgb(36, 36, 64);
@@ -782,17 +786,26 @@ input[type=checkbox] {
   margin-bottom: 32px;
 }
 .detail .tour__answers-item {
+  align-items: center;
   color: rgb(68, 68, 68);
   font-size: 20px;
   font-weight: 400;
   line-height: 24px;
   text-align: right;
+  margin-bottom: 16px;
+}
+.detail .tour__answers-itemCircle {
+  width: 16px;
+  height: 16px;
+  margin-left: 12px;
+  border-radius: 50%;
+  background: rgb(255, 106, 0);
 }
 .detail .tour__images {
   padding: 0 0 27px;
 }
 .detail__activities {
-  padding: 46px 0 30px;
+  padding: 29px 0 30px;
 }
 .detail__activities-title {
   color: rgb(36, 36, 64);
@@ -912,7 +925,7 @@ input[type=checkbox] {
   background: rgba(194, 194, 194, 0.2);
 }
 .detail__schedule {
-  padding: 28px 0;
+  padding: 22px 0;
 }
 .detail__schedule-title {
   color: rgb(36, 36, 64);
@@ -925,7 +938,7 @@ input[type=checkbox] {
 }
 .detail__schedule-description {
   background: rgb(255, 211, 179);
-  padding: 4px 0;
+  padding: 7px 0;
   justify-content: center;
   margin-bottom: 20px;
 }
@@ -951,14 +964,11 @@ input[type=checkbox] {
   border: 2px solid rgb(206, 229, 255);
   border-radius: 10px;
   background: rgb(255, 255, 255);
-  padding: 20px 20px 20px 20px;
-  margin-bottom: 24px;
+  padding: 30px 20px 20px 20px;
+  margin-bottom: 19px;
 }
 .detail__schedule-cartMenu {
   justify-content: space-between;
-  border-bottom: 1px solid rgb(206, 229, 255);
-  margin-bottom: 20px;
-  padding-bottom: 20px;
 }
 .detail__schedule-cartDropButton {
   width: 42px;
@@ -989,6 +999,9 @@ input[type=checkbox] {
 }
 .detail__schedule-cartContent {
   display: none;
+  border-top: 1px solid rgb(206, 229, 255);
+  padding-top: 20px;
+  margin-top: 20px;
 }
 .detail__schedule-cartContentRow {
   margin: 0 -5px;
@@ -1027,14 +1040,10 @@ input[type=checkbox] {
   content: "";
   background: rgba(194, 194, 194, 0.2);
 }
-.detail__schedule .schedule--active {
-  display: block;
+.detail__staying {
+  padding: 16px 0 30px;
 }
-
-.tour__staying {
-  padding: 20px 0 30px;
-}
-.tour__staying-title {
+.detail__staying-title {
   color: rgb(36, 36, 64);
   font-size: 40px;
   font-weight: 600;
@@ -1042,6 +1051,296 @@ input[type=checkbox] {
   text-align: right;
   text-transform: uppercase;
   margin-bottom: 32px;
+}
+.detail__staying-desc {
+  margin-bottom: 40px;
+  color: rgb(68, 68, 68);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 170%;
+  text-align: right;
+}
+.detail__journey {
+  padding: 20px 0 30px;
+}
+.detail__journey-title {
+  color: rgb(36, 36, 64);
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 47px;
+  text-align: right;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.detail__journey-subtitle {
+  color: rgb(1, 122, 195);
+  text-align: left;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 160%;
+  color: #017AC3;
+  margin-bottom: 3px;
+}
+.detail__journey-includeList {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 18px;
+  box-sizing: border-box;
+  border: 2px solid rgb(206, 229, 255);
+  border-radius: 10px;
+  background: rgb(255, 255, 255);
+}
+.detail__journey-includeItemTitle {
+  margin-bottom: 24px;
+}
+.detail__journey-includeItemTitleLink {
+  color: rgb(36, 36, 64);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 140%;
+  text-align: right;
+}
+.detail__journey-includeItem {
+  color: rgb(68, 68, 68);
+  font-family: Rubik;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 170%;
+  letter-spacing: 0%;
+  text-align: right;
+  margin-bottom: 12px;
+}
+.detail__journey-includeItemIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  margin-left: 8px;
+}
+.detail__journey-includeItemIcon img {
+  max-width: 100%;
+}
+.detail__costs {
+  padding: 28px 0;
+}
+.detail__costs-row {
+  margin-bottom: 35px;
+}
+.detail__costs-container {
+  box-sizing: border-box;
+  border: 2px solid rgb(206, 229, 255);
+  border-radius: 10px;
+  background: rgb(231, 242, 255);
+  padding: 30px 35px;
+}
+.detail__costs-title {
+  color: rgb(36, 36, 64);
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 47px;
+  text-align: right;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+.detail__costs-item {
+  width: 20%;
+  color: rgb(68, 68, 68);
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 160%;
+  text-align: right;
+}
+.detail__costs-itemCheck {
+  margin-right: 16px;
+}
+.detail__costs-order {
+  border-radius: 10px;
+  background: rgb(255, 106, 0);
+  height: 56px;
+  width: 100%;
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 160%;
+  text-align: center;
+}
+.detail__costs .costs--wide {
+  width: 60%;
+  display: flex;
+  justify-content: end;
+}
+.detail__share {
+  padding: 28px 0;
+}
+.detail__share-container {
+  border: 1px solid rgb(231, 242, 255);
+  padding: 28px 0 33px;
+}
+.detail__share-row {
+  justify-content: space-between;
+}
+.detail__share-link {
+  color: rgb(102, 102, 102);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  margin-left: 5px;
+}
+.detail__share-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  margin-left: 8px;
+}
+.detail__share-icon img {
+  max-width: 100%;
+}
+.detail__share-button {
+  width: 197px;
+  height: 40px;
+  border-radius: 10px;
+  background: rgb(231, 242, 255);
+  color: rgb(5, 135, 214);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  text-align: center;
+}
+.detail__share-messengers {
+  align-items: center;
+}
+.detail .schedule--active {
+  display: block;
+}
+.detail .schedule--activeButton img {
+  transform: none;
+}
+.detail .detail--days,
+.detail .detail--nights {
+  width: 40%;
+  font-size: 20px;
+}
+.detail .center {
+  justify-content: center;
+  margin-bottom: 14px;
+}
+.detail .detailBooking--button {
+  width: 100%;
+}
+
+.detailService {
+  padding: 20px 0 0 0;
+}
+
+.detailService__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 12px;
+  height: 36px;
+  width: 36px;
+}
+.detailService__icon img {
+  width: 100%;
+}
+
+.detailService__numbers-content__number {
+  color: rgb(51, 51, 51);
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 47px;
+  letter-spacing: 1%;
+  text-align: left;
+}
+
+.detailService__numbers-content {
+  padding: 27px 57px;
+  box-sizing: border-box;
+  border: 2px solid rgb(206, 229, 255);
+  border-top: none;
+  border-radius: 0 0 10px 10px;
+  background: rgb(255, 255, 255);
+}
+
+.detailService__numbers-content__link {
+  display: flex;
+  align-items: center;
+  margin-bottom: 7px;
+}
+
+.detailService__numbers-content__link:last-child {
+  margin-top: 14px;
+}
+
+.detailService__numbers-content__email {
+  color: rgb(1, 122, 195);
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: left;
+}
+
+.detailService--small {
+  font-size: 32px;
+}
+
+.detailService__row {
+  box-sizing: border-box;
+  border: 2px solid rgb(206, 229, 255);
+  border-radius: 10px 10px 0 0;
+  background: rgb(255, 255, 255);
+  border-bottom: 1px solid rgb(206, 229, 255);
+  padding: 32px 57px 2px;
+}
+
+.detailService__item {
+  width: 100%;
+  padding: 0;
+  margin-bottom: 27px;
+}
+.detailService__item-container {
+  display: flex;
+  flex-direction: row;
+}
+.detailService__item-desc {
+  color: rgb(5, 135, 214);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 120%;
+  text-align: right;
+  max-width: 140px;
+}
+.detailService__item-image {
+  height: 77px;
+  margin-bottom: 0;
+}
+.detailService__item img {
+  height: 100%;
+}
+
+.similar {
+  padding: 13px 0 48px;
+}
+.similar__container {
+  padding: 10px 0 23px;
+}
+.similar__title {
+  color: rgb(36, 36, 64);
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 47px;
+  text-align: right;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+.similar .tours__slider {
+  margin-bottom: 16px;
 }
 
 .booking__button {
@@ -1063,14 +1362,14 @@ input[type=checkbox] {
 .catalog__left-section {
   width: 318px;
 }
-.catalog__left-section .service {
+.catalog__left-section .detailService {
   padding: 32px 18px;
   box-sizing: border-box;
   border: 1px solid rgb(206, 229, 255);
   border-radius: 10px;
   background: rgb(255, 255, 255);
 }
-.catalog__left-section .service:hover {
+.catalog__left-section .detailService:hover {
   border: 2px solid rgb(206, 229, 255);
   border-radius: 10px;
   box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
@@ -2139,6 +2438,10 @@ input[type=checkbox]:checked + .send__label-input span::before {
   line-height: 120%;
   text-align: left;
   max-width: 187px;
+}
+
+.detail--checkbox {
+  margin-left: 0;
 }
 
 /* ----- F O O T E R ----- */
