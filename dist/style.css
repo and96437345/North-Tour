@@ -61,6 +61,7 @@ input[type=checkbox] {
 
 .mobile,
 .service__mobile,
+.detail--mobile,
 .catalog__dropdown-menu {
   display: none;
 }
@@ -682,8 +683,19 @@ input[type=checkbox] {
   display: flex;
 }
 .detail__change-discount {
+  justify-content: space-between;
   border-radius: 10px;
   background: rgb(255, 122, 0);
+}
+.detail__change-discountImage {
+  height: 144px;
+}
+.detail__change-discountImage img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 .detail__change-discountContent {
   padding: 10px 17px;
@@ -795,7 +807,7 @@ input[type=checkbox] {
   margin-bottom: 16px;
 }
 .detail .tour__answers-itemCircle {
-  width: 16px;
+  min-width: 16px;
   height: 16px;
   margin-left: 12px;
   border-radius: 50%;
@@ -1008,7 +1020,8 @@ input[type=checkbox] {
 }
 .detail__schedule-cartContentImageContainer {
   width: 25%;
-  padding: 0 5px;
+  padding: 0 5px 10px;
+  box-sizing: border-box;
 }
 .detail__schedule-cartContentDesc {
   color: rgb(68, 68, 68);
@@ -2640,6 +2653,22 @@ input[type=checkbox]:checked + .send__label-input span::before {
     width: 100%;
     margin-top: 10px;
   }
+  .detail__main-section {
+    width: 48%;
+  }
+  .hero__detail-title {
+    max-width: 490px;
+  }
+  .detail__share-row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .detail__share-messengers {
+    margin-bottom: 20px;
+  }
+  .detail__journey-includeItem img {
+    min-width: 20px;
+  }
 }
 /* ----- M O B I L E ----- */
 @media (max-width: 1024px) {
@@ -2710,6 +2739,24 @@ input[type=checkbox]:checked + .send__label-input span::before {
   .service__mobile .service__item {
     width: 33.3%;
     margin-bottom: 30px;
+  }
+  .detail-row {
+    flex-direction: column;
+  }
+  .detail__left-section {
+    margin: 0;
+  }
+  .detail__left-sectionContainer, .detail__main-section {
+    width: 100%;
+  }
+  .detail--desktop {
+    display: none;
+  }
+  .detail--mobile {
+    display: block;
+  }
+  .detail__activities-cart {
+    width: 100%;
   }
 }
 @media (max-width: 992px) {
@@ -2931,6 +2978,65 @@ input[type=checkbox]:checked + .send__label-input span::before {
   }
   .catalog__item-image img {
     border-radius: 10px 10px 0 0;
+  }
+  .hero__detail-image {
+    height: 200px;
+  }
+  .hero__offer {
+    height: 200px;
+  }
+  .hero__detail-desc {
+    bottom: 25px;
+    right: 20px;
+    width: 300px;
+  }
+  .hero__detail-title {
+    font-size: 29px;
+  }
+  .detail__change-discountImage {
+    height: 121px;
+  }
+  .detail__schedule-cartContentRow {
+    flex-wrap: wrap;
+  }
+  .detail__schedule-cartContentImageContainer {
+    width: 50%;
+  }
+  .detail__costs-row {
+    flex-direction: column-reverse;
+  }
+  .detail__costs-item {
+    width: 100%;
+    font-size: 24px;
+  }
+  .detail__costs .costs--wide {
+    width: 100%;
+  }
+  .detail .discount__change-value,
+  .detail .discount__change-desc {
+    font-size: 20px;
+  }
+  .detail__schedule-image {
+    height: 50px;
+    width: 50px;
+  }
+  .detail__schedule-cartMenu {
+    flex-direction: column-reverse;
+  }
+  .detail__schedule-cartButton {
+    margin-right: auto;
+  }
+  .detail__schedule-cartDrop {
+    margin-top: 10px;
+  }
+  .detail__journey-includeList {
+    flex-direction: column;
+  }
+  .detail__share-messengers {
+    flex-direction: column;
+  }
+  .detail__share-link {
+    margin-bottom: 20px;
   }
 }
 @media (max-width: 412px) {
