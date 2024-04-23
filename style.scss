@@ -24,7 +24,7 @@ ul {
     padding: 0;
     margin: 0;
 }
-p {
+h1, p {
     margin: 0;
 }
 
@@ -37,6 +37,16 @@ p {
 a {
     text-decoration: none;
     cursor: pointer;
+}
+
+
+.white--link:hover {
+    color: #cfcfcf;
+    transition: .3s;
+}
+.blue--link:hover {
+    color:rgb(0, 68, 149);
+    transition: .3s;
 }
 
 input[type="checkbox"] {
@@ -209,8 +219,12 @@ input[type="checkbox"] {
     transition: .5s;
 }
 
-.callBack:hover {
+// .callBack:hover {
+//     background: rgb(0, 68, 149);
+// }
+.callBack:active {
     background: rgb(0, 68, 149);
+
 }
 
 .header__menu {
@@ -1040,6 +1054,7 @@ input[type="checkbox"] {
             background: rgb(231, 242, 255);
             img {
                 transform: rotate(180deg);
+                transition: .5s;
             }
         }
         &-cartDropDesc {
@@ -2833,6 +2848,10 @@ input[type="checkbox"]:checked + .send__label-input span::before {
         text-align: center;
         // margin-bottom: 600px;
     }
+}
+.black--link:hover {
+    color: rgb(0, 68, 149);
+    transition: .3s;
 }
 
 // html,
