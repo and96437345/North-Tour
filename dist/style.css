@@ -2897,7 +2897,7 @@ input[type=checkbox]:checked + .send__label-input span::before {
     height: 330px;
   }
   .hero__image {
-    height: 330px;
+    height: 100%;
   }
   .hero__navigation {
     display: none;
