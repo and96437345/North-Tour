@@ -1,1778 +1,2028 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tour detail</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="http://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+      type="text/css"
+    />
     <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    
-    <link rel="stylesheet" href="dist/style.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="
+    https://cdn.jsdelivr.net/npm/air-datepicker@3.5.0/air-datepicker.min.js
+    "></script>
+    <link
+      href="
+    https://cdn.jsdelivr.net/npm/air-datepicker@3.5.0/air-datepicker.min.css
+    "
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="dist/style.css" />
+  </head>
+  <body>
     <header>
-        <div class="header__top" dir="rtl">
-            <div class="container">
-                <div class="header__top-row row">
-                    
-                    <div class="header__top-logo row">
-                        <a href="#" class="logo">
-                            <div class="logo__image">
-                                <img src="images/logo.png" alt="">
-                            </div>
-                            <div class="logo__desc">شمال تور</div>
-                        </a>
-                        <button class="header__top-burger btn">
-                            <img src="images/burger.svg" alt="">
-                        </button>
-                    </div>
-                    <ul class="header__top-list row">
-                        
-                        <li class="header__top-listItem list--phone">
-                            <a href="tel:+98211373" class="header__top-phoneLink row">
-                                <div class="header__top-phoneNumber black--link" dir="ltr">+98 211373</div>
-                                <div class="header__top-phoneIcon">
-                                    <img src="images/phone.svg" alt="">
-                                </div>
-                            </a>
-                        </li>
-                        <li class="header__top-listItem list--massangers">
-                            <a href="tel:+981343425970" class="header__top-whatsAppLink row">
-                                <div class="header__top-whatsAppNumber  black--link" dir="ltr">+98 1343425970</div>
-                                <div class="header__top-whatsAppIcon">
-                                    <img src="images/whatsapp.svg" alt="">
-                                </div>
-                            </a>
-                            <a href="tel:+981343425970" class="header__top-telegramLink row">
-                                <div class="header__top-telegramNumber  black--link" dir="ltr">+98 1343425970</div>
-                                <div class="header__top-telegramIcon">
-                                    <img src="images/telegram.svg" alt="">
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="header__top-listItem">
-                            <button class="callBack btn">
-                                <span>تماس</span>
-                                <span>درخواست</span>
-                                
-                            </button>
-                            <a href="mailto:info@shomoltour.com" class="header__top-emailLink row">
-                                <div class="header__top-emailAdress black--link">
-                                    info&#64;shomoltour.com
-                                </div>
-                                <div class="header__top-emailIcon">
-                                    <img src="images/email.svg" alt="">
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
+      <div class="header__top" dir="rtl">
+        <div class="container">
+          <div class="header__top-row row">
+            <div class="header__top-logo row">
+              <a href="#" class="logo">
+                <div class="logo__image">
+                  <img src="images/logo.png" alt="" />
                 </div>
+                <div class="logo__desc">شمال تور</div>
+              </a>
+              <button class="header__top-burger btn">
+                <img src="images/burger.svg" alt="" />
+              </button>
             </div>
+            <ul class="header__top-list row">
+              <li class="header__top-listItem list--phone">
+                <a href="tel:+98211373" class="header__top-phoneLink row">
+                  <div class="header__top-phoneNumber black--link" dir="ltr">
+                    +98 211373
+                  </div>
+                  <div class="header__top-phoneIcon">
+                    <img src="images/phone.svg" alt="" />
+                  </div>
+                </a>
+              </li>
+              <li class="header__top-listItem list--massangers">
+                <a
+                  href="tel:+981343425970"
+                  class="header__top-whatsAppLink row"
+                >
+                  <div class="header__top-whatsAppNumber black--link" dir="ltr">
+                    +98 1343425970
+                  </div>
+                  <div class="header__top-whatsAppIcon">
+                    <img src="images/whatsapp.svg" alt="" />
+                  </div>
+                </a>
+                <a
+                  href="tel:+981343425970"
+                  class="header__top-telegramLink row"
+                >
+                  <div class="header__top-telegramNumber black--link" dir="ltr">
+                    +98 1343425970
+                  </div>
+                  <div class="header__top-telegramIcon">
+                    <img src="images/telegram.svg" alt="" />
+                  </div>
+                </a>
+              </li>
+
+              <li class="header__top-listItem">
+                <button class="callBack btn">
+                  <span>تماس</span>
+                  <span>درخواست</span>
+                </button>
+                <a
+                  href="mailto:info@shomoltour.com"
+                  class="header__top-emailLink row"
+                >
+                  <div class="header__top-emailAdress black--link">
+                    info&#64;shomoltour.com
+                  </div>
+                  <div class="header__top-emailIcon">
+                    <img src="images/email.svg" alt="" />
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <nav class="header__menu" dir="rtl">
-            <div class="container">
-                <ul class="header__menu-list row">
-                    <li>
-                        <a href="#" class="header__menu-link white--link">
-                            ویزا روسیه
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="header__menu-link white--link">
-                            تورهای روسیه
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="header__menu-link white--link">
-                            هتل های روسیه
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="header__menu-link white--link">
-                            ترانسفر روسیه
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="header__menu-link white--link">
-                            بیمه روسیه
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="header__menu-link white--link">
-                            تورگاید روسیه
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+      </div>
+      <nav class="header__menu" dir="rtl">
+        <div class="container">
+          <ul class="header__menu-list row">
+            <li>
+              <a href="#" class="header__menu-link white--link"> ویزا روسیه </a>
+            </li>
+            <li>
+              <a href="#" class="header__menu-link white--link">
+                تورهای روسیه
+              </a>
+            </li>
+            <li>
+              <a href="#" class="header__menu-link white--link">
+                هتل های روسیه
+              </a>
+            </li>
+            <li>
+              <a href="#" class="header__menu-link white--link">
+                ترانسفر روسیه
+              </a>
+            </li>
+            <li>
+              <a href="#" class="header__menu-link white--link"> بیمه روسیه </a>
+            </li>
+            <li>
+              <a href="#" class="header__menu-link white--link">
+                تورگاید روسیه
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
 
     <main>
-        <div class="hero">
-            <div class="hero__offer">
-                <div class="hero__image hero__detail-image">
-                    <img src="images/tour_catalog/tours_1.jpg" alt="">
-                </div>
-                <div class="container hero__container">
-                    
-                    <div class="hero__navigation row" dir="rtl">
-                        <div class="hero__navigation-prev">صفحه اصلی</div>
-                        <div class="hero__navigation-prevBreak">/</div>
-                        <div class="hero__navigation-prev">تورهای منطقه کالینینگراد</div>
-                        <div class="hero__navigation-prevBreak">/</div>
-                        <div class="hero__navigation-temp">سال نو در قلب کونیگزبرگ</div>
-                    </div>
-                    <div class="hero__detail-desc" dir="rtl">
-                        <div class="hero__detail-subtitle">
-                            <p></p>
-                        </div>
-                        <div class="hero__detail-title">
-                            <p>تور مسکو سفر خاطر انگیز به پایتخت روسیه </p>
-                        </div>
-                    </div>
-
-                </div>
+      <div class="hero">
+        <div class="hero__offer">
+          <div class="hero__image hero__detail-image">
+            <img src="images/tour_catalog/tours_1.jpg" alt="" />
+          </div>
+          <div class="container hero__container">
+            <div class="hero__navigation row" dir="rtl">
+              <div class="hero__navigation-prev">صفحه اصلی</div>
+              <div class="hero__navigation-prevBreak">/</div>
+              <div class="hero__navigation-prev">تورهای منطقه کالینینگراد</div>
+              <div class="hero__navigation-prevBreak">/</div>
+              <div class="hero__navigation-temp">سال نو در قلب کونیگزبرگ</div>
             </div>
+            <div class="hero__detail-desc" dir="rtl">
+              <div class="hero__detail-subtitle">
+                <p></p>
+              </div>
+              <div class="hero__detail-title">
+                <p>تور مسکو سفر خاطر انگیز به پایتخت روسیه</p>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
 
-        <div class="detail">
-            <div class="container">
-                <div class="detail-row row">
-                    
-
-                    <div class="detail__left-section" dir="rtl">
-                        <div class="detail__left-sectionContainer detail--desktop">
-                           
-                            <div class="detail__change">
-                                <div class="detail__item-booking row">
-                                    <div class="detail__item-booking__desc">
-                                        <div class="detail__item-price" dir="ltr">39.000.000 تومان</div>
-                                        <div class="detail__item-desc">انگیز به پایتخت روسی</div>
-                                        <div class="detail__item-duration center row">
-                                            <div class="catalog__item-days detail--days row">
-                                                <div class="catalog__item-icon">
-                                                    <img src="images/tour_catalog/day.svg" alt="">
-                                                </div>
-                                                <div class="catalog__item-days__desc" dir="ltr">
-                                                    7 روز 
-                                                </div>
-                                            </div>
-                                            <div class="catalog__item-nights detail--nights row">
-                                                <div class="catalog__item-icon">
-                                                    <img src="images/tour_catalog/nigth.svg" alt="">
-                                                </div>
-                                                <div class="catalog__item-days__desc" dir="ltr">
-                                                    6 شب
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="detail__calendarChange row">
-                                            <div class="detail__calendarDate">
-                                                5 اسفند 1403
-                                            </div>
-                                            <button class="detail__calendarButton btn">
-                                                <img src="images/tour_detail/detail_calendar.svg" alt="">
-                                            </button>
-                                        </div>
-                                    </div>
-                                    <button class="booking__button detailBooking--button btn">رزرو تور </button>
-                                </div>
-                            </div>
-                            <div class="detail__change-info">
-                                <div class="detail__change-class">
-                                    <div class="detail__class-title">کلاس اقامت تور</div>
-                                    <div class="detail__class-desc">
-                                        <div class="detail__class-descIcon">
-                                            <img src="images/tour_detail/detail_star.svg" alt="">
-                                        </div>
-                                        <div class="detail__class-descText">4-5</div>
-                                    </div>
-                                </div>
-                                <ul class="detail__change-ticketsList">
-                                    <li class="detail__change-ticketItem">
-                                        <div class="detail__class-descIcon">
-                                            <img src="images/tour_detail/detail_plane.svg" alt="">
-                                        </div>
-                                        <div class="detail__class-descText">پرواز رفت: 03:00</div>
-                                    </li>
-                                    <li class="detail__change-ticketItem">
-                                        <div class="detail__class-descIcon">
-                                            <img src="images/tour_detail/detail_people.svg" alt="">
-                                        </div>
-                                        <div class="detail__class-descText">دیدار گروهی در هتل رکسان : 22:00</div>
-                                    </li>
-                                    <li class="detail__change-ticketItem">
-                                        <div class="detail__class-descIcon">
-                                            <img src="images/tour_detail/detail_basket.svg" alt="">
-                                        </div>
-                                        <div class="detail__class-descText">کافی شاپ هتل رکسان همراه با پذیرایی چای و قهوه</div>
-                                    </li>
-                                </ul>
-                                <div class="detail__change-backTickets">
-                                    <div class="detail__class-descIcon">
-                                            <img src="images/tour_detail/detail_planeback.svg" alt="">
-                                    </div>
-                                    <div class="detail__class-descText">پرواز برگشت: 03:00</div>
-                                </div>                               
-                            </div>
-                            
-                            
-                            
+      <div class="detail">
+        <div class="container">
+          <div class="detail-row row">
+            <div class="detail__left-section" dir="rtl">
+              <div class="detail__left-sectionContainer detail--desktop">
+                <div class="detail__change">
+                  <div class="detail__item-booking row">
+                    <div class="detail__item-booking__desc">
+                      <div class="detail__item-price" dir="ltr">
+                        39.000.000 تومان
+                      </div>
+                      <div class="detail__item-desc">انگیز به پایتخت روسی</div>
+                      <div class="detail__item-duration center row">
+                        <div class="catalog__item-days detail--days row">
+                          <div class="catalog__item-icon">
+                            <img src="images/tour_catalog/day.svg" alt="" />
+                          </div>
+                          <div class="catalog__item-days__desc" dir="ltr">
+                            7 روز
+                          </div>
                         </div>
-
-                        <div class="change__discount-container detail--desktop">
-
-                            <div class="detail__change-discount row">
-                                <div class="detail__change-discountImage">
-                                    <img src="images/tour_detail/detail__discount.png" alt="">
-                                </div>
-                                <div class="detail__change-discountContent">
-                                    <div class="discount__change-desc">با ثبت نام 5 نفری </div>
-                                    <div class="discount__change-value">5٪تخفیف بگیرید</div>
-                                </div>
-                            </div>
-
+                        <div class="catalog__item-nights detail--nights row">
+                          <div class="catalog__item-icon">
+                            <img src="images/tour_catalog/nigth.svg" alt="" />
+                          </div>
+                          <div class="catalog__item-days__desc" dir="ltr">
+                            6 شب
+                          </div>
                         </div>
-                        <div class="detailService catalog--service" dir="rtl">
-                            <!-- <div class="container"> -->
-                                <div class="detailService__row" dir="rtl">
-                                    
-                                    <div class="detailService__item">
-                                        <a class="detailService__item-container">
-                                            <div class="detailService__item-image">
-                                                <img src="images/service_1.svg" alt="">
-                                            </div>
-                                            <div class="detailService__item-desc">
-                                                ویزای
-                                                روسیه 
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="detailService__item">
-                                        <a class="detailService__item-container">
-                                            <div class="detailService__item-image">
-                                                <img src="images/service_2.svg" alt="">
-                                            </div>
-                                            <div class="detailService__item-desc">
-                                                تورهای
-                 روسیه  
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="detailService__item">
-                                        <a class="detailService__item-container">
-                                            <div class="detailService__item-image">
-                                                <img src="images/service_3.svg" alt="">
-                                            </div>
-                                            <div class="detailService__item-desc">
-                                                هتل های
-                روسیه  
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="detailService__item">
-                                        <a class="detailService__item-container">
-                                            <div class="detailService__item-image">
-                                                <img src="images/service_4.svg" alt="">
-                                            </div>
-                                            <div class="detailService__item-desc">
-                                                حمل و نقل در 
-                                                روسیه
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="detailService__item">
-                                        <a class="detailService__item-container">
-                                            <div class="detailService__item-image">
-                                                <img src="images/service_5.svg" alt="">
-                                            </div>
-                                            <div class="detailService__item-desc">
-                                                بیمه 
-                روسیه  
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="detailService__item">
-                                        <a class="detailService__item-container">
-                                            <div class="detailService__item-image">
-                                                <img src="images/service_7.svg" alt="">
-                                            </div>
-                                            <div class="detailService__item-desc">
-                                                فعالیت ها در روسیه
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="detailService__item">
-                                        <a class="detailService__item-container">
-                                            <div class="detailService__item-image">
-                                                <img src="images/service_6.svg" alt="">
-                                            </div>
-                                            <div class="detailService__item-desc">
-                                                تور گاید روسیه 
-                                            </div>
-                                        </a>
-                                    </div>
-                                    
-                                </div>
-
-                                <div class="detailService__numbers-container" dir="ltr">
-                                    <div class="detailService__numbers-content content--padding">
-                                        <div class="detailService__numbers-content__row">
-                                            <a href="#" class="detailService__numbers-content__link row">
-                                                <div class="detailService__icon">
-                                                    <img src="images/phone-small.svg" alt="">
-                                                </div>
-                                                <div class="detailService__numbers-content__number">+98 211373</div>
-                                            </a>
-                                            <a href="#" class="detailService__numbers-content__link row">
-                                                <div class="detailService__icon">
-                                                    <img src="images/whatsapp.svg" alt="">
-                                                </div>
-                                                <div class="detailService__numbers-content__number detailService--small">+98 1343425970</div>
-                                            </a>
-                                            <a href="#" class="detailService__numbers-content__link row">
-                                                <div class="detailService__icon">
-                                                    <img src="images/telegram.svg" alt="">
-                                                </div>
-                                                <div class="detailService__numbers-content__number detailService--small">+98 1343425970</div>
-                                            </a>
-                                            <a href="#" class="detailService__numbers-content__link row">
-                                                <div class="detailService__icon">
-                                                    <img src="images/email.svg" alt="">
-                                                </div>
-                                                <div class="detailService__numbers-content__email">info&#64;shomaltour.com</div>
-                                            </a>
-                                        </div>
-                                        
-                                    </div>
-                                </div>
-                            <!-- </div> -->
-                        </div>
-
-
-
+                      </div>
+                      <div class="detail__calendarChange row">
+                        <input type="text" id="calendar" />
+                        <div class="detail__calendarDate">5 اسفند 1403</div>
+                        <button class="detail__calendarButton btn">
+                          <img
+                            src="images/tour_detail/detail_calendar.svg"
+                            alt=""
+                          />
+                        </button>
+                      </div>
                     </div>
-                    
-                    <div class="detail__main-section" dir="rtl">
-                        <div class="tour__description">
-
-                            <div class="tour__desc">
-                                در طول تعطیلات زمستانی، کالینینگراد شبیه یک شهر از کارت پستال سال نو است، اما حال و هوای جشن در اینجا کاملا متفاوت است. خیابان‌ها با گلدسته‌های رنگارنگ می‌درخشند، فضای جادویی در نمایشگاه‌های سال نو حاکم است و همه جا بوی سوزن کاج و شراب تند به مشام می‌رسد.
-                            </div>
-                            <div class="tour__question">
-                                چرا به مسکو سفر میکنیم؟‌
-                            </div>
-                            <ul class="tour__answers">
-                                <li class="tour__answers-item row"><div class="tour__answers-itemCircle"></div>
-                                    میبینیم مسکو با چه پتانسیلی داشته تا پس از ۲۱۵ سال پایتخت شود  
-                                </li>
-                                <li class="tour__answers-item row"><div class="tour__answers-itemCircle"></div>
-                                    میبینیم مسکو با چه پتانسیلی داشته تا پس از ۲۱۵ سال پایتخت شود  
-                                </li>
-                                <li class="tour__answers-item row"><div class="tour__answers-itemCircle"></div>
-                                    میبینیم مسکو با چه پتانسیلی داشته تا پس از ۲۱۵ سال پایتخت شود  
-                                </li>
-                                <li class="tour__answers-item row"><div class="tour__answers-itemCircle"></div>
-                                    میبینیم مسکو با چه پتانسیلی داشته تا پس از ۲۱۵ سال پایتخت شود  
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="tour__images">
-                            <div class="tour__bigImage-row row">
-                                <div class="tour__bigImage-container">
-                                    <div class="tour__bigImage">
-                                        <img src="images/tours_1.jpg" alt="">
-                                    </div>
-                                </div>
-                                <div class="tour__bigImage-container">
-                                    <div class="tour__bigImage">
-                                        <img src="images/tours_2.jpg" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tour__smallImage-row row">
-                                <div class="tour__smallImage-container">
-                                    <div class="tour__smallImage">
-                                        <img src="images/regions_1.jpg" alt="">
-                                    </div>
-                                </div>
-                                <div class="tour__smallImage-container">
-                                    <div class="tour__smallImage">
-                                        <img src="images/regions_2.jpg" alt="">
-                                    </div>
-                                </div>
-                                <div class="tour__smallImage-container">
-                                    <div class="tour__smallImage">
-                                        <img src="images/regions_3.jpg" alt="">
-                                    </div>
-                                </div>
-                                <div class="tour__smallImage-container">
-                                    <div class="tour__smallImage">
-                                        <img src="images/regions_1.jpg" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        
-                        <div class="detail__left-sectionContainer detail--mobile">
-                               
-                                <div class="detail__change">
-                                    <div class="detail__item-booking row">
-                                        <div class="detail__item-booking__desc">
-                                            <div class="detail__item-price" dir="ltr">39.000.000 تومان</div>
-                                            <div class="detail__item-desc">انگیز به پایتخت روسی</div>
-                                            <div class="detail__item-duration center row">
-                                                <div class="catalog__item-days detail--days row">
-                                                    <div class="catalog__item-icon">
-                                                        <img src="images/tour_catalog/day.svg" alt="">
-                                                    </div>
-                                                    <div class="catalog__item-days__desc" dir="ltr">
-                                                        7 روز 
-                                                    </div>
-                                                </div>
-                                                <div class="catalog__item-nights detail--nights row">
-                                                    <div class="catalog__item-icon">
-                                                        <img src="images/tour_catalog/nigth.svg" alt="">
-                                                    </div>
-                                                    <div class="catalog__item-days__desc" dir="ltr">
-                                                        6 شب
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="detail__calendarChange row">
-                                                <div class="detail__calendarDate">
-                                                    5 اسفند 1403
-                                                </div>
-                                                <button class="detail__calendarButton btn">
-                                                    <img src="images/tour_detail/detail_calendar.svg" alt="">
-                                                </button>
-                                            </div>
-                                        </div>
-                                        <button class="booking__button detailBooking--button btn">رزرو تور </button>
-                                    </div>
-                                </div>
-                                <div class="detail__change-info">
-                                    <div class="detail__change-class">
-                                        <div class="detail__class-title">کلاس اقامت تور</div>
-                                        <div class="detail__class-desc">
-                                            <div class="detail__class-descIcon">
-                                                <img src="images/tour_detail/detail_star.svg" alt="">
-                                            </div>
-                                            <div class="detail__class-descText">4-5</div>
-                                        </div>
-                                    </div>
-                                    <ul class="detail__change-ticketsList">
-                                        <li class="detail__change-ticketItem">
-                                            <div class="detail__class-descIcon">
-                                                <img src="images/tour_detail/detail_plane.svg" alt="">
-                                            </div>
-                                            <div class="detail__class-descText">پرواز رفت: 03:00</div>
-                                        </li>
-                                        <li class="detail__change-ticketItem">
-                                            <div class="detail__class-descIcon">
-                                                <img src="images/tour_detail/detail_people.svg" alt="">
-                                            </div>
-                                            <div class="detail__class-descText">دیدار گروهی در هتل رکسان : 22:00</div>
-                                        </li>
-                                        <li class="detail__change-ticketItem">
-                                            <div class="detail__class-descIcon">
-                                                <img src="images/tour_detail/detail_basket.svg" alt="">
-                                            </div>
-                                            <div class="detail__class-descText">کافی شاپ هتل رکسان همراه با پذیرایی چای و قهوه</div>
-                                        </li>
-                                    </ul>
-                                    <div class="detail__change-backTickets">
-                                        <div class="detail__class-descIcon">
-                                                <img src="images/tour_detail/detail_planeback.svg" alt="">
-                                        </div>
-                                        <div class="detail__class-descText">پرواز برگشت: 03:00</div>
-                                    </div>                               
-                                </div>
-                                
-                                
-                                
-                        </div>
-
-                        <div class="change__discount-container detail--mobile">
-                            <div class="detail__change-discount row">
-                                <div class="detail__change-discountImage">
-                                    <img src="images/tour_detail/detail__discount.png" alt="">
-                                </div>
-                                <div class="detail__change-discountContent">
-                                    <div class="discount__change-desc">با ثبت نام 5 نفری </div>
-                                    <div class="discount__change-value">5٪تخفیف بگیرید</div>
-                                </div>
-                            </div>
-                        </div>
-    
-                        
-                        <div class="detail__activities">
-                            <div class="detail__activities-title">
-                                چه فعالیت هایی در تور مسکو انجام میدهیم؟
-                            </div>
-     
-
-                            <!-- Swiper -->
-                            <div class="swiper mySwiper activities--swiper">
-                                <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <div class="detail__activities-cart">
-                                        <div class="detail__activities-image">
-                                            <img src="images/activities_2.jpg" alt="">
-                                        </div>
-                                        <div class="detail__activities-content">
-                                            <div class="detail__activities-subtitle">در کنار سنگفرش های معروف میدان سرخ</div>
-                                            <div class="detail__activities-desc">گنبدهای رنگارنگ کلیسای جامع سنت باسیل را ببینید و از محوطه کرملین مسکو دیدن کنید.</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="detail__activities-cart">
-                                        <div class="detail__activities-image">
-                                            <img src="images/activities_1.jpg" alt="">
-                                        </div>
-                                        <div class="detail__activities-content">
-                                            <div class="detail__activities-subtitle">در کنار سنگفرش های معروف میدان سرخ</div>
-                                            <div class="detail__activities-desc">گنبدهای رنگارنگ کلیسای جامع سنت باسیل را ببینید و از محوطه کرملین مسکو دیدن کنید.</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="detail__activities-cart">
-                                        <div class="detail__activities-image">
-                                            <img src="images/activities_3.jpg" alt="">
-                                        </div>
-                                        <div class="detail__activities-content">
-                                            <div class="detail__activities-subtitle">در کنار سنگفرش های معروف میدان سرخ</div>
-                                            <div class="detail__activities-desc">گنبدهای رنگارنگ کلیسای جامع سنت باسیل را ببینید و از محوطه کرملین مسکو دیدن کنید.</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="detail__activities-cart">
-                                        <div class="detail__activities-image">
-                                            <img src="images/activities_1.jpg" alt="">
-                                        </div>
-                                        <div class="detail__activities-content">
-                                            <div class="detail__activities-subtitle">در کنار سنگفرش های معروف میدان سرخ</div>
-                                            <div class="detail__activities-desc">گنبدهای رنگارنگ کلیسای جامع سنت باسیل را ببینید و از محوطه کرملین مسکو دیدن کنید.</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                </div>
-                                <div class="swiper-pagination"></div>
-                            </div>
-                        </div>
-
-                        <div class="detail__schedule">
-                            <div class="detail__schedule-title">
-                                برنامه تور مسکو
-                            </div>
-                            <div class="detail__schedule-description row" dir="rtl">
-                                <div class="detail__schedule-image">
-                                    <img src="images/tour_detail/detail_pdf.svg" alt="">
-                                </div>
-                                <div class="detail__schedule-desc">
-                                    برنامه تور را به صورت PDF دریافت کنید
-                                </div>
-                            </div>
-
-                            <div class="detail__schedule-cart">
-                                <div class="detail__schedule-cartMenu row">
-                                    <div class="detail__schedule-cartDrop row">
-                                        <button class="detail__schedule-cartDropButton schedule--activeButton btn">
-                                            <img src="images/tour_detail/detail_arrow-down.svg" alt="">
-                                        </button>
-                                        <div class="detail__schedule-cartDropDesc">پرواز بر فراز مسکو</div>
-                                    </div>
-                                    <button class="detail__schedule-cartButton btn"> روز  اول</button>
-                                </div>
-                                <div class="detail__schedule-cartContent schedule--active">
-                                    <div class="detail__schedule-cartContentDesc">
-                                        تور پیاده روی در پارک زریادیه با بازدید از جاذبه های پرواز بر فراز مسکو/روسیه.
-                                        شما به اندازه کافی خوش شانس خواهید بود که سفری بی نظیر در فضا و زمان داشته باشید.شما در قلمرو زیبای پارک مدرن قدم زده و با اشیاء معماری اصلی آن آشنا خواهید شد.
-                                    </div>
-                                    <div class="detail__schedule-cartContentRow row">
-                                        <div class="detail__schedule-cartContentImageContainer">
-                                            <div class="detail__schedule-cartContentImage">
-                                                <img src="images/tours_1.jpg" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="detail__schedule-cartContentImageContainer">
-                                            <div class="detail__schedule-cartContentImage">
-                                                <img src="images/tours_2.jpg" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="detail__schedule-cartContentImageContainer">
-                                            <div class="detail__schedule-cartContentImage">
-                                                <img src="images/tours_3.jpg" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="detail__schedule-cartContentImageContainer">
-                                            <div class="detail__schedule-cartContentImage">
-                                                <img src="images/tours_1.jpg" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                            </div>
-                            <div class="detail__schedule-cart">
-                                <div class="detail__schedule-cartMenu row">
-                                    <div class="detail__schedule-cartDrop row">
-                                        <button class="detail__schedule-cartDropButton btn">
-                                            <img src="images/tour_detail/detail_arrow-down.svg" alt="">
-                                        </button>
-                                        <div class="detail__schedule-cartDropDesc">بازدید ٰکولومنسکویه</div>
-                                    </div>
-                                    <button class="detail__schedule-cartButton btn"> روز  اول</button>
-                                </div>
-                                <div class="detail__schedule-cartContent">
-                                    <div class="detail__schedule-cartContentDesc">
-                                        تور پیاده روی در پارک زریادیه با بازدید از جاذبه های پرواز بر فراز مسکو/روسیه.
-                                        شما به اندازه کافی خوش شانس خواهید بود که سفری بی نظیر در فضا و زمان داشته باشید.شما در قلمرو زیبای پارک مدرن قدم زده و با اشیاء معماری اصلی آن آشنا خواهید شد.
-                                    </div>
-                                    <div class="detail__schedule-cartContentRow row">
-                                        <div class="detail__schedule-cartContentImageContainer">
-                                            <div class="detail__schedule-cartContentImage">
-                                                <img src="images/tours_1.jpg" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="detail__schedule-cartContentImageContainer">
-                                            <div class="detail__schedule-cartContentImage">
-                                                <img src="images/tours_2.jpg" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="detail__schedule-cartContentImageContainer">
-                                            <div class="detail__schedule-cartContentImage">
-                                                <img src="images/tours_3.jpg" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="detail__schedule-cartContentImageContainer">
-                                            <div class="detail__schedule-cartContentImage">
-                                                <img src="images/tours_1.jpg" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                            </div>
-                            <div class="detail__schedule-cart">
-                                <div class="detail__schedule-cartMenu row">
-                                    <div class="detail__schedule-cartDrop row">
-                                        <button class="detail__schedule-cartDropButton btn">
-                                            <img src="images/tour_detail/detail_arrow-down.svg" alt="">
-                                        </button>
-                                        <div class="detail__schedule-cartDropDesc">آربات تا میدان اسمولنسکایا</div>
-                                    </div>
-                                    <button class="detail__schedule-cartButton btn"> روز  اول</button>
-                                </div>
-                                <div class="detail__schedule-cartContent">
-                                    <div class="detail__schedule-cartContentDesc">
-                                        تور پیاده روی در پارک زریادیه با بازدید از جاذبه های پرواز بر فراز مسکو/روسیه.
-                                        شما به اندازه کافی خوش شانس خواهید بود که سفری بی نظیر در فضا و زمان داشته باشید.شما در قلمرو زیبای پارک مدرن قدم زده و با اشیاء معماری اصلی آن آشنا خواهید شد.
-                                    </div>
-                                    <div class="detail__schedule-cartContentRow row">
-                                        <div class="detail__schedule-cartContentImageContainer">
-                                            <div class="detail__schedule-cartContentImage">
-                                                <img src="images/tours_1.jpg" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="detail__schedule-cartContentImageContainer">
-                                            <div class="detail__schedule-cartContentImage">
-                                                <img src="images/tours_2.jpg" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="detail__schedule-cartContentImageContainer">
-                                            <div class="detail__schedule-cartContentImage">
-                                                <img src="images/tours_3.jpg" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="detail__schedule-cartContentImageContainer">
-                                            <div class="detail__schedule-cartContentImage">
-                                                <img src="images/tours_1.jpg" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                            </div>
-                            <div class="detail__schedule-cart">
-                                <div class="detail__schedule-cartMenu row">
-                                    <div class="detail__schedule-cartDrop row">
-                                        <button class="detail__schedule-cartDropButton btn">
-                                            <img src="images/tour_detail/detail_arrow-down.svg" alt="">
-                                        </button>
-                                        <div class="detail__schedule-cartDropDesc">بازدید موزه کیهان شناسی</div>
-                                    </div>
-                                    <button class="detail__schedule-cartButton btn"> روز  اول</button>
-                                </div>
-                                <div class="detail__schedule-cartContent">
-                                    <div class="detail__schedule-cartContentDesc">
-                                        تور پیاده روی در پارک زریادیه با بازدید از جاذبه های پرواز بر فراز مسکو/روسیه.
-                                        شما به اندازه کافی خوش شانس خواهید بود که سفری بی نظیر در فضا و زمان داشته باشید.شما در قلمرو زیبای پارک مدرن قدم زده و با اشیاء معماری اصلی آن آشنا خواهید شد.
-                                    </div>
-                                    <div class="detail__schedule-cartContentRow row">
-                                        <div class="detail__schedule-cartContentImageContainer">
-                                            <div class="detail__schedule-cartContentImage">
-                                                <img src="images/tours_1.jpg" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="detail__schedule-cartContentImageContainer">
-                                            <div class="detail__schedule-cartContentImage">
-                                                <img src="images/tours_2.jpg" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="detail__schedule-cartContentImageContainer">
-                                            <div class="detail__schedule-cartContentImage">
-                                                <img src="images/tours_3.jpg" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="detail__schedule-cartContentImageContainer">
-                                            <div class="detail__schedule-cartContentImage">
-                                                <img src="images/tours_1.jpg" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                            </div>
-                        </div>
-
-                        <div class="detail__staying">
-                                <div class="detail__staying-title">
-                                    اقامت در تور
-                                </div>
-                                <div class="detail__staying-desc">
-                                    این تور شامل اقامت در مجتمع FridayCenter می باشد.
-قیمت پایه تور برای 1 نفر شامل اقامت دو نفره در یک اتاق دو نفره با حمام مشترک می باشد.
-می توانید محل اقامت راحت تری را انتخاب کنید:
-                                </div>
-                            
-
-
-                            <div class="detail__schedule-cart">
-                                <div class="detail__schedule-cartMenu row">
-                                    <div class="detail__schedule-cartDrop row">
-                                        <button class="detail__schedule-cartDropButton schedule--activeButton btn">
-                                            <img src="images/tour_detail/detail_arrow-down.svg" alt="">
-                                        </button>
-                                        <div class="detail__schedule-cartDropDesc">کراستووایا- مسکو</div>
-                                    </div>
-                                    <button class="detail__schedule-cartButton btn"> روز  اول</button>
-                                </div>
-                                <div class="detail__schedule-cartContent schedule--active">
-                                    <div class="detail__schedule-cartContentDesc">
-                                        هتل Krestovaya Pad با مناظری زیبا در 50 متری ساحل دریاچه بایکال واقع شده است. دارای تراس آفتابگیر و سونا می باشد. هر اتاق دارای تلویزیون صفحه تخت و امکانات تهیه چای/قهوه است. اتاق‌های به سبک کلبه دارای روکش چوبی هستند و شامل میز کار، مینی‌بار و حمام خصوصی می‌شوند. برخی از اتاق‌ها Wi-Fi رایگان دارند. بار-رستوران رنگارنگ غذاهای اروپایی و انواع غذاهای سیبری از منطقه بایکال را سرو می کند. یک منوی غنی برای صبحانه در دسترس است.
-                                    </div>
-                                    <div class="detail__schedule-cartContentRow row">
-                                        <div class="detail__schedule-cartContentImageContainer">
-                                            <div class="detail__schedule-cartContentImage">
-                                                <img src="images/tours_1.jpg" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="detail__schedule-cartContentImageContainer">
-                                            <div class="detail__schedule-cartContentImage">
-                                                <img src="images/tours_2.jpg" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="detail__schedule-cartContentImageContainer">
-                                            <div class="detail__schedule-cartContentImage">
-                                                <img src="images/tours_3.jpg" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="detail__schedule-cartContentImageContainer">
-                                            <div class="detail__schedule-cartContentImage">
-                                                <img src="images/tours_1.jpg" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                            </div>
-                            <div class="detail__schedule-cart">
-                                <div class="detail__schedule-cartMenu row">
-                                    <div class="detail__schedule-cartDrop row">
-                                        <button class="detail__schedule-cartDropButton schedule--activeButton btn">
-                                            <img src="images/tour_detail/detail_arrow-down.svg" alt="">
-                                        </button>
-                                        <div class="detail__schedule-cartDropDesc">کراستووایا- مسکو</div>
-                                    </div>
-                                    <button class="detail__schedule-cartButton btn"> روز  اول</button>
-                                </div>
-                                <div class="detail__schedule-cartContent schedule--active">
-                                    <div class="detail__schedule-cartContentDesc">
-                                        هتل Krestovaya Pad با مناظری زیبا در 50 متری ساحل دریاچه بایکال واقع شده است. دارای تراس آفتابگیر و سونا می باشد. هر اتاق دارای تلویزیون صفحه تخت و امکانات تهیه چای/قهوه است. اتاق‌های به سبک کلبه دارای روکش چوبی هستند و شامل میز کار، مینی‌بار و حمام خصوصی می‌شوند. برخی از اتاق‌ها Wi-Fi رایگان دارند. بار-رستوران رنگارنگ غذاهای اروپایی و انواع غذاهای سیبری از منطقه بایکال را سرو می کند. یک منوی غنی برای صبحانه در دسترس است.
-                                    </div>
-                                    <div class="detail__schedule-cartContentRow row">
-                                        <div class="detail__schedule-cartContentImageContainer">
-                                            <div class="detail__schedule-cartContentImage">
-                                                <img src="images/tours_1.jpg" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="detail__schedule-cartContentImageContainer">
-                                            <div class="detail__schedule-cartContentImage">
-                                                <img src="images/tours_2.jpg" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="detail__schedule-cartContentImageContainer">
-                                            <div class="detail__schedule-cartContentImage">
-                                                <img src="images/tours_3.jpg" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="detail__schedule-cartContentImageContainer">
-                                            <div class="detail__schedule-cartContentImage">
-                                                <img src="images/tours_1.jpg" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                            </div>
-                            <div class="detail__schedule-cart">
-                                <div class="detail__schedule-cartMenu row">
-                                    <div class="detail__schedule-cartDrop row">
-                                        <button class="detail__schedule-cartDropButton btn">
-                                            <img src="images/tour_detail/detail_arrow-down.svg" alt="">
-                                        </button>
-                                        <div class="detail__schedule-cartDropDesc">اسم اقامتگاه- شهر</div>
-                                    </div>
-                                    <button class="detail__schedule-cartButton btn"> روز  اول</button>
-                                </div>
-                                <div class="detail__schedule-cartContent">
-                                    <div class="detail__schedule-cartContentDesc">
-                                        هتل Krestovaya Pad با مناظری زیبا در 50 متری ساحل دریاچه بایکال واقع شده است. دارای تراس آفتابگیر و سونا می باشد. هر اتاق دارای تلویزیون صفحه تخت و امکانات تهیه چای/قهوه است. اتاق‌های به سبک کلبه دارای روکش چوبی هستند و شامل میز کار، مینی‌بار و حمام خصوصی می‌شوند. برخی از اتاق‌ها Wi-Fi رایگان دارند. بار-رستوران رنگارنگ غذاهای اروپایی و انواع غذاهای سیبری از منطقه بایکال را سرو می کند. یک منوی غنی برای صبحانه در دسترس است.
-                                    </div>
-                                    <div class="detail__schedule-cartContentRow row">
-                                        <div class="detail__schedule-cartContentImageContainer">
-                                            <div class="detail__schedule-cartContentImage">
-                                                <img src="images/tours_1.jpg" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="detail__schedule-cartContentImageContainer">
-                                            <div class="detail__schedule-cartContentImage">
-                                                <img src="images/tours_2.jpg" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="detail__schedule-cartContentImageContainer">
-                                            <div class="detail__schedule-cartContentImage">
-                                                <img src="images/tours_3.jpg" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="detail__schedule-cartContentImageContainer">
-                                            <div class="detail__schedule-cartContentImage">
-                                                <img src="images/tours_1.jpg" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                            </div>
-                            <div class="detail__schedule-cart">
-                                <div class="detail__schedule-cartMenu row">
-                                    <div class="detail__schedule-cartDrop row">
-                                        <button class="detail__schedule-cartDropButton btn">
-                                            <img src="images/tour_detail/detail_arrow-down.svg" alt="">
-                                        </button>
-                                        <div class="detail__schedule-cartDropDesc">اسم اقامتگاه- شهر</div>
-                                    </div>
-                                    <button class="detail__schedule-cartButton btn"> روز  اول</button>
-                                </div>
-                                <div class="detail__schedule-cartContent">
-                                    <div class="detail__schedule-cartContentDesc">
-                                        هتل Krestovaya Pad با مناظری زیبا در 50 متری ساحل دریاچه بایکال واقع شده است. دارای تراس آفتابگیر و سونا می باشد. هر اتاق دارای تلویزیون صفحه تخت و امکانات تهیه چای/قهوه است. اتاق‌های به سبک کلبه دارای روکش چوبی هستند و شامل میز کار، مینی‌بار و حمام خصوصی می‌شوند. برخی از اتاق‌ها Wi-Fi رایگان دارند. بار-رستوران رنگارنگ غذاهای اروپایی و انواع غذاهای سیبری از منطقه بایکال را سرو می کند. یک منوی غنی برای صبحانه در دسترس است.
-                                    </div>
-                                    <div class="detail__schedule-cartContentRow row">
-                                        <div class="detail__schedule-cartContentImageContainer">
-                                            <div class="detail__schedule-cartContentImage">
-                                                <img src="images/tours_1.jpg" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="detail__schedule-cartContentImageContainer">
-                                            <div class="detail__schedule-cartContentImage">
-                                                <img src="images/tours_2.jpg" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="detail__schedule-cartContentImageContainer">
-                                            <div class="detail__schedule-cartContentImage">
-                                                <img src="images/tours_3.jpg" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="detail__schedule-cartContentImageContainer">
-                                            <div class="detail__schedule-cartContentImage">
-                                                <img src="images/tours_1.jpg" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                            </div>
-
-                        </div>
-
-                        <div class="detail__journey">
-                            <div class="detail__journey-title">
-                                دانستنی سفر 
-                            </div>
-                            <div class="detail__journey-subtitle">
-                                مشاهده همه 
-                            </div>
-                            <div class="detail__schedule-cart">
-                                <div class="detail__schedule-cartMenu row">
-                                    <div class="detail__schedule-cartDrop row">
-                                        <button class="detail__schedule-cartDropButton btn">
-                                            <img src="images/tour_detail/detail_arrow-down.svg" alt="">
-                                        </button>
-                                        <div class="detail__schedule-cartDropDesc">کراستووایا- مسکو</div>
-                                    </div>
-                                    
-                                </div>
-                                <div class="detail__schedule-cartContent">
-                                    <div class="detail__schedule-cartContentDesc">
-                                        دستکش و کلاه گرم .1
-                                    </div>
-
-                                </div>
-                                
-                            </div>
-                            <div class="detail__schedule-cart">
-                            <div class="detail__schedule-cartMenu row">
-                                <div class="detail__schedule-cartDrop row">
-                                    <button class="detail__schedule-cartDropButton  schedule--activeButton btn">
-                                        <img src="images/tour_detail/detail_arrow-down.svg" alt="">
-                                    </button>
-                                    <div class="detail__schedule-cartDropDesc">کراستووایا- مسکو</div>
-                                </div>
-                                
-                            </div>
-                            <div class="detail__schedule-cartContent schedule--active">
-                                <div class="detail__schedule-cartContentDesc">
-                                    دستکش و کلاه گرم .1
-                                </div>
-
-                            </div>
-                            
-                        
-                            </div>
-                            <ul class="detail__journey-includeList row">
-                                <ul class="detail__journey-includeListInner">
-                                    <li class="detail__journey-includeItemTitle">
-                                        <a href="*" class="detail__journey-includeItemTitleLink">
-                                            در قیمت گنجانده شده است
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="*" class="detail__journey-includeItem row">
-                                            <div class="detail__journey-includeItemIcon">
-                                                <img src="images/tour_detail/include_active.svg" alt="">
-                                            </div>
-                                            <div class="detail__journey-includeItemDesc">
-                                                اقامت در هتل
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="*" class="detail__journey-includeItem row">
-                                            <div class="detail__journey-includeItemIcon">
-                                                <img src="images/tour_detail/include_active.svg" alt="">
-                                            </div>
-                                            <div class="detail__journey-includeItemDesc">
-                                                نقل و انتقالات بر اساس برنامه
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="*" class="detail__journey-includeItem row">
-                                            <div class="detail__journey-includeItemIcon">
-                                                <img src="images/tour_detail/include_active.svg" alt="">
-                                            </div>
-                                            <div class="detail__journey-includeItemDesc">
-                                                وعده های غذایی طبق برنامه:
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="*" class="detail__journey-includeItem row">
-                                            <div class="detail__journey-includeItemIcon">
-                                                <img src="images/tour_detail/include_active.svg" alt="">
-                                            </div>
-                                            <div class="detail__journey-includeItemDesc">
-                                                گشت و گذار در شمال جزیره 
-                                            </div>
-                                        </a>
-                                    </li>
-                                </ul>
-                                <ul class="detail__journey-includeListInner">
-                                    <li class="detail__journey-includeItemTitle">
-                                        <a href="*" class="detail__journey-includeItemTitleLink">
-                                            در قیمت گنجانده نشده است
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="*" class="detail__journey-includeItem row">
-                                            <div class="detail__journey-includeItemIcon">
-                                                <img src="images/tour_detail/include_unactive.svg" alt="">
-                                            </div>
-                                            <div class="detail__journey-includeItemDesc">
-                                                اقامت در هتل
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="*" class="detail__journey-includeItem row">
-                                            <div class="detail__journey-includeItemIcon">
-                                                <img src="images/tour_detail/include_unactive.svg" alt="">
-                                            </div>
-                                            <div class="detail__journey-includeItemDesc">
-                                                نقل و انتقالات بر اساس برنامه
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="*" class="detail__journey-includeItem row">
-                                            <div class="detail__journey-includeItemIcon">
-                                                <img src="images/tour_detail/include_unactive.svg" alt="">
-                                            </div>
-                                            <div class="detail__journey-includeItemDesc">
-                                                برنامه سرگرمی در پارک قومی
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="*" class="detail__journey-includeItem row">
-                                            <div class="detail__journey-includeItemIcon">
-                                                <img src="images/tour_detail/include_unactive.svg" alt="">
-                                            </div>
-                                            <div class="detail__journey-includeItemDesc">
-                                                برنامه سرگرمی در پارک قومی
-                                            </div>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </ul>
-
-
-                        </div>
-
-                        <div class="detail__costs">
-                            <div class="detail__costs-container">
-                                <div class="detail__costs-title">هزینه تور و انواع اتاق</div>
-                                <ul>
-                                    <li>
-                                        <ul class="detail__costs-row row">
-                                            <li class="detail__costs-item">SGL</li>
-                                            <li class="detail__costs-item">تک نفره</li>
-                                            <li class="detail__costs-item costs--wide">
-                                                <div class="detail__costs-itemDesc row">
-                                                    <div class="detail__costs-itemText">  30.000.000 تومان</div>
-                                                    <div class="detail__costs-itemCheck">
-                                                        <input type="checkbox" name="" id="check2" checked>
-                                                        <label for="check2" class="send__label-input">
-                                                        <span class="send__checkbox-custom detail--checkbox"></span>
-                                                    </label>
-                                                    </div>                            
-                                                </div>
-                                            </li>     
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <ul class="detail__costs-row row">
-                                            <li class="detail__costs-item">DBL</li>
-                                            <li class="detail__costs-item">دو نفره</li>
-                                            <li class="detail__costs-item costs--wide">
-                                                <div class="detail__costs-itemDesc row">
-                                                    <div class="detail__costs-itemText">  30.000.000 تومان</div>
-                                                    <div class="detail__costs-itemCheck">
-                                                        <input type="checkbox" name="" id="check3">
-                                                        <label for="check3" class="send__label-input">
-                                                        <span class="send__checkbox-custom detail--checkbox"></span>
-                                                    </label>
-                                                    </div>                            
-                                                </div>
-                                            </li>     
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <ul class="detail__costs-row row">
-                                            <li class="detail__costs-item">TWN</li>
-                                            <li class="detail__costs-item">دو تک نفره</li>
-                                            <li class="detail__costs-item costs--wide">
-                                                <div class="detail__costs-itemDesc row">
-                                                    <div class="detail__costs-itemText">  30.000.000 تومان</div>
-                                                    <div class="detail__costs-itemCheck">
-                                                        <input type="checkbox" name="" id="check4">
-                                                        <label for="check4" class="send__label-input">
-                                                        <span class="send__checkbox-custom detail--checkbox"></span>
-                                                    </label>
-                                                    </div>                            
-                                                </div>
-                                            </li>     
-                                        </ul>
-                                    </li>
-                                </ul>
-                                <button class="detail__costs-order btn">
-                                    سفارش 
-                                </button>
-                            </div>
-                        </div>
-
-                        <div class="detail__share">
-                            <div class="detail__share-container">
-                                <div class="detail__share-row row">
-                                    <div class="detail__share-messengers row">
-                                        <div class="detail__share-link">برای به اشتراک گذاشتن:</div>
-                                        <div class="detail__share-messengers-row row">
-                                            <div class="detail__share-icon">
-                                                <img src="images/tour_detail/detail_messenger1.svg" alt="">
-                                            </div>
-                                            <div class="detail__share-icon">
-                                                <img src="images/tour_detail/detail_messenger2.svg" alt="">
-                                            </div>
-                                            <div class="detail__share-icon">
-                                                <img src="images/tour_detail/detail_messenger3.svg" alt="">
-                                            </div>
-                                            <div class="detail__share-icon">
-                                                <img src="images/tour_detail/detail_messenger4.svg" alt="">
-                                            </div>
-                                            <div class="detail__share-icon">
-                                                <img src="images/tour_detail/detail_messenger5.svg" alt="">
-                                            </div>
-                                            <div class="detail__share-icon">
-                                                <img src="images/tour_detail/detail_messenger6.svg" alt="">
-                                            </div>
-                                        </div>
-                                        
-                                    </div>
-                                    <button class="detail__share-button btn">بازگشت به تورها </button>
-                                </div>
-                            </div>
-                        </div>
-                        
-                    </div>
-                    
+                    <button class="booking__button detailBooking--button btn">
+                      رزرو تور
+                    </button>
+                  </div>
                 </div>
-            </div>
-            
-        </div>
-        
-        
-        <div class="service__mobile" dir="rtl">
-            <div class="container">
-                <div class="service__row" dir="rtl">
-                    
-                    <div class="service__item">
-                        <a class="service__item-container">
-                            <div class="service__item-image">
-                                <img src="images/service_1.svg" alt="">
-                            </div>
-                            <div class="service__item-desc">
-                                ویزای
-                                روسیه 
-                            </div>
-                        </a>
+                <div class="detail__change-info">
+                  <div class="detail__change-class">
+                    <div class="detail__class-title">کلاس اقامت تور</div>
+                    <div class="detail__class-desc">
+                      <div class="detail__class-descIcon">
+                        <img src="images/tour_detail/detail_star.svg" alt="" />
+                      </div>
+                      <div class="detail__class-descText">4-5</div>
                     </div>
-                    <div class="service__item">
-                        <a class="service__item-container">
-                            <div class="service__item-image">
-                                <img src="images/service_2.svg" alt="">
-                            </div>
-                            <div class="service__item-desc">
-                                تورهای
-                                روسیه  
-                            </div>
-                        </a>
+                  </div>
+                  <ul class="detail__change-ticketsList">
+                    <li class="detail__change-ticketItem">
+                      <div class="detail__class-descIcon">
+                        <img src="images/tour_detail/detail_plane.svg" alt="" />
+                      </div>
+                      <div class="detail__class-descText">پرواز رفت: 03:00</div>
+                    </li>
+                    <li class="detail__change-ticketItem">
+                      <div class="detail__class-descIcon">
+                        <img
+                          src="images/tour_detail/detail_people.svg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="detail__class-descText">
+                        دیدار گروهی در هتل رکسان : 22:00
+                      </div>
+                    </li>
+                    <li class="detail__change-ticketItem">
+                      <div class="detail__class-descIcon">
+                        <img
+                          src="images/tour_detail/detail_basket.svg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="detail__class-descText">
+                        کافی شاپ هتل رکسان همراه با پذیرایی چای و قهوه
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="detail__change-backTickets">
+                    <div class="detail__class-descIcon">
+                      <img
+                        src="images/tour_detail/detail_planeback.svg"
+                        alt=""
+                      />
                     </div>
-                    <div class="service__item">
-                        <a class="service__item-container">
-                            <div class="service__item-image">
-                                <img src="images/service_3.svg" alt="">
-                            </div>
-                            <div class="service__item-desc">
-                                هتل های
-                                روسیه  
-                            </div>
-                        </a>
-                    </div>
-                    <div class="service__item">
-                        <a class="service__item-container">
-                            <div class="service__item-image">
-                                <img src="images/service_4.svg" alt="">
-                            </div>
-                            <div class="service__item-desc">
-                                حمل و نقل در 
-                                روسیه
-                            </div>
-                        </a>
-                    </div>
-                    <div class="service__item">
-                        <a class="service__item-container">
-                            <div class="service__item-image">
-                                <img src="images/service_5.svg" alt="">
-                            </div>
-                            <div class="service__item-desc">
-                                بیمه 
-                                روسیه  
-                            </div>
-                        </a>
-                    </div>
-                    <div class="service__item">
-                        <a class="service__item-container">
-                            <div class="service__item-image">
-                                <img src="images/service_7.svg" alt="">
-                            </div>
-                            <div class="service__item-desc">
-                                فعالیت ها در روسیه
-                            </div>
-                        </a>
-                    </div>
-                    <div class="service__item">
-                        <a class="service__item-container">
-                            <div class="service__item-image">
-                                <img src="images/service_6.svg" alt="">
-                            </div>
-                            <div class="service__item-desc">
-                                تور گاید روسیه 
-                            </div>
-                        </a>
-                    </div>
-                    
+                    <div class="detail__class-descText">پرواز برگشت: 03:00</div>
+                  </div>
                 </div>
-                
-                
+              </div>
+
+              <div class="change__discount-container detail--desktop">
+                <div class="detail__change-discount row">
+                  <div class="detail__change-discountImage">
+                    <img src="images/tour_detail/detail__discount.png" alt="" />
+                  </div>
+                  <div class="detail__change-discountContent">
+                    <div class="discount__change-desc">با ثبت نام 5 نفری</div>
+                    <div class="discount__change-value">5٪تخفیف بگیرید</div>
+                  </div>
                 </div>
+              </div>
+              <div class="detailService catalog--service" dir="rtl">
+                <!-- <div class="container"> -->
+                <div class="detailService__row" dir="rtl">
+                  <div class="detailService__item">
+                    <a class="detailService__item-container">
+                      <div class="detailService__item-image">
+                        <img src="images/service_1.svg" alt="" />
+                      </div>
+                      <div class="detailService__item-desc">ویزای روسیه</div>
+                    </a>
+                  </div>
+                  <div class="detailService__item">
+                    <a class="detailService__item-container">
+                      <div class="detailService__item-image">
+                        <img src="images/service_2.svg" alt="" />
+                      </div>
+                      <div class="detailService__item-desc">تورهای روسیه</div>
+                    </a>
+                  </div>
+                  <div class="detailService__item">
+                    <a class="detailService__item-container">
+                      <div class="detailService__item-image">
+                        <img src="images/service_3.svg" alt="" />
+                      </div>
+                      <div class="detailService__item-desc">هتل های روسیه</div>
+                    </a>
+                  </div>
+                  <div class="detailService__item">
+                    <a class="detailService__item-container">
+                      <div class="detailService__item-image">
+                        <img src="images/service_4.svg" alt="" />
+                      </div>
+                      <div class="detailService__item-desc">
+                        حمل و نقل در روسیه
+                      </div>
+                    </a>
+                  </div>
+                  <div class="detailService__item">
+                    <a class="detailService__item-container">
+                      <div class="detailService__item-image">
+                        <img src="images/service_5.svg" alt="" />
+                      </div>
+                      <div class="detailService__item-desc">بیمه روسیه</div>
+                    </a>
+                  </div>
+                  <div class="detailService__item">
+                    <a class="detailService__item-container">
+                      <div class="detailService__item-image">
+                        <img src="images/service_7.svg" alt="" />
+                      </div>
+                      <div class="detailService__item-desc">
+                        فعالیت ها در روسیه
+                      </div>
+                    </a>
+                  </div>
+                  <div class="detailService__item">
+                    <a class="detailService__item-container">
+                      <div class="detailService__item-image">
+                        <img src="images/service_6.svg" alt="" />
+                      </div>
+                      <div class="detailService__item-desc">تور گاید روسیه</div>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="detailService__numbers-container" dir="ltr">
+                  <div class="detailService__numbers-content content--padding">
+                    <div class="detailService__numbers-content__row">
+                      <a
+                        href="#"
+                        class="detailService__numbers-content__link row"
+                      >
+                        <div class="detailService__icon">
+                          <img src="images/phone-small.svg" alt="" />
+                        </div>
+                        <div class="detailService__numbers-content__number">
+                          +98 211373
+                        </div>
+                      </a>
+                      <a
+                        href="#"
+                        class="detailService__numbers-content__link row"
+                      >
+                        <div class="detailService__icon">
+                          <img src="images/whatsapp.svg" alt="" />
+                        </div>
+                        <div
+                          class="detailService__numbers-content__number detailService--small"
+                        >
+                          +98 1343425970
+                        </div>
+                      </a>
+                      <a
+                        href="#"
+                        class="detailService__numbers-content__link row"
+                      >
+                        <div class="detailService__icon">
+                          <img src="images/telegram.svg" alt="" />
+                        </div>
+                        <div
+                          class="detailService__numbers-content__number detailService--small"
+                        >
+                          +98 1343425970
+                        </div>
+                      </a>
+                      <a
+                        href="#"
+                        class="detailService__numbers-content__link row"
+                      >
+                        <div class="detailService__icon">
+                          <img src="images/email.svg" alt="" />
+                        </div>
+                        <div class="detailService__numbers-content__email">
+                          info&#64;shomaltour.com
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- </div> -->
+              </div>
             </div>
 
-        <div class="similar" dir="rtl">
-            <div class="container">
-                <div class="similar__container">
-                    <div class="similar__title">تورهای مشابه</div>
+            <div class="detail__main-section" dir="rtl">
+              <div class="tour__description">
+                <div class="tour__desc">
+                  در طول تعطیلات زمستانی، کالینینگراد شبیه یک شهر از کارت پستال
+                  سال نو است، اما حال و هوای جشن در اینجا کاملا متفاوت است.
+                  خیابان‌ها با گلدسته‌های رنگارنگ می‌درخشند، فضای جادویی در
+                  نمایشگاه‌های سال نو حاکم است و همه جا بوی سوزن کاج و شراب تند
+                  به مشام می‌رسد.
                 </div>
-    
-    
-                <div class="tours__slider">
-    
-                    <!-- Swiper -->
-                   <div class="swiper tours--swiper">
-                       <div class="swiper-wrapper">
-                       <div class="swiper-slide">
-                           <div class="tours__slide-container">
-                               <div class="tours__slide">
-                                   <img src="images/slider_3.jpg" alt="">
-                                   <div class="tours__slide-desc">
-                                       <div class="tours__slide-destination">
-                                           <p>منطقه کالینینگراد</p>
-                                       </div>
-                                       <div class="tours__slide-name">
-                                           <p>تور شهر کالینینگراد</p>
-                                       </div>
-                                       <div class="tours__slide-property">
-                                           <p>30.000.000 تومان</p>
-                                       </div>
-                                       <div class="tours__slide-destination">
-                                           <p>5 اسفند 1403</p>
-                                       </div>
-                                   </div>
-                               </div>
-                           </div>
-                       </div>
-                       <div class="swiper-slide">
-                           <div class="tours__slide-container">
-                               <div class="tours__slide">
-                                   <img src="images/slider_1.jpg" alt="">
-                                   <div class="tours__slide-desc">
-                                       <div class="tours__slide-destination">
-                                           <p>منطقه کالینینگراد</p>
-                                       </div>
-                                       <div class="tours__slide-name">
-                                           <p>تور شهر کالینینگراد</p>
-                                       </div>
-                                       <div class="tours__slide-property">
-                                           <p>20.000.000 تومان</p>
-                                       </div>
-                                       <div class="tours__slide-destination">
-                                           <p>5 اسفند 1403</p>
-                                       </div>
-                                   </div>
-                               </div>
-                           </div>
-                       </div>
-                       <div class="swiper-slide">
-                           <div class="tours__slide-container">
-                               <div class="tours__slide">
-                                   <img src="images/slider_2.jpg" alt="">
-                                   <div class="tours__slide-desc">
-                                       <div class="tours__slide-destination">
-                                           <p>منطقه کالینینگراد</p>
-                                       </div>
-                                       <div class="tours__slide-name">
-                                           <p>تور شهر کالینینگراد</p>
-                                       </div>
-                                       <div class="tours__slide-property">
-                                           <p>20.000.000 تومان</p>
-                                       </div>
-                                       <div class="tours__slide-destination">
-                                           <p>5 اسفند 1403</p>
-                                       </div>
-                                   </div>
-                               </div>
-                           </div>
-                       </div>
-                       <div class="swiper-slide">
-                           <div class="tours__slide-container">
-                               <div class="tours__slide">
-                                   <img src="images/slider_3.jpg" alt="">
-                                   <div class="tours__slide-desc">
-                                       <div class="tours__slide-destination">
-                                           <p>منطقه کالینینگراد</p>
-                                       </div>
-                                       <div class="tours__slide-name">
-                                           <p>تور شهر کالینینگراد</p>
-                                       </div>
-                                       <div class="tours__slide-property">
-                                           <p>20.000.000 تومان</p>
-                                       </div>
-                                       <div class="tours__slide-destination">
-                                           <p>5 اسفند 1403</p>
-                                       </div>
-                                   </div>
-                               </div>
-                           </div>
-                       </div>
-                       <div class="swiper-slide">
-                           <div class="tours__slide-container">
-                               <div class="tours__slide">
-                                   <img src="images/slider_1.jpg" alt="">
-                                   <div class="tours__slide-desc">
-                                       <div class="tours__slide-destination">
-                                           <p>منطقه کالینینگراد</p>
-                                       </div>
-                                       <div class="tours__slide-name">
-                                           <p>تور شهر کالینینگراد</p>
-                                       </div>
-                                       <div class="tours__slide-property">
-                                           <p>20.000.000 تومان</p>
-                                       </div>
-                                       <div class="tours__slide-destination">
-                                           <p>5 اسفند 1403</p>
-                                       </div>
-                                   </div>
-                               </div>
-                           </div>
-                       </div>
-                       </div>
-                   </div>
-                   
-                   <div class="swiper-button-next tours--next">
-                       <img src="images/left-arrow.svg" alt="">
-                   </div>
-                   <div class="swiper-button-prev tours--prev">
-                       <img src="images/right-arrow.svg" alt="">
-                   </div>
-                </div>
-    
-                <div class="regions__slider">
-    
-                    <!-- Swiper -->
-                   <div class="swiper regions--swiper">
-                       <div class="swiper-wrapper">
-                       <div class="swiper-slide">
-                           <div class="regions__slide-container">
-                               <div class="regions__slide">
-                                   <img src="images/regions_1.jpg" alt="">
-                                   <div class="regions__slide-desc">
-                                       <div class="regions__slide-title">
-                                           <p>منطقه کالینینگراد</p>
-                                       </div>
-    
-                                   </div>
-                               </div>
-                           </div>
-                       </div>
-                       <div class="swiper-slide">
-                           <div class="regions__slide-container">
-                               <div class="regions__slide">
-                                   <img src="images/regions_1.jpg" alt="">
-                                   <div class="regions__slide-desc">
-                                       <div class="regions__slide-title">
-                                           <p>سفر به مورمانسک</p>
-                                       </div>
-    
-                                   </div>
-                               </div>
-                           </div>
-                       </div>
-                       <div class="swiper-slide">
-                           <div class="regions__slide-container">
-                               <div class="regions__slide">
-                                   <img src="images/regions_2.jpg" alt="">
-                                   <div class="regions__slide-desc">
-                                       <div class="regions__slide-title">
-                                           <p>سفر به مورمانسک</p>
-                                       </div>
-    
-                                   </div>
-                               </div>
-                           </div>
-                       </div>
-                       <div class="swiper-slide">
-                           <div class="regions__slide-container">
-                               <div class="regions__slide">
-                                   <img src="images/regions_3.jpg" alt="">
-                                   <div class="regions__slide-desc">
-                                       <div class="regions__slide-title">
-                                           <p>سفر به مورمانسک</p>
-                                       </div>
-    
-                                   </div>
-                               </div>
-                           </div>
-                       </div>
-                       <div class="swiper-slide">
-                           <div class="regions__slide-container">
-                               <div class="regions__slide">
-                                   <img src="images/regions_1.jpg" alt="">
-                                   <div class="regions__slide-desc">
-                                       <div class="regions__slide-title">
-                                           <p>سفر به مورمانسک</p>
-                                       </div>
-    
-                                   </div>
-                               </div>
-                           </div>
-                       </div>
-                       <div class="swiper-slide">
-                           <div class="regions__slide-container">
-                               <div class="regions__slide">
-                                   <img src="images/regions_2.jpg" alt="">
-                                   <div class="regions__slide-desc">
-                                       <div class="regions__slide-title">
-                                           <p>سفر به مورمانسک</p>
-                                       </div>
-    
-                                   </div>
-                               </div>
-                           </div>
-                       </div>                   
-                       </div>
-    
-                   </div>
-                   <div class="swiper-button-next regions--next">
-                       <img src="images/left-arrow.svg" alt="">
-                   </div>
-                   <div class="swiper-button-prev regions--prev">
-                       <img src="images/right-arrow.svg" alt="">
-                   </div>
-                </div>
-            </div>
-            
-
-
-        </div>
-           
-    </main>
-         
-    <footer>
-        <div class="footer__top">
-            <div class="footer__top-line"></div>
-            <div class="container">
-                <div class="footer__top-inner" dir="rtl">
-                    <div class="footer__top-logo">
-                        <a href="#" class="logo">
-                            <div class="logo__image">
-                                <img src="images/logo.png" alt="">
-                            </div>
-                            <div class="logo__desc">شمال تور</div>
-                        </a>
-                    </div>
-                    <div class="footer__top-container" dir="ltr">
-                        <div class="footer__top-content">
-                            <div class="footer__top-content__row row">
-                                <a href="tel:+98211373" class="footer__top-content__link">
-                                    <div class="footer__icon">
-                                        <img src="images/phone-small.svg" alt="">
-                                    </div>
-                                    <div class="footer__top-content__number black--link">+98 211373</div>
-                                </a>
-                                <a href="tel:+98 1343425970" class="footer__top-content__link">
-                                    <div class="footer__icon">
-                                        <img src="images/whatsapp.svg" alt="">
-                                    </div>
-                                    <div class="footer__top-content__number black--link footer--small">+98 1343425970</div>
-                                </a>
-                                <a href="tel:+98 1343425970" class="footer__top-content__link">
-                                    <div class="footer__icon">
-                                        <img src="images/telegram.svg" alt="">
-                                    </div>
-                                    <div class="footer__top-content__number black--link footer--small">+98 1343425970</div>
-                                </a>
-                                <a href="mailto:info@shomaltour.com" class="footer__top-content__link">
-                                    <div class="footer__icon">
-                                        <img src="images/email.svg" alt="">
-                                    </div>
-                                    <div class="footer__top-content__email black--link">info&#64;shomaltour.com</div>
-                                </a>
-                            </div>
-                            <div class="footer__top-content__desc" dir="rtl">
-                                <p>
-                                    دفتر تهران:  خیابان دکتر فاطمی، هتل لاله، ِ غرفه ۱۱دفتر انزلی: خیابان رمضانی، کوچه کشاورز، ساختمان امیر کبیر، واحد ۱۱
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-
-        </div>
-        <nav class="footer__menu">
-            <div class="container">
-                <ul class="footer__menu-list row" dir="rtl">
-                    <li class="footer__menu-item">
-                        <ul class="footer__menu-item__list">
-                            <li class="footer__menu-item__title">
-                                <a href="#" class="footer__menu-item__link title--link black--link">
-                                    تور های روسیه 
-                                </a>
-                            </li>
-                            <li class="footer__menu-item__subtitle">
-                                <a href="#" class="footer__menu-item__link subtitle--link black--link">
-                                    تور مسکو   
-                                </a>
-                            </li>
-                            <li class="footer__menu-item__subtitle">
-                                <a href="#" class="footer__menu-item__link subtitle--link black--link">
-                                    تور سنت پترز بورگ                                     
-                                </a>
-                            </li>
-                            <li class="footer__menu-item__subtitle">
-                                <a href="#" class="footer__menu-item__link subtitle--link black--link">
-                                    تور کازان  
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="footer__menu-item">
-                        <ul class="footer__menu-item__list">
-                            <li class="footer__menu-item__title">
-                                <a href="#" class="footer__menu-item__link title--link black--link">
-                                    دریافت ویزا روسیه  
-                                </a>
-                            </li>
-                            <li class="footer__menu-item__subtitle">
-                                <a href="#" class="footer__menu-item__link subtitle--link black--link">
-                                    ویزا توریستی روسیه   
-                                </a>
-                            </li>
-                            <li class="footer__menu-item__subtitle">
-                                <a href="#" class="footer__menu-item__link subtitle--link black--link">
-                                    ویزا تجاری روسیه   
-                                </a>
-                            </li>
-                            <li class="footer__menu-item__subtitle">
-                                <a href="#" class="footer__menu-item__link subtitle--link black--link">
-                                    ویزا تحصیلی روسیه   
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="footer__menu-item">
-                        <ul class="footer__menu-item__list">
-                            <li class="footer__menu-item__title">
-                                <a href="#" class="footer__menu-item__link title--link black--link">
-                                    فعالیت هادر  روسیه 
-                                </a>
-                            </li>
-                            <li class="footer__menu-item__subtitle">
-                                <a href="#" class="footer__menu-item__link subtitle--link black--link">
-                                    فعالیت های ورزشی  در روسیه  
-                                </a>
-                            </li>
-                            <li class="footer__menu-item__subtitle">
-                                <a href="#" class="footer__menu-item__link subtitle--link black--link">
-                                    خرید بلیط قطار در روسیه  
-                                </a>
-                            </li>
-                            <li class="footer__menu-item__subtitle">
-                                <a href="#" class="footer__menu-item__link subtitle--link black--link">
-                                       
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="footer__menu-item">
-                        <ul class="footer__menu-item__list">
-                            <li class="footer__menu-item__title">
-                                <a href="#" class="footer__menu-item__link title--link black--link">
-                                    خدمات در روسیه  
-                                </a>
-                            </li>
-                            <li class="footer__menu-item__subtitle">
-                                <a href="#" class="footer__menu-item__link subtitle--link black--link">
-                                    تورگاید ومترجم  در روسیه 
-                                </a>
-                            </li>
-                            <li class="footer__menu-item__subtitle">
-                                <a href="#" class="footer__menu-item__link subtitle--link black--link">
-                                      
-                                </a>
-                            </li>
-                            <li class="footer__menu-item__subtitle">
-                                <a href="#" class="footer__menu-item__link subtitle--link black--link">
-                                      
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="footer__menu-item">
-                        <ul class="footer__menu-item__list">
-                            <li class="footer__menu-item__title">
-                                <a href="#" class="footer__menu-item__link title--link black--link">
-                                    خدمات تراسفر در روسیه  
-                                </a>
-                            </li>
-                            <li class="footer__menu-item__subtitle">
-                                <a href="#" class="footer__menu-item__link subtitle--link black--link">
-                                    خرید بلیط پرواز در روسیه
-                                </a>
-                            </li>
-                            <li class="footer__menu-item__subtitle">
-                                <a href="#" class="footer__menu-item__link subtitle--link black--link">
-                                    خرید بلیط قطار در روسیه  
-                                </a>
-                            </li>
-                            <li class="footer__menu-item__subtitle">
-                                <a href="#" class="footer__menu-item__link subtitle--link black--link">
-                                    ترانسفر فرودگاهی در روسیه   
-                                </a>
-                            </li>
-                        </ul>
-                    </li>          
+                <div class="tour__question">چرا به مسکو سفر میکنیم؟‌</div>
+                <ul class="tour__answers">
+                  <li class="tour__answers-item row">
+                    <div class="tour__answers-itemCircle"></div>
+                    میبینیم مسکو با چه پتانسیلی داشته تا پس از ۲۱۵ سال پایتخت
+                    شود
+                  </li>
+                  <li class="tour__answers-item row">
+                    <div class="tour__answers-itemCircle"></div>
+                    میبینیم مسکو با چه پتانسیلی داشته تا پس از ۲۱۵ سال پایتخت
+                    شود
+                  </li>
+                  <li class="tour__answers-item row">
+                    <div class="tour__answers-itemCircle"></div>
+                    میبینیم مسکو با چه پتانسیلی داشته تا پس از ۲۱۵ سال پایتخت
+                    شود
+                  </li>
+                  <li class="tour__answers-item row">
+                    <div class="tour__answers-itemCircle"></div>
+                    میبینیم مسکو با چه پتانسیلی داشته تا پس از ۲۱۵ سال پایتخت
+                    شود
+                  </li>
                 </ul>
+              </div>
+
+              <div class="tour__images">
+                <div class="tour__bigImage-row row">
+                  <div class="tour__bigImage-container">
+                    <div class="tour__bigImage">
+                      <img src="images/tours_1.jpg" alt="" />
+                    </div>
+                  </div>
+                  <div class="tour__bigImage-container">
+                    <div class="tour__bigImage">
+                      <img src="images/tours_2.jpg" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="tour__smallImage-row row">
+                  <div class="tour__smallImage-container">
+                    <div class="tour__smallImage">
+                      <img src="images/regions_1.jpg" alt="" />
+                    </div>
+                  </div>
+                  <div class="tour__smallImage-container">
+                    <div class="tour__smallImage">
+                      <img src="images/regions_2.jpg" alt="" />
+                    </div>
+                  </div>
+                  <div class="tour__smallImage-container">
+                    <div class="tour__smallImage">
+                      <img src="images/regions_3.jpg" alt="" />
+                    </div>
+                  </div>
+                  <div class="tour__smallImage-container">
+                    <div class="tour__smallImage">
+                      <img src="images/regions_1.jpg" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="detail__left-sectionContainer detail--mobile">
+                <div class="detail__change">
+                  <div class="detail__item-booking row">
+                    <div class="detail__item-booking__desc">
+                      <div class="detail__item-price" dir="ltr">
+                        39.000.000 تومان
+                      </div>
+                      <div class="detail__item-desc">انگیز به پایتخت روسی</div>
+                      <div class="detail__item-duration center row">
+                        <div class="catalog__item-days detail--days row">
+                          <div class="catalog__item-icon">
+                            <img src="images/tour_catalog/day.svg" alt="" />
+                          </div>
+                          <div class="catalog__item-days__desc" dir="ltr">
+                            7 روز
+                          </div>
+                        </div>
+                        <div class="catalog__item-nights detail--nights row">
+                          <div class="catalog__item-icon">
+                            <img src="images/tour_catalog/nigth.svg" alt="" />
+                          </div>
+                          <div class="catalog__item-days__desc" dir="ltr">
+                            6 شب
+                          </div>
+                        </div>
+                      </div>
+                      <div class="detail__calendarChange row">
+                        <div class="detail__calendarDate">5 اسفند 1403</div>
+                        <button class="detail__calendarButton btn">
+                          <img
+                            src="images/tour_detail/detail_calendar.svg"
+                            alt=""
+                          />
+                        </button>
+                      </div>
+                    </div>
+                    <button class="booking__button detailBooking--button btn">
+                      رزرو تور
+                    </button>
+                  </div>
+                </div>
+                <div class="detail__change-info">
+                  <div class="detail__change-class">
+                    <div class="detail__class-title">کلاس اقامت تور</div>
+                    <div class="detail__class-desc">
+                      <div class="detail__class-descIcon">
+                        <img src="images/tour_detail/detail_star.svg" alt="" />
+                      </div>
+                      <div class="detail__class-descText">4-5</div>
+                    </div>
+                  </div>
+                  <ul class="detail__change-ticketsList">
+                    <li class="detail__change-ticketItem">
+                      <div class="detail__class-descIcon">
+                        <img src="images/tour_detail/detail_plane.svg" alt="" />
+                      </div>
+                      <div class="detail__class-descText">پرواز رفت: 03:00</div>
+                    </li>
+                    <li class="detail__change-ticketItem">
+                      <div class="detail__class-descIcon">
+                        <img
+                          src="images/tour_detail/detail_people.svg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="detail__class-descText">
+                        دیدار گروهی در هتل رکسان : 22:00
+                      </div>
+                    </li>
+                    <li class="detail__change-ticketItem">
+                      <div class="detail__class-descIcon">
+                        <img
+                          src="images/tour_detail/detail_basket.svg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="detail__class-descText">
+                        کافی شاپ هتل رکسان همراه با پذیرایی چای و قهوه
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="detail__change-backTickets">
+                    <div class="detail__class-descIcon">
+                      <img
+                        src="images/tour_detail/detail_planeback.svg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="detail__class-descText">پرواز برگشت: 03:00</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="change__discount-container detail--mobile">
+                <div class="detail__change-discount row">
+                  <div class="detail__change-discountImage">
+                    <img src="images/tour_detail/detail__discount.png" alt="" />
+                  </div>
+                  <div class="detail__change-discountContent">
+                    <div class="discount__change-desc">با ثبت نام 5 نفری</div>
+                    <div class="discount__change-value">5٪تخفیف بگیرید</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="detail__activities">
+                <div class="detail__activities-title">
+                  چه فعالیت هایی در تور مسکو انجام میدهیم؟
+                </div>
+
+                <!-- Swiper -->
+                <div class="swiper mySwiper activities--swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="detail__activities-cart">
+                        <div class="detail__activities-image">
+                          <img src="images/activities_2.jpg" alt="" />
+                        </div>
+                        <div class="detail__activities-content">
+                          <div class="detail__activities-subtitle">
+                            در کنار سنگفرش های معروف میدان سرخ
+                          </div>
+                          <div class="detail__activities-desc">
+                            گنبدهای رنگارنگ کلیسای جامع سنت باسیل را ببینید و از
+                            محوطه کرملین مسکو دیدن کنید.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="detail__activities-cart">
+                        <div class="detail__activities-image">
+                          <img src="images/activities_1.jpg" alt="" />
+                        </div>
+                        <div class="detail__activities-content">
+                          <div class="detail__activities-subtitle">
+                            در کنار سنگفرش های معروف میدان سرخ
+                          </div>
+                          <div class="detail__activities-desc">
+                            گنبدهای رنگارنگ کلیسای جامع سنت باسیل را ببینید و از
+                            محوطه کرملین مسکو دیدن کنید.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="detail__activities-cart">
+                        <div class="detail__activities-image">
+                          <img src="images/activities_3.jpg" alt="" />
+                        </div>
+                        <div class="detail__activities-content">
+                          <div class="detail__activities-subtitle">
+                            در کنار سنگفرش های معروف میدان سرخ
+                          </div>
+                          <div class="detail__activities-desc">
+                            گنبدهای رنگارنگ کلیسای جامع سنت باسیل را ببینید و از
+                            محوطه کرملین مسکو دیدن کنید.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="detail__activities-cart">
+                        <div class="detail__activities-image">
+                          <img src="images/activities_1.jpg" alt="" />
+                        </div>
+                        <div class="detail__activities-content">
+                          <div class="detail__activities-subtitle">
+                            در کنار سنگفرش های معروف میدان سرخ
+                          </div>
+                          <div class="detail__activities-desc">
+                            گنبدهای رنگارنگ کلیسای جامع سنت باسیل را ببینید و از
+                            محوطه کرملین مسکو دیدن کنید.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+
+              <div class="detail__schedule">
+                <div class="detail__schedule-title">برنامه تور مسکو</div>
+                <div class="detail__schedule-description row" dir="rtl">
+                  <div class="detail__schedule-image">
+                    <img src="images/tour_detail/detail_pdf.svg" alt="" />
+                  </div>
+                  <div class="detail__schedule-desc">
+                    برنامه تور را به صورت PDF دریافت کنید
+                  </div>
+                </div>
+
+                <div class="detail__schedule-cart">
+                  <div class="detail__schedule-cartMenu row">
+                    <div class="detail__schedule-cartDrop row">
+                      <button
+                        class="detail__schedule-cartDropButton schedule--activeButton btn"
+                      >
+                        <img
+                          src="images/tour_detail/detail_arrow-down.svg"
+                          alt=""
+                        />
+                      </button>
+                      <div class="detail__schedule-cartDropDesc">
+                        پرواز بر فراز مسکو
+                      </div>
+                    </div>
+                    <button class="detail__schedule-cartButton btn">
+                      روز اول
+                    </button>
+                  </div>
+                  <div class="detail__schedule-cartContent schedule--active">
+                    <div class="detail__schedule-cartContentDesc">
+                      تور پیاده روی در پارک زریادیه با بازدید از جاذبه های پرواز
+                      بر فراز مسکو/روسیه. شما به اندازه کافی خوش شانس خواهید بود
+                      که سفری بی نظیر در فضا و زمان داشته باشید.شما در قلمرو
+                      زیبای پارک مدرن قدم زده و با اشیاء معماری اصلی آن آشنا
+                      خواهید شد.
+                    </div>
+                    <div class="detail__schedule-cartContentRow row">
+                      <div class="detail__schedule-cartContentImageContainer">
+                        <div class="detail__schedule-cartContentImage">
+                          <img src="images/tours_1.jpg" alt="" />
+                        </div>
+                      </div>
+                      <div class="detail__schedule-cartContentImageContainer">
+                        <div class="detail__schedule-cartContentImage">
+                          <img src="images/tours_2.jpg" alt="" />
+                        </div>
+                      </div>
+                      <div class="detail__schedule-cartContentImageContainer">
+                        <div class="detail__schedule-cartContentImage">
+                          <img src="images/tours_3.jpg" alt="" />
+                        </div>
+                      </div>
+                      <div class="detail__schedule-cartContentImageContainer">
+                        <div class="detail__schedule-cartContentImage">
+                          <img src="images/tours_1.jpg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="detail__schedule-cart">
+                  <div class="detail__schedule-cartMenu row">
+                    <div class="detail__schedule-cartDrop row">
+                      <button class="detail__schedule-cartDropButton btn">
+                        <img
+                          src="images/tour_detail/detail_arrow-down.svg"
+                          alt=""
+                        />
+                      </button>
+                      <div class="detail__schedule-cartDropDesc">
+                        بازدید ٰکولومنسکویه
+                      </div>
+                    </div>
+                    <button class="detail__schedule-cartButton btn">
+                      روز اول
+                    </button>
+                  </div>
+                  <div class="detail__schedule-cartContent">
+                    <div class="detail__schedule-cartContentDesc">
+                      تور پیاده روی در پارک زریادیه با بازدید از جاذبه های پرواز
+                      بر فراز مسکو/روسیه. شما به اندازه کافی خوش شانس خواهید بود
+                      که سفری بی نظیر در فضا و زمان داشته باشید.شما در قلمرو
+                      زیبای پارک مدرن قدم زده و با اشیاء معماری اصلی آن آشنا
+                      خواهید شد.
+                    </div>
+                    <div class="detail__schedule-cartContentRow row">
+                      <div class="detail__schedule-cartContentImageContainer">
+                        <div class="detail__schedule-cartContentImage">
+                          <img src="images/tours_1.jpg" alt="" />
+                        </div>
+                      </div>
+                      <div class="detail__schedule-cartContentImageContainer">
+                        <div class="detail__schedule-cartContentImage">
+                          <img src="images/tours_2.jpg" alt="" />
+                        </div>
+                      </div>
+                      <div class="detail__schedule-cartContentImageContainer">
+                        <div class="detail__schedule-cartContentImage">
+                          <img src="images/tours_3.jpg" alt="" />
+                        </div>
+                      </div>
+                      <div class="detail__schedule-cartContentImageContainer">
+                        <div class="detail__schedule-cartContentImage">
+                          <img src="images/tours_1.jpg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="detail__schedule-cart">
+                  <div class="detail__schedule-cartMenu row">
+                    <div class="detail__schedule-cartDrop row">
+                      <button class="detail__schedule-cartDropButton btn">
+                        <img
+                          src="images/tour_detail/detail_arrow-down.svg"
+                          alt=""
+                        />
+                      </button>
+                      <div class="detail__schedule-cartDropDesc">
+                        آربات تا میدان اسمولنسکایا
+                      </div>
+                    </div>
+                    <button class="detail__schedule-cartButton btn">
+                      روز اول
+                    </button>
+                  </div>
+                  <div class="detail__schedule-cartContent">
+                    <div class="detail__schedule-cartContentDesc">
+                      تور پیاده روی در پارک زریادیه با بازدید از جاذبه های پرواز
+                      بر فراز مسکو/روسیه. شما به اندازه کافی خوش شانس خواهید بود
+                      که سفری بی نظیر در فضا و زمان داشته باشید.شما در قلمرو
+                      زیبای پارک مدرن قدم زده و با اشیاء معماری اصلی آن آشنا
+                      خواهید شد.
+                    </div>
+                    <div class="detail__schedule-cartContentRow row">
+                      <div class="detail__schedule-cartContentImageContainer">
+                        <div class="detail__schedule-cartContentImage">
+                          <img src="images/tours_1.jpg" alt="" />
+                        </div>
+                      </div>
+                      <div class="detail__schedule-cartContentImageContainer">
+                        <div class="detail__schedule-cartContentImage">
+                          <img src="images/tours_2.jpg" alt="" />
+                        </div>
+                      </div>
+                      <div class="detail__schedule-cartContentImageContainer">
+                        <div class="detail__schedule-cartContentImage">
+                          <img src="images/tours_3.jpg" alt="" />
+                        </div>
+                      </div>
+                      <div class="detail__schedule-cartContentImageContainer">
+                        <div class="detail__schedule-cartContentImage">
+                          <img src="images/tours_1.jpg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="detail__schedule-cart">
+                  <div class="detail__schedule-cartMenu row">
+                    <div class="detail__schedule-cartDrop row">
+                      <button class="detail__schedule-cartDropButton btn">
+                        <img
+                          src="images/tour_detail/detail_arrow-down.svg"
+                          alt=""
+                        />
+                      </button>
+                      <div class="detail__schedule-cartDropDesc">
+                        بازدید موزه کیهان شناسی
+                      </div>
+                    </div>
+                    <button class="detail__schedule-cartButton btn">
+                      روز اول
+                    </button>
+                  </div>
+                  <div class="detail__schedule-cartContent">
+                    <div class="detail__schedule-cartContentDesc">
+                      تور پیاده روی در پارک زریادیه با بازدید از جاذبه های پرواز
+                      بر فراز مسکو/روسیه. شما به اندازه کافی خوش شانس خواهید بود
+                      که سفری بی نظیر در فضا و زمان داشته باشید.شما در قلمرو
+                      زیبای پارک مدرن قدم زده و با اشیاء معماری اصلی آن آشنا
+                      خواهید شد.
+                    </div>
+                    <div class="detail__schedule-cartContentRow row">
+                      <div class="detail__schedule-cartContentImageContainer">
+                        <div class="detail__schedule-cartContentImage">
+                          <img src="images/tours_1.jpg" alt="" />
+                        </div>
+                      </div>
+                      <div class="detail__schedule-cartContentImageContainer">
+                        <div class="detail__schedule-cartContentImage">
+                          <img src="images/tours_2.jpg" alt="" />
+                        </div>
+                      </div>
+                      <div class="detail__schedule-cartContentImageContainer">
+                        <div class="detail__schedule-cartContentImage">
+                          <img src="images/tours_3.jpg" alt="" />
+                        </div>
+                      </div>
+                      <div class="detail__schedule-cartContentImageContainer">
+                        <div class="detail__schedule-cartContentImage">
+                          <img src="images/tours_1.jpg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="detail__staying">
+                <div class="detail__staying-title">اقامت در تور</div>
+                <div class="detail__staying-desc">
+                  این تور شامل اقامت در مجتمع FridayCenter می باشد. قیمت پایه
+                  تور برای 1 نفر شامل اقامت دو نفره در یک اتاق دو نفره با حمام
+                  مشترک می باشد. می توانید محل اقامت راحت تری را انتخاب کنید:
+                </div>
+
+                <div class="detail__schedule-cart">
+                  <div class="detail__schedule-cartMenu row">
+                    <div class="detail__schedule-cartDrop row">
+                      <button
+                        class="detail__schedule-cartDropButton schedule--activeButton btn"
+                      >
+                        <img
+                          src="images/tour_detail/detail_arrow-down.svg"
+                          alt=""
+                        />
+                      </button>
+                      <div class="detail__schedule-cartDropDesc">
+                        کراستووایا- مسکو
+                      </div>
+                    </div>
+                    <button class="detail__schedule-cartButton btn">
+                      روز اول
+                    </button>
+                  </div>
+                  <div class="detail__schedule-cartContent schedule--active">
+                    <div class="detail__schedule-cartContentDesc">
+                      هتل Krestovaya Pad با مناظری زیبا در 50 متری ساحل دریاچه
+                      بایکال واقع شده است. دارای تراس آفتابگیر و سونا می باشد.
+                      هر اتاق دارای تلویزیون صفحه تخت و امکانات تهیه چای/قهوه
+                      است. اتاق‌های به سبک کلبه دارای روکش چوبی هستند و شامل میز
+                      کار، مینی‌بار و حمام خصوصی می‌شوند. برخی از اتاق‌ها Wi-Fi
+                      رایگان دارند. بار-رستوران رنگارنگ غذاهای اروپایی و انواع
+                      غذاهای سیبری از منطقه بایکال را سرو می کند. یک منوی غنی
+                      برای صبحانه در دسترس است.
+                    </div>
+                    <div class="detail__schedule-cartContentRow row">
+                      <div class="detail__schedule-cartContentImageContainer">
+                        <div class="detail__schedule-cartContentImage">
+                          <img src="images/tours_1.jpg" alt="" />
+                        </div>
+                      </div>
+                      <div class="detail__schedule-cartContentImageContainer">
+                        <div class="detail__schedule-cartContentImage">
+                          <img src="images/tours_2.jpg" alt="" />
+                        </div>
+                      </div>
+                      <div class="detail__schedule-cartContentImageContainer">
+                        <div class="detail__schedule-cartContentImage">
+                          <img src="images/tours_3.jpg" alt="" />
+                        </div>
+                      </div>
+                      <div class="detail__schedule-cartContentImageContainer">
+                        <div class="detail__schedule-cartContentImage">
+                          <img src="images/tours_1.jpg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="detail__schedule-cart">
+                  <div class="detail__schedule-cartMenu row">
+                    <div class="detail__schedule-cartDrop row">
+                      <button
+                        class="detail__schedule-cartDropButton schedule--activeButton btn"
+                      >
+                        <img
+                          src="images/tour_detail/detail_arrow-down.svg"
+                          alt=""
+                        />
+                      </button>
+                      <div class="detail__schedule-cartDropDesc">
+                        کراستووایا- مسکو
+                      </div>
+                    </div>
+                    <button class="detail__schedule-cartButton btn">
+                      روز اول
+                    </button>
+                  </div>
+                  <div class="detail__schedule-cartContent schedule--active">
+                    <div class="detail__schedule-cartContentDesc">
+                      هتل Krestovaya Pad با مناظری زیبا در 50 متری ساحل دریاچه
+                      بایکال واقع شده است. دارای تراس آفتابگیر و سونا می باشد.
+                      هر اتاق دارای تلویزیون صفحه تخت و امکانات تهیه چای/قهوه
+                      است. اتاق‌های به سبک کلبه دارای روکش چوبی هستند و شامل میز
+                      کار، مینی‌بار و حمام خصوصی می‌شوند. برخی از اتاق‌ها Wi-Fi
+                      رایگان دارند. بار-رستوران رنگارنگ غذاهای اروپایی و انواع
+                      غذاهای سیبری از منطقه بایکال را سرو می کند. یک منوی غنی
+                      برای صبحانه در دسترس است.
+                    </div>
+                    <div class="detail__schedule-cartContentRow row">
+                      <div class="detail__schedule-cartContentImageContainer">
+                        <div class="detail__schedule-cartContentImage">
+                          <img src="images/tours_1.jpg" alt="" />
+                        </div>
+                      </div>
+                      <div class="detail__schedule-cartContentImageContainer">
+                        <div class="detail__schedule-cartContentImage">
+                          <img src="images/tours_2.jpg" alt="" />
+                        </div>
+                      </div>
+                      <div class="detail__schedule-cartContentImageContainer">
+                        <div class="detail__schedule-cartContentImage">
+                          <img src="images/tours_3.jpg" alt="" />
+                        </div>
+                      </div>
+                      <div class="detail__schedule-cartContentImageContainer">
+                        <div class="detail__schedule-cartContentImage">
+                          <img src="images/tours_1.jpg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="detail__schedule-cart">
+                  <div class="detail__schedule-cartMenu row">
+                    <div class="detail__schedule-cartDrop row">
+                      <button class="detail__schedule-cartDropButton btn">
+                        <img
+                          src="images/tour_detail/detail_arrow-down.svg"
+                          alt=""
+                        />
+                      </button>
+                      <div class="detail__schedule-cartDropDesc">
+                        اسم اقامتگاه- شهر
+                      </div>
+                    </div>
+                    <button class="detail__schedule-cartButton btn">
+                      روز اول
+                    </button>
+                  </div>
+                  <div class="detail__schedule-cartContent">
+                    <div class="detail__schedule-cartContentDesc">
+                      هتل Krestovaya Pad با مناظری زیبا در 50 متری ساحل دریاچه
+                      بایکال واقع شده است. دارای تراس آفتابگیر و سونا می باشد.
+                      هر اتاق دارای تلویزیون صفحه تخت و امکانات تهیه چای/قهوه
+                      است. اتاق‌های به سبک کلبه دارای روکش چوبی هستند و شامل میز
+                      کار، مینی‌بار و حمام خصوصی می‌شوند. برخی از اتاق‌ها Wi-Fi
+                      رایگان دارند. بار-رستوران رنگارنگ غذاهای اروپایی و انواع
+                      غذاهای سیبری از منطقه بایکال را سرو می کند. یک منوی غنی
+                      برای صبحانه در دسترس است.
+                    </div>
+                    <div class="detail__schedule-cartContentRow row">
+                      <div class="detail__schedule-cartContentImageContainer">
+                        <div class="detail__schedule-cartContentImage">
+                          <img src="images/tours_1.jpg" alt="" />
+                        </div>
+                      </div>
+                      <div class="detail__schedule-cartContentImageContainer">
+                        <div class="detail__schedule-cartContentImage">
+                          <img src="images/tours_2.jpg" alt="" />
+                        </div>
+                      </div>
+                      <div class="detail__schedule-cartContentImageContainer">
+                        <div class="detail__schedule-cartContentImage">
+                          <img src="images/tours_3.jpg" alt="" />
+                        </div>
+                      </div>
+                      <div class="detail__schedule-cartContentImageContainer">
+                        <div class="detail__schedule-cartContentImage">
+                          <img src="images/tours_1.jpg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="detail__schedule-cart">
+                  <div class="detail__schedule-cartMenu row">
+                    <div class="detail__schedule-cartDrop row">
+                      <button class="detail__schedule-cartDropButton btn">
+                        <img
+                          src="images/tour_detail/detail_arrow-down.svg"
+                          alt=""
+                        />
+                      </button>
+                      <div class="detail__schedule-cartDropDesc">
+                        اسم اقامتگاه- شهر
+                      </div>
+                    </div>
+                    <button class="detail__schedule-cartButton btn">
+                      روز اول
+                    </button>
+                  </div>
+                  <div class="detail__schedule-cartContent">
+                    <div class="detail__schedule-cartContentDesc">
+                      هتل Krestovaya Pad با مناظری زیبا در 50 متری ساحل دریاچه
+                      بایکال واقع شده است. دارای تراس آفتابگیر و سونا می باشد.
+                      هر اتاق دارای تلویزیون صفحه تخت و امکانات تهیه چای/قهوه
+                      است. اتاق‌های به سبک کلبه دارای روکش چوبی هستند و شامل میز
+                      کار، مینی‌بار و حمام خصوصی می‌شوند. برخی از اتاق‌ها Wi-Fi
+                      رایگان دارند. بار-رستوران رنگارنگ غذاهای اروپایی و انواع
+                      غذاهای سیبری از منطقه بایکال را سرو می کند. یک منوی غنی
+                      برای صبحانه در دسترس است.
+                    </div>
+                    <div class="detail__schedule-cartContentRow row">
+                      <div class="detail__schedule-cartContentImageContainer">
+                        <div class="detail__schedule-cartContentImage">
+                          <img src="images/tours_1.jpg" alt="" />
+                        </div>
+                      </div>
+                      <div class="detail__schedule-cartContentImageContainer">
+                        <div class="detail__schedule-cartContentImage">
+                          <img src="images/tours_2.jpg" alt="" />
+                        </div>
+                      </div>
+                      <div class="detail__schedule-cartContentImageContainer">
+                        <div class="detail__schedule-cartContentImage">
+                          <img src="images/tours_3.jpg" alt="" />
+                        </div>
+                      </div>
+                      <div class="detail__schedule-cartContentImageContainer">
+                        <div class="detail__schedule-cartContentImage">
+                          <img src="images/tours_1.jpg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="detail__journey">
+                <div class="detail__journey-title">دانستنی سفر</div>
+                <div class="detail__journey-subtitle">مشاهده همه</div>
+                <div class="detail__schedule-cart">
+                  <div class="detail__schedule-cartMenu row">
+                    <div class="detail__schedule-cartDrop row">
+                      <button class="detail__schedule-cartDropButton btn">
+                        <img
+                          src="images/tour_detail/detail_arrow-down.svg"
+                          alt=""
+                        />
+                      </button>
+                      <div class="detail__schedule-cartDropDesc">
+                        کراستووایا- مسکو
+                      </div>
+                    </div>
+                  </div>
+                  <div class="detail__schedule-cartContent">
+                    <div class="detail__schedule-cartContentDesc">
+                      دستکش و کلاه گرم .1
+                    </div>
+                  </div>
+                </div>
+                <div class="detail__schedule-cart">
+                  <div class="detail__schedule-cartMenu row">
+                    <div class="detail__schedule-cartDrop row">
+                      <button
+                        class="detail__schedule-cartDropButton schedule--activeButton btn"
+                      >
+                        <img
+                          src="images/tour_detail/detail_arrow-down.svg"
+                          alt=""
+                        />
+                      </button>
+                      <div class="detail__schedule-cartDropDesc">
+                        کراستووایا- مسکو
+                      </div>
+                    </div>
+                  </div>
+                  <div class="detail__schedule-cartContent schedule--active">
+                    <div class="detail__schedule-cartContentDesc">
+                      دستکش و کلاه گرم .1
+                    </div>
+                  </div>
+                </div>
+                <ul class="detail__journey-includeList row">
+                  <ul class="detail__journey-includeListInner">
+                    <li class="detail__journey-includeItemTitle">
+                      <a href="*" class="detail__journey-includeItemTitleLink">
+                        در قیمت گنجانده شده است
+                      </a>
+                    </li>
+                    <li>
+                      <a href="*" class="detail__journey-includeItem row">
+                        <div class="detail__journey-includeItemIcon">
+                          <img
+                            src="images/tour_detail/include_active.svg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="detail__journey-includeItemDesc">
+                          اقامت در هتل
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="*" class="detail__journey-includeItem row">
+                        <div class="detail__journey-includeItemIcon">
+                          <img
+                            src="images/tour_detail/include_active.svg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="detail__journey-includeItemDesc">
+                          نقل و انتقالات بر اساس برنامه
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="*" class="detail__journey-includeItem row">
+                        <div class="detail__journey-includeItemIcon">
+                          <img
+                            src="images/tour_detail/include_active.svg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="detail__journey-includeItemDesc">
+                          وعده های غذایی طبق برنامه:
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="*" class="detail__journey-includeItem row">
+                        <div class="detail__journey-includeItemIcon">
+                          <img
+                            src="images/tour_detail/include_active.svg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="detail__journey-includeItemDesc">
+                          گشت و گذار در شمال جزیره
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                  <ul class="detail__journey-includeListInner">
+                    <li class="detail__journey-includeItemTitle">
+                      <a href="*" class="detail__journey-includeItemTitleLink">
+                        در قیمت گنجانده نشده است
+                      </a>
+                    </li>
+                    <li>
+                      <a href="*" class="detail__journey-includeItem row">
+                        <div class="detail__journey-includeItemIcon">
+                          <img
+                            src="images/tour_detail/include_unactive.svg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="detail__journey-includeItemDesc">
+                          اقامت در هتل
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="*" class="detail__journey-includeItem row">
+                        <div class="detail__journey-includeItemIcon">
+                          <img
+                            src="images/tour_detail/include_unactive.svg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="detail__journey-includeItemDesc">
+                          نقل و انتقالات بر اساس برنامه
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="*" class="detail__journey-includeItem row">
+                        <div class="detail__journey-includeItemIcon">
+                          <img
+                            src="images/tour_detail/include_unactive.svg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="detail__journey-includeItemDesc">
+                          برنامه سرگرمی در پارک قومی
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="*" class="detail__journey-includeItem row">
+                        <div class="detail__journey-includeItemIcon">
+                          <img
+                            src="images/tour_detail/include_unactive.svg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="detail__journey-includeItemDesc">
+                          برنامه سرگرمی در پارک قومی
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </ul>
+              </div>
+
+              <div class="detail__costs">
+                <div class="detail__costs-container">
+                  <div class="detail__costs-title">هزینه تور و انواع اتاق</div>
+                  <ul>
+                    <li>
+                      <ul class="detail__costs-row row">
+                        <li class="detail__costs-item">SGL</li>
+                        <li class="detail__costs-item">تک نفره</li>
+                        <li class="detail__costs-item costs--wide">
+                          <div class="detail__costs-itemDesc row">
+                            <div class="detail__costs-itemText">
+                              30.000.000 تومان
+                            </div>
+                            <div class="detail__costs-itemCheck">
+                              <input
+                                type="checkbox"
+                                name=""
+                                id="check2"
+                                checked
+                              />
+                              <label for="check2" class="send__label-input">
+                                <span
+                                  class="send__checkbox-custom detail--checkbox"
+                                ></span>
+                              </label>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <ul class="detail__costs-row row">
+                        <li class="detail__costs-item">DBL</li>
+                        <li class="detail__costs-item">دو نفره</li>
+                        <li class="detail__costs-item costs--wide">
+                          <div class="detail__costs-itemDesc row">
+                            <div class="detail__costs-itemText">
+                              30.000.000 تومان
+                            </div>
+                            <div class="detail__costs-itemCheck">
+                              <input type="checkbox" name="" id="check3" />
+                              <label for="check3" class="send__label-input">
+                                <span
+                                  class="send__checkbox-custom detail--checkbox"
+                                ></span>
+                              </label>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <ul class="detail__costs-row row">
+                        <li class="detail__costs-item">TWN</li>
+                        <li class="detail__costs-item">دو تک نفره</li>
+                        <li class="detail__costs-item costs--wide">
+                          <div class="detail__costs-itemDesc row">
+                            <div class="detail__costs-itemText">
+                              30.000.000 تومان
+                            </div>
+                            <div class="detail__costs-itemCheck">
+                              <input type="checkbox" name="" id="check4" />
+                              <label for="check4" class="send__label-input">
+                                <span
+                                  class="send__checkbox-custom detail--checkbox"
+                                ></span>
+                              </label>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <button class="detail__costs-order btn">سفارش</button>
+                </div>
+              </div>
+
+              <div class="detail__share">
+                <div class="detail__share-container">
+                  <div class="detail__share-row row">
+                    <div class="detail__share-messengers row">
+                      <div class="detail__share-link">
+                        برای به اشتراک گذاشتن:
+                      </div>
+                      <div class="detail__share-messengers-row row">
+                        <div class="detail__share-icon">
+                          <img
+                            src="images/tour_detail/detail_messenger1.svg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="detail__share-icon">
+                          <img
+                            src="images/tour_detail/detail_messenger2.svg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="detail__share-icon">
+                          <img
+                            src="images/tour_detail/detail_messenger3.svg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="detail__share-icon">
+                          <img
+                            src="images/tour_detail/detail_messenger4.svg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="detail__share-icon">
+                          <img
+                            src="images/tour_detail/detail_messenger5.svg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="detail__share-icon">
+                          <img
+                            src="images/tour_detail/detail_messenger6.svg"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <button class="detail__share-button btn">
+                      بازگشت به تورها
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
-        </nav>
-        <div class="footer__bottom" dir="rtl">
-            <div class="container">
-                <p>
-                    11223344556676 “شمال گشت مسیر ترقی”شماره مجوز شرکت:  1401 ©
-                </p>
-            </div>
+          </div>
         </div>
+      </div>
+
+      <div class="service__mobile" dir="rtl">
+        <div class="container">
+          <div class="service__row" dir="rtl">
+            <div class="service__item">
+              <a class="service__item-container">
+                <div class="service__item-image">
+                  <img src="images/service_1.svg" alt="" />
+                </div>
+                <div class="service__item-desc">ویزای روسیه</div>
+              </a>
+            </div>
+            <div class="service__item">
+              <a class="service__item-container">
+                <div class="service__item-image">
+                  <img src="images/service_2.svg" alt="" />
+                </div>
+                <div class="service__item-desc">تورهای روسیه</div>
+              </a>
+            </div>
+            <div class="service__item">
+              <a class="service__item-container">
+                <div class="service__item-image">
+                  <img src="images/service_3.svg" alt="" />
+                </div>
+                <div class="service__item-desc">هتل های روسیه</div>
+              </a>
+            </div>
+            <div class="service__item">
+              <a class="service__item-container">
+                <div class="service__item-image">
+                  <img src="images/service_4.svg" alt="" />
+                </div>
+                <div class="service__item-desc">حمل و نقل در روسیه</div>
+              </a>
+            </div>
+            <div class="service__item">
+              <a class="service__item-container">
+                <div class="service__item-image">
+                  <img src="images/service_5.svg" alt="" />
+                </div>
+                <div class="service__item-desc">بیمه روسیه</div>
+              </a>
+            </div>
+            <div class="service__item">
+              <a class="service__item-container">
+                <div class="service__item-image">
+                  <img src="images/service_7.svg" alt="" />
+                </div>
+                <div class="service__item-desc">فعالیت ها در روسیه</div>
+              </a>
+            </div>
+            <div class="service__item">
+              <a class="service__item-container">
+                <div class="service__item-image">
+                  <img src="images/service_6.svg" alt="" />
+                </div>
+                <div class="service__item-desc">تور گاید روسیه</div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="similar" dir="rtl">
+        <div class="container">
+          <div class="similar__container">
+            <div class="similar__title">تورهای مشابه</div>
+          </div>
+
+          <div class="tours__slider">
+            <!-- Swiper -->
+            <div class="swiper tours--swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="tours__slide-container">
+                    <div class="tours__slide">
+                      <img src="images/slider_3.jpg" alt="" />
+                      <div class="tours__slide-desc">
+                        <div class="tours__slide-destination">
+                          <p>منطقه کالینینگراد</p>
+                        </div>
+                        <div class="tours__slide-name">
+                          <p>تور شهر کالینینگراد</p>
+                        </div>
+                        <div class="tours__slide-property">
+                          <p>30.000.000 تومان</p>
+                        </div>
+                        <div class="tours__slide-destination">
+                          <p>5 اسفند 1403</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="tours__slide-container">
+                    <div class="tours__slide">
+                      <img src="images/slider_1.jpg" alt="" />
+                      <div class="tours__slide-desc">
+                        <div class="tours__slide-destination">
+                          <p>منطقه کالینینگراد</p>
+                        </div>
+                        <div class="tours__slide-name">
+                          <p>تور شهر کالینینگراد</p>
+                        </div>
+                        <div class="tours__slide-property">
+                          <p>20.000.000 تومان</p>
+                        </div>
+                        <div class="tours__slide-destination">
+                          <p>5 اسفند 1403</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="tours__slide-container">
+                    <div class="tours__slide">
+                      <img src="images/slider_2.jpg" alt="" />
+                      <div class="tours__slide-desc">
+                        <div class="tours__slide-destination">
+                          <p>منطقه کالینینگراد</p>
+                        </div>
+                        <div class="tours__slide-name">
+                          <p>تور شهر کالینینگراد</p>
+                        </div>
+                        <div class="tours__slide-property">
+                          <p>20.000.000 تومان</p>
+                        </div>
+                        <div class="tours__slide-destination">
+                          <p>5 اسفند 1403</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="tours__slide-container">
+                    <div class="tours__slide">
+                      <img src="images/slider_3.jpg" alt="" />
+                      <div class="tours__slide-desc">
+                        <div class="tours__slide-destination">
+                          <p>منطقه کالینینگراد</p>
+                        </div>
+                        <div class="tours__slide-name">
+                          <p>تور شهر کالینینگراد</p>
+                        </div>
+                        <div class="tours__slide-property">
+                          <p>20.000.000 تومان</p>
+                        </div>
+                        <div class="tours__slide-destination">
+                          <p>5 اسفند 1403</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="tours__slide-container">
+                    <div class="tours__slide">
+                      <img src="images/slider_1.jpg" alt="" />
+                      <div class="tours__slide-desc">
+                        <div class="tours__slide-destination">
+                          <p>منطقه کالینینگراد</p>
+                        </div>
+                        <div class="tours__slide-name">
+                          <p>تور شهر کالینینگراد</p>
+                        </div>
+                        <div class="tours__slide-property">
+                          <p>20.000.000 تومان</p>
+                        </div>
+                        <div class="tours__slide-destination">
+                          <p>5 اسفند 1403</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-button-next tours--next">
+              <img src="images/left-arrow.svg" alt="" />
+            </div>
+            <div class="swiper-button-prev tours--prev">
+              <img src="images/right-arrow.svg" alt="" />
+            </div>
+          </div>
+
+          <div class="regions__slider">
+            <!-- Swiper -->
+            <div class="swiper regions--swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="regions__slide-container">
+                    <div class="regions__slide">
+                      <img src="images/regions_1.jpg" alt="" />
+                      <div class="regions__slide-desc">
+                        <div class="regions__slide-title">
+                          <p>منطقه کالینینگراد</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="regions__slide-container">
+                    <div class="regions__slide">
+                      <img src="images/regions_1.jpg" alt="" />
+                      <div class="regions__slide-desc">
+                        <div class="regions__slide-title">
+                          <p>سفر به مورمانسک</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="regions__slide-container">
+                    <div class="regions__slide">
+                      <img src="images/regions_2.jpg" alt="" />
+                      <div class="regions__slide-desc">
+                        <div class="regions__slide-title">
+                          <p>سفر به مورمانسک</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="regions__slide-container">
+                    <div class="regions__slide">
+                      <img src="images/regions_3.jpg" alt="" />
+                      <div class="regions__slide-desc">
+                        <div class="regions__slide-title">
+                          <p>سفر به مورمانسک</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="regions__slide-container">
+                    <div class="regions__slide">
+                      <img src="images/regions_1.jpg" alt="" />
+                      <div class="regions__slide-desc">
+                        <div class="regions__slide-title">
+                          <p>سفر به مورمانسک</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="regions__slide-container">
+                    <div class="regions__slide">
+                      <img src="images/regions_2.jpg" alt="" />
+                      <div class="regions__slide-desc">
+                        <div class="regions__slide-title">
+                          <p>سفر به مورمانسک</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next regions--next">
+              <img src="images/left-arrow.svg" alt="" />
+            </div>
+            <div class="swiper-button-prev regions--prev">
+              <img src="images/right-arrow.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer__top">
+        <div class="footer__top-line"></div>
+        <div class="container">
+          <div class="footer__top-inner" dir="rtl">
+            <div class="footer__top-logo">
+              <a href="#" class="logo">
+                <div class="logo__image">
+                  <img src="images/logo.png" alt="" />
+                </div>
+                <div class="logo__desc">شمال تور</div>
+              </a>
+            </div>
+            <div class="footer__top-container" dir="ltr">
+              <div class="footer__top-content">
+                <div class="footer__top-content__row row">
+                  <a href="tel:+98211373" class="footer__top-content__link">
+                    <div class="footer__icon">
+                      <img src="images/phone-small.svg" alt="" />
+                    </div>
+                    <div class="footer__top-content__number black--link">
+                      +98 211373
+                    </div>
+                  </a>
+                  <a
+                    href="tel:+98 1343425970"
+                    class="footer__top-content__link"
+                  >
+                    <div class="footer__icon">
+                      <img src="images/whatsapp.svg" alt="" />
+                    </div>
+                    <div
+                      class="footer__top-content__number black--link footer--small"
+                    >
+                      +98 1343425970
+                    </div>
+                  </a>
+                  <a
+                    href="tel:+98 1343425970"
+                    class="footer__top-content__link"
+                  >
+                    <div class="footer__icon">
+                      <img src="images/telegram.svg" alt="" />
+                    </div>
+                    <div
+                      class="footer__top-content__number black--link footer--small"
+                    >
+                      +98 1343425970
+                    </div>
+                  </a>
+                  <a
+                    href="mailto:info@shomaltour.com"
+                    class="footer__top-content__link"
+                  >
+                    <div class="footer__icon">
+                      <img src="images/email.svg" alt="" />
+                    </div>
+                    <div class="footer__top-content__email black--link">
+                      info&#64;shomaltour.com
+                    </div>
+                  </a>
+                </div>
+                <div class="footer__top-content__desc" dir="rtl">
+                  <p>
+                    دفتر تهران: خیابان دکتر فاطمی، هتل لاله، ِ غرفه ۱۱دفتر
+                    انزلی: خیابان رمضانی، کوچه کشاورز، ساختمان امیر کبیر، واحد
+                    ۱۱
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="footer__menu">
+        <div class="container">
+          <ul class="footer__menu-list row" dir="rtl">
+            <li class="footer__menu-item">
+              <ul class="footer__menu-item__list">
+                <li class="footer__menu-item__title">
+                  <a
+                    href="#"
+                    class="footer__menu-item__link title--link black--link"
+                  >
+                    تور های روسیه
+                  </a>
+                </li>
+                <li class="footer__menu-item__subtitle">
+                  <a
+                    href="#"
+                    class="footer__menu-item__link subtitle--link black--link"
+                  >
+                    تور مسکو
+                  </a>
+                </li>
+                <li class="footer__menu-item__subtitle">
+                  <a
+                    href="#"
+                    class="footer__menu-item__link subtitle--link black--link"
+                  >
+                    تور سنت پترز بورگ
+                  </a>
+                </li>
+                <li class="footer__menu-item__subtitle">
+                  <a
+                    href="#"
+                    class="footer__menu-item__link subtitle--link black--link"
+                  >
+                    تور کازان
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="footer__menu-item">
+              <ul class="footer__menu-item__list">
+                <li class="footer__menu-item__title">
+                  <a
+                    href="#"
+                    class="footer__menu-item__link title--link black--link"
+                  >
+                    دریافت ویزا روسیه
+                  </a>
+                </li>
+                <li class="footer__menu-item__subtitle">
+                  <a
+                    href="#"
+                    class="footer__menu-item__link subtitle--link black--link"
+                  >
+                    ویزا توریستی روسیه
+                  </a>
+                </li>
+                <li class="footer__menu-item__subtitle">
+                  <a
+                    href="#"
+                    class="footer__menu-item__link subtitle--link black--link"
+                  >
+                    ویزا تجاری روسیه
+                  </a>
+                </li>
+                <li class="footer__menu-item__subtitle">
+                  <a
+                    href="#"
+                    class="footer__menu-item__link subtitle--link black--link"
+                  >
+                    ویزا تحصیلی روسیه
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="footer__menu-item">
+              <ul class="footer__menu-item__list">
+                <li class="footer__menu-item__title">
+                  <a
+                    href="#"
+                    class="footer__menu-item__link title--link black--link"
+                  >
+                    فعالیت هادر روسیه
+                  </a>
+                </li>
+                <li class="footer__menu-item__subtitle">
+                  <a
+                    href="#"
+                    class="footer__menu-item__link subtitle--link black--link"
+                  >
+                    فعالیت های ورزشی در روسیه
+                  </a>
+                </li>
+                <li class="footer__menu-item__subtitle">
+                  <a
+                    href="#"
+                    class="footer__menu-item__link subtitle--link black--link"
+                  >
+                    خرید بلیط قطار در روسیه
+                  </a>
+                </li>
+                <li class="footer__menu-item__subtitle">
+                  <a
+                    href="#"
+                    class="footer__menu-item__link subtitle--link black--link"
+                  >
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="footer__menu-item">
+              <ul class="footer__menu-item__list">
+                <li class="footer__menu-item__title">
+                  <a
+                    href="#"
+                    class="footer__menu-item__link title--link black--link"
+                  >
+                    خدمات در روسیه
+                  </a>
+                </li>
+                <li class="footer__menu-item__subtitle">
+                  <a
+                    href="#"
+                    class="footer__menu-item__link subtitle--link black--link"
+                  >
+                    تورگاید ومترجم در روسیه
+                  </a>
+                </li>
+                <li class="footer__menu-item__subtitle">
+                  <a
+                    href="#"
+                    class="footer__menu-item__link subtitle--link black--link"
+                  >
+                  </a>
+                </li>
+                <li class="footer__menu-item__subtitle">
+                  <a
+                    href="#"
+                    class="footer__menu-item__link subtitle--link black--link"
+                  >
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="footer__menu-item">
+              <ul class="footer__menu-item__list">
+                <li class="footer__menu-item__title">
+                  <a
+                    href="#"
+                    class="footer__menu-item__link title--link black--link"
+                  >
+                    خدمات تراسفر در روسیه
+                  </a>
+                </li>
+                <li class="footer__menu-item__subtitle">
+                  <a
+                    href="#"
+                    class="footer__menu-item__link subtitle--link black--link"
+                  >
+                    خرید بلیط پرواز در روسیه
+                  </a>
+                </li>
+                <li class="footer__menu-item__subtitle">
+                  <a
+                    href="#"
+                    class="footer__menu-item__link subtitle--link black--link"
+                  >
+                    خرید بلیط قطار در روسیه
+                  </a>
+                </li>
+                <li class="footer__menu-item__subtitle">
+                  <a
+                    href="#"
+                    class="footer__menu-item__link subtitle--link black--link"
+                  >
+                    ترانسفر فرودگاهی در روسیه
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="footer__bottom" dir="rtl">
+        <div class="container">
+          <p>11223344556676 “شمال گشت مسیر ترقی”شماره مجوز شرکت: 1401 ©</p>
+        </div>
+      </div>
     </footer>
-        
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>        
-        <script>
-            var swiper = new Swiper(".activities--swiper", {
-            slidesPerView: 1.2,
-            spaceBetween: 19,
-            centeredSlides: true,
-            loop: true,
-            // pagination: {
-            //     el: ".swiper-pagination",
-            //     clickable: true,
-            // },
-            breakpoints: {
-                1280: {
-                slidesPerView: 1.75,
-                // spaceBetween: 40
-                }
-              },
-            });
-        </script>
-        <script>
-    
-            var swiperTours = new Swiper('.tours--swiper', {
-              slidesPerView: 1,
-              direction: getDirection(),
-              navigation: {
-                nextEl: '.tours--next',
-                prevEl: '.tours--prev',
-              },
-              breakpoints: {
-                768: {
-                slidesPerView: 2,
-                // spaceBetween: 30
-                },
-                1024: {
-                slidesPerView: 3,
-                // spaceBetween: 40
-                }
-              },
-              on: {
-                resize: function () {
-                  swiperTours.changeDirection(getDirection());
-                },
-              },
-            });
-        
-        
-            var swiperRegions = new Swiper('.regions--swiper', {
-              slidesPerView: 1,
-              direction: getDirection(),
-              navigation: {
-                nextEl: '.regions--next',
-                prevEl: '.regions--prev',
-              },
-              breakpoints: {
-                421: {
-                slidesPerView: 2,
-                // spaceBetween: 40
-                },
-                768: {
-                slidesPerView: 3,
-                // spaceBetween: 30
-                },
-                1024: {
-                slidesPerView: 4,
-                // spaceBetween: 40
-                }
-              },
-              on: {
-                resize: function () {
-                  swiperRegions.changeDirection(getDirection());
-                },
-              },
-            });
-        
-            function getDirection() {
-              var windowWidth = window.innerWidth;
-            //   var direction = window.innerWidth <= 760 ? 'vertical' : 'horizontal';
-              var direction = 'horizontal';
-        
-              return direction;
-            }
-          </script>
 
-          <script>
-            import AirDatepicker from 'air-datepicker';
-            import 'air-datepicker/air-datepicker.css';
-            new AirDatepicker('#input', {
-                range: true,
-                multipleDatesSeparator: ' - '
-            });
-        </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".activities--swiper", {
+        slidesPerView: 1.2,
+        spaceBetween: 19,
+        centeredSlides: true,
+        loop: true,
+        // pagination: {
+        //     el: ".swiper-pagination",
+        //     clickable: true,
+        // },
+        breakpoints: {
+          1280: {
+            slidesPerView: 1.75,
+            // spaceBetween: 40
+          },
+        },
+      });
+    </script>
+    <script>
+      var swiperTours = new Swiper(".tours--swiper", {
+        slidesPerView: 1,
+        direction: getDirection(),
+        navigation: {
+          nextEl: ".tours--next",
+          prevEl: ".tours--prev",
+        },
+        breakpoints: {
+          768: {
+            slidesPerView: 2,
+            // spaceBetween: 30
+          },
+          1024: {
+            slidesPerView: 3,
+            // spaceBetween: 40
+          },
+        },
+        on: {
+          resize: function () {
+            swiperTours.changeDirection(getDirection());
+          },
+        },
+      });
 
+      var swiperRegions = new Swiper(".regions--swiper", {
+        slidesPerView: 1,
+        direction: getDirection(),
+        navigation: {
+          nextEl: ".regions--next",
+          prevEl: ".regions--prev",
+        },
+        breakpoints: {
+          421: {
+            slidesPerView: 2,
+            // spaceBetween: 40
+          },
+          768: {
+            slidesPerView: 3,
+            // spaceBetween: 30
+          },
+          1024: {
+            slidesPerView: 4,
+            // spaceBetween: 40
+          },
+        },
+        on: {
+          resize: function () {
+            swiperRegions.changeDirection(getDirection());
+          },
+        },
+      });
 
-            <script>
-                let carts = document.querySelectorAll(".detail__schedule-cart");
-                carts.forEach((cart) => {
-                    let button = cart.querySelector('.detail__schedule-cartDropButton');
-                    let content = cart.querySelector('.detail__schedule-cartContent');
-                    button.addEventListener('click', () => {
-                        button.classList.toggle('schedule--activeButton');
-                        content.classList.toggle('schedule--active');
-                    })
-                });
+      function getDirection() {
+        var windowWidth = window.innerWidth;
+        //   var direction = window.innerWidth <= 760 ? 'vertical' : 'horizontal';
+        var direction = "horizontal";
 
-            </script>
+        return direction;
+      }
+    </script>
 
-    
-       
-</body>
+    <script>
+      new AirDatepicker("#calendar", {
+        range: true,
+        multipleDatesSeparator: " - ",
+      });
+    </script>
+
+    <script>
+      let carts = document.querySelectorAll(".detail__schedule-cart");
+      carts.forEach((cart) => {
+        let button = cart.querySelector(".detail__schedule-cartDropButton");
+        let content = cart.querySelector(".detail__schedule-cartContent");
+        button.addEventListener("click", () => {
+          button.classList.toggle("schedule--activeButton");
+          content.classList.toggle("schedule--active");
+        });
+      });
+    </script>
+  </body>
 </html>
