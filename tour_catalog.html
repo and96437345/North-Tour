@@ -41,8 +41,8 @@
             </div>
             <ul class="header__top-list row">
               <li class="header__top-listItem list--phone">
-                <a href="#" class="header__top-phoneLink row">
-                  <div class="header__top-phoneNumber" dir="ltr">
+                <a href="tel:+98211373" class="header__top-phoneLink row">
+                  <div class="header__top-phoneNumber black--link" dir="ltr">
                     +98 211373
                   </div>
                   <div class="header__top-phoneIcon">
@@ -51,16 +51,22 @@
                 </a>
               </li>
               <li class="header__top-listItem list--massangers">
-                <a href="#" class="header__top-whatsAppLink row">
-                  <div class="header__top-whatsAppNumber" dir="ltr">
+                <a
+                  href="tel:+981343425970"
+                  class="header__top-whatsAppLink row"
+                >
+                  <div class="header__top-whatsAppNumber black--link" dir="ltr">
                     +98 1343425970
                   </div>
                   <div class="header__top-whatsAppIcon">
                     <img src="images/whatsapp.svg" alt="" />
                   </div>
                 </a>
-                <a href="#" class="header__top-telegramLink row">
-                  <div class="header__top-telegramNumber" dir="ltr">
+                <a
+                  href="tel:+981343425970"
+                  class="header__top-telegramLink row"
+                >
+                  <div class="header__top-telegramNumber black--link" dir="ltr">
                     +98 1343425970
                   </div>
                   <div class="header__top-telegramIcon">
@@ -74,8 +80,11 @@
                   <span>تماس</span>
                   <span>درخواست</span>
                 </button>
-                <a href="#" class="header__top-emailLink row">
-                  <div class="header__top-emailAdress">
+                <a
+                  href="mailto:info@shomoltour.com"
+                  class="header__top-emailLink row"
+                >
+                  <div class="header__top-emailAdress black--link">
                     info&#64;shomoltour.com
                   </div>
                   <div class="header__top-emailIcon">
@@ -91,22 +100,30 @@
         <div class="container">
           <ul class="header__menu-list row">
             <li>
-              <a href="#" class="header__menu-link"> ویزا روسیه </a>
+              <a href="#" class="header__menu-link white--link"> ویزا روسیه </a>
             </li>
             <li>
-              <a href="#" class="header__menu-link"> تورهای روسیه </a>
+              <a href="#" class="header__menu-link white--link">
+                تورهای روسیه
+              </a>
             </li>
             <li>
-              <a href="#" class="header__menu-link"> هتل های روسیه </a>
+              <a href="#" class="header__menu-link white--link">
+                هتل های روسیه
+              </a>
             </li>
             <li>
-              <a href="#" class="header__menu-link"> ترانسفر روسیه </a>
+              <a href="#" class="header__menu-link white--link">
+                ترانسفر روسیه
+              </a>
             </li>
             <li>
-              <a href="#" class="header__menu-link"> بیمه روسیه </a>
+              <a href="#" class="header__menu-link white--link"> بیمه روسیه </a>
             </li>
             <li>
-              <a href="#" class="header__menu-link"> تورگاید روسیه </a>
+              <a href="#" class="header__menu-link white--link">
+                تورگاید روسیه
+              </a>
             </li>
           </ul>
         </div>
@@ -1109,51 +1126,47 @@
     </main>
 
     <script>
-      let ragnesNew = document.querySelectorAll(".dev123");
-      console.log(ragnesNew);
-      ragnesNew.forEach((ragneNew) => {
-        let rangeMin = 0;
-        const range = ragneNew.querySelector(".range-selected");
-        const rangeInput = ragneNew.querySelectorAll(".range-input input");
-        const rangePrice = ragneNew.querySelectorAll(".range-price input");
-        console.log(rangePrice);
-        rangeInput.forEach((input) => {
-          input.addEventListener("input", (e) => {
-            let minRange = parseInt(rangeInput[0].value);
-            let maxRange = parseInt(rangeInput[1].value);
-            if (maxRange - minRange < rangeMin) {
-              if (e.target.className === "min") {
-                rangeInput[0].value = maxRange - rangeMin;
-              } else {
-                rangeInput[1].value = minRange + rangeMin;
-              }
+      let rangeMin = 0;
+      const range = document.querySelector(".range-selected");
+      const rangeInput = document.querySelectorAll(".range-input input");
+      const rangePrice = document.querySelectorAll(".range-price input");
+
+      rangeInput.forEach((input) => {
+        input.addEventListener("input", (e) => {
+          let minRange = parseInt(rangeInput[0].value);
+          let maxRange = parseInt(rangeInput[1].value);
+          if (maxRange - minRange < rangeMin) {
+            if (e.target.className === "min") {
+              rangeInput[0].value = maxRange - rangeMin;
             } else {
-              rangePrice[0].value = minRange;
-              rangePrice[1].value = maxRange;
-              range.style.left = (minRange / rangeInput[0].max) * 100 + "%";
-              range.style.right =
-                100 - (maxRange / rangeInput[1].max) * 100 + "%";
+              rangeInput[1].value = minRange + rangeMin;
             }
-          });
+          } else {
+            rangePrice[0].value = minRange;
+            rangePrice[1].value = maxRange;
+            range.style.left = (minRange / rangeInput[0].max) * 100 + "%";
+            range.style.right =
+              100 - (maxRange / rangeInput[1].max) * 100 + "%";
+          }
         });
-        rangePrice.forEach((input) => {
-          input.addEventListener("input", (e) => {
-            let minPrice = rangePrice[0].value;
-            let maxPrice = rangePrice[1].value;
-            if (
-              maxPrice - minPrice >= rangeMin &&
-              maxPrice <= rangeInput[1].max
-            ) {
-              if (e.target.className === "min") {
-                rangeInput[0].value = minPrice;
-                range.style.left = (minPrice / rangeInput[0].max) * 100 + "%";
-              } else {
-                rangeInput[1].value = maxPrice;
-                range.style.right =
-                  100 - (maxPrice / rangeInput[1].max) * 100 + "%";
-              }
+      });
+      rangePrice.forEach((input) => {
+        input.addEventListener("input", (e) => {
+          let minPrice = rangePrice[0].value;
+          let maxPrice = rangePrice[1].value;
+          if (
+            maxPrice - minPrice >= rangeMin &&
+            maxPrice <= rangeInput[1].max
+          ) {
+            if (e.target.className === "min") {
+              rangeInput[0].value = minPrice;
+              range.style.left = (minPrice / rangeInput[0].max) * 100 + "%";
+            } else {
+              rangeInput[1].value = maxPrice;
+              range.style.right =
+                100 - (maxPrice / rangeInput[1].max) * 100 + "%";
             }
-          });
+          }
         });
       });
     </script>

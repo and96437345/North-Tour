@@ -25,7 +25,7 @@ ul {
   margin: 0;
 }
 
-p {
+h1, p {
   margin: 0;
 }
 
@@ -38,6 +38,16 @@ p {
 a {
   text-decoration: none;
   cursor: pointer;
+}
+
+.white--link:hover {
+  color: #cfcfcf;
+  transition: 0.3s;
+}
+
+.blue--link:hover {
+  color: rgb(0, 68, 149);
+  transition: 0.3s;
 }
 
 input[type=checkbox] {
@@ -195,7 +205,7 @@ input[type=checkbox] {
   transition: 0.5s;
 }
 
-.callBack:hover {
+.callBack:active {
   background: rgb(0, 68, 149);
 }
 
@@ -991,6 +1001,7 @@ input[type=checkbox] {
 }
 .detail__schedule-cartDropButton img {
   transform: rotate(180deg);
+  transition: 0.5s;
 }
 .detail__schedule-cartDropDesc {
   color: rgb(36, 36, 64);
@@ -2559,6 +2570,11 @@ input[type=checkbox]:checked + .send__label-input span::before {
   text-align: center;
 }
 
+.black--link:hover {
+  color: rgb(0, 68, 149);
+  transition: 0.3s;
+}
+
 @media (max-width: 1430px) {
   .catalog .service--small {
     font-size: 26px;
@@ -2881,7 +2897,7 @@ input[type=checkbox]:checked + .send__label-input span::before {
     height: 330px;
   }
   .hero__image {
-    height: 330px;
+    height: 100%;
   }
   .hero__navigation {
     display: none;
