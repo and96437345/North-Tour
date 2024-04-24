@@ -315,8 +315,7 @@ input[type="checkbox"] {
         &-image {
         height: 464px;
         }
-        &-desc {
-            
+        &-desc {    
             position: absolute;
             right: 80px;
             bottom: 48px;
@@ -350,6 +349,10 @@ input[type="checkbox"] {
         width: 100%;
         background: linear-gradient(180.00deg, rgba(131, 128, 128, 0) 2.86%,rgba(0, 0, 0, 0.7) 107.945%),rgb(194, 194, 194, 0.3);     
         z-index: 1;
+    }
+    &__offer:hover::before{
+        opacity: .6;
+        transition: .3s;
     }
     &__title {
         position: absolute;
@@ -1625,6 +1628,10 @@ background: rgb(255, 255, 255);
             flex-direction: column;
             align-items: center;
         }
+        &-container:hover div{
+            color: #004495;
+            transition: .3s;
+        }
         &-image {
             height: 138px;
             display: flex;
@@ -1747,9 +1754,10 @@ background: rgb(255, 255, 255);
         max-width: 300px;
         margin-bottom: 40px;
     }
+    
     &__image {
         position: relative;
-        height: 440px;
+        height: 100%;
         border-radius: 10px;
         &-container {
             width: 50%;
@@ -1760,7 +1768,7 @@ background: rgb(255, 255, 255);
             display: block;
             height: 100%;
             width: 100%;
-            object-fit: contain;
+            object-fit: cover;
             object-position: center;
             border-radius: 10px;
         }
@@ -1802,7 +1810,12 @@ background: rgb(255, 255, 255);
             line-height: 160%;
             text-align: right;
         }
+        &:hover::before {
+            opacity: .4;
+            transition: .3s;
+        }
     }
+
 
     &__slider {
         position: relative;
@@ -1834,6 +1847,10 @@ background: rgb(255, 255, 255);
             z-index: 1;
             border-radius: 10px;
             background: linear-gradient(180.00deg, rgba(131, 128, 128, 0) 2.86%,rgba(0, 0, 0, 0.7) 107.945%),rgb(194, 194, 194, 0.2);
+        }
+        &:hover::before {
+            opacity: .4;
+            transition: .3s;
         }
         &-desc {
             position: absolute;
@@ -2034,6 +2051,10 @@ background: rgb(255, 255, 255);
             border-radius: 10px;
             background: linear-gradient(180.00deg, rgba(131, 128, 128, 0) 2.86%,rgba(0, 0, 0, 0.7) 107.945%),rgb(194, 194, 194, 0.2);
         }
+        &:hover::before {
+            opacity: .4;
+            transition: .3s;
+        }
         &-desc {
             position: absolute;
             right: 20px;
@@ -2136,6 +2157,10 @@ background: rgb(255, 255, 255);
             text-align: center;
             max-width: 240px;
         }
+    }
+    &__item:hover div{
+        color: #004495;
+        transition: .3s;
     }
 }
 
@@ -2851,6 +2876,10 @@ input[type="checkbox"]:checked + .send__label-input span::before {
 }
 .black--link:hover {
     color: rgb(0, 68, 149);
+    transition: .3s;
+}
+.title--hover:hover {
+    color: #004495;
     transition: .3s;
 }
 
