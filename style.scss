@@ -374,7 +374,7 @@ input[type="checkbox"] {
         padding: 0 0px 41px;
         box-sizing: border-box;
         &-container {
-            border: 1px solid rgb(206, 229, 255);
+            border: 2px solid rgb(206, 229, 255);
             border-radius: 10px;
             background: rgb(255, 255, 255);
             padding-bottom: 24px;
@@ -398,7 +398,7 @@ input[type="checkbox"] {
         }
         &-days {
             margin-bottom: 10px;
-            padding: 16px 24px 20px 24px;
+            padding: 16px 17px 20px 14px;
             box-sizing: border-box;
 
         }
@@ -434,7 +434,7 @@ input[type="checkbox"] {
         padding: 40px 0;
     }
     .service--small {
-        font-size: 28px;
+        font-size: 26px;
     }
     .service__row {
         border-bottom: 1px solid rgb(206, 229, 255);
@@ -453,6 +453,21 @@ input[type="checkbox"] {
         }
         & img {
             height: 100%;
+        }
+    }
+    &__service-container {
+        padding: 20px 20px;
+        box-sizing: border-box;
+        border: 2px solid rgb(206, 229, 255);
+        border-radius: 10px;
+        background: rgb(255, 255, 255);
+        margin-top: -60px;
+        &:hover {
+            box-sizing: border-box;
+            border: 2px solid rgb(206, 229, 255);
+            border-radius: 10px;
+            box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
+            background: rgb(255, 255, 255);
         }
     }
     .content--padding {
@@ -485,7 +500,7 @@ input[type="checkbox"] {
     }
     &__list-item {
         box-sizing: border-box;
-        border: 1px solid rgb(206, 229, 255);
+        border: 2px solid rgb(206, 229, 255);
         border-radius: 10px;
         background: rgb(255, 255, 255);
         margin-bottom: 31px;
@@ -1078,7 +1093,10 @@ input[type="checkbox"] {
             line-height: 24px;
         }
         &-cartContent {
-            display: none;
+            opacity: 0;
+            max-height: 0;
+            visibility: hidden;
+            transition: .4s;
             border-top: 1px solid rgb(206, 229, 255);
             padding-top: 20px;
             margin-top: 20px;
@@ -1302,9 +1320,9 @@ input[type="checkbox"] {
         }
     }
     .schedule--active {
-        display: block;
-        
-        
+        opacity: 1;
+        max-height: 1000px;
+        visibility: visible;
     }
     .schedule--activeButton img {
         transform: none;
@@ -1926,6 +1944,14 @@ background: rgb(255, 255, 255);
     & img {
         max-width: 100%;
     }
+    &:hover {
+        box-sizing: border-box;
+        background: #fff;
+        -webkit-box-shadow: 0px 0px 12px -1px rgba(0, 0, 0, 1);
+        -moz-box-shadow: 0px 0px 12px -1px rgba(0, 0, 0, 1);
+        box-shadow: 0px 0px 12px -1px rgba(0, 0, 0, 1);
+        transition: .3s;
+    }
 }
 
 .swiper-button-next {
@@ -2210,12 +2236,15 @@ background: rgb(255, 255, 255);
         height: 56px;
         background: rgb(255, 255, 255);
         margin-bottom: 31px;
+        padding: 15px 20px;
         &::placeholder {
-            padding: 15px 20px;
             color: rgb(194, 194, 194);
             font-size: 16px;
             font-weight: 400;
             line-height: 160%;
+        }
+        &:focus {
+            outline: 1px solid #017AC3;
         }
     }
     &__request {
@@ -2268,6 +2297,9 @@ background: rgb(255, 255, 255);
         line-height: 160%;
         text-align: center;
         height: 55px;
+        &:active {
+            border-radius: 10px;
+        }
     }
     &__desc {
         width: 49.2%;
@@ -2426,6 +2458,10 @@ input[type="checkbox"]:checked + .send__label-input span::before {
             z-index: 1;
             border-radius: 10px;
             background: linear-gradient(180.00deg, rgba(131, 128, 128, 0) 2.86%,rgba(0, 0, 0, 0.7) 107.945%),rgb(194, 194, 194, 0.2);
+        }
+        &:hover::before {
+            opacity: .4;
+            transition: .3s;
         }
         &-desc {
             position: absolute;
@@ -2597,6 +2633,10 @@ input[type="checkbox"]:checked + .send__label-input span::before {
             border-radius: 10px 10px 0 0;
             background: linear-gradient(180.00deg, rgba(131, 128, 128, 0) 2.86%,rgba(0, 0, 0, 0.7) 107.945%),rgb(194, 194, 194, 0.2);
         }
+        &:hover::before {
+            opacity: .4;
+            transition: .3s;
+        }
         &-desc {
             
             padding: 24px 20px 21px 20px;
@@ -2608,7 +2648,12 @@ input[type="checkbox"]:checked + .send__label-input span::before {
             line-height: 120%;
             text-align: right;
             margin-bottom: 15px;
+            &:hover {
+                color:#004495;
+                transition: .3s;
+            }
         }
+
         &-subtitle {
             color: rgb(68, 68, 68);
             font-size: 20px;
@@ -2676,6 +2721,10 @@ input[type="checkbox"]:checked + .send__label-input span::before {
             border-radius: 10px;
             background: linear-gradient(180.00deg, rgba(131, 128, 128, 0) 2.86%,rgba(0, 0, 0, 0.7) 107.945%),rgb(194, 194, 194, 0.2);
         }
+        &:hover::before {
+            opacity: .4;
+            transition: .3s;
+        }
         &-desc {
             position: absolute;
             right: 20px;
@@ -2712,7 +2761,10 @@ input[type="checkbox"]:checked + .send__label-input span::before {
             box-sizing: border-box;
             border: 1px solid rgb(220, 219, 219);
             border-radius: 10px;
-
+            &:hover {
+                border: 1px solid #017AC3;
+                transition: .3s;
+            }
         }
         &-image {
             flex-direction: row-reverse;
@@ -2899,11 +2951,11 @@ input[type="checkbox"]:checked + .send__label-input span::before {
 // }
 
 
-@media (max-width: 1430px) {
-    .catalog .service--small {
-        font-size: 26px;
-    }
-}
+// @media (max-width: 1430px) {
+//     .catalog .service--small {
+//         font-size: 26px;
+//     }
+// }
 @media (max-width: 1320px) {
     .send {
         &__row {

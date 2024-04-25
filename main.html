@@ -761,7 +761,7 @@
                         <label for="name" class="send__label"><span style="color: rgb(255, 106, 0);">*</span>نام و نام خانوادگی</label>
                         <input type="text" class="send__input" name="name" placeholder="یوسف اجیروف">
                         <label for="phone" class="send__label"><span style="color: rgb(255, 106, 0);">*</span>شماره تماس</label>
-                        <input type="text" class="send__input" name="phone" placeholder="+98" dir="ltr">
+                        <input type="text" class="send__input tel" name="phone" placeholder="+98" dir="ltr">
                         <label for="request" class="send__label">درخواست</label>
                         <input type="text" class="send__input send__request" name="request" placeholder="ترجیحات و خواسته های شما">
                         <div class="send__checkbox-row row">
@@ -771,7 +771,7 @@
                                 <span>من با پردازش داده های شخصی مطابق با شرایط سیاست حفظ حریم خصوصی موافقم</span>
                             </label>
                         </div>
-                        <button class="send__button btn">ارسال درخواست</button>
+                        <button type="submit" class="send__button btn">ارسال درخواست</button>
                     </div>
                     <div class="send__desc">
                         <div class="send__desc-title desktop">
@@ -795,9 +795,11 @@
 
         <div class="activities" dir="rtl">
             <div class="container">
-                <div class="activities__title title--hover">
-                    <p>فعالیت ها</p>
-                </div>
+                <a href="#" class="activities__link">
+                    <div class="activities__title title--hover">
+                        <p>فعالیت ها</p>
+                    </div>
+                </a>
 
                 <div class="activities__slider">
 
@@ -806,111 +808,121 @@
                        <div class="swiper-wrapper">
                        <div class="swiper-slide">
                            <div class="activities__slide-container">
-                               <div class="activities__slide">
-                                   <img src="images/activities_2.jpg" alt="">
-                                   <div class="activities__slide-desc">
-                                       <!-- <div class="activities__slide-destination">
-                                           <p>منطقه کالینینگراد</p>
-                                       </div> -->
-                                       <div class="activities__slide-name">
-                                           <p>تور شهر کالینینگراد</p>
-                                       </div>
-                                       <div class="activities__slide-property">
-                                           <p>30.000.000 تومان</p>
-                                       </div>
-                                       <!-- <div class="activities__slide-destination">
-                                           <p>5 اسفند 1403</p>
-                                       </div> -->
-   
-                                   </div>
-                               </div>
+                            <a href="" class="activities__slide-link">
+                                <div class="activities__slide">
+                                    <img src="images/activities_2.jpg" alt="">
+                                    <div class="activities__slide-desc">
+                                        <!-- <div class="activities__slide-destination">
+                                            <p>منطقه کالینینگراد</p>
+                                        </div> -->
+                                        <div class="activities__slide-name">
+                                            <p>تور شهر کالینینگراد</p>
+                                        </div>
+                                        <div class="activities__slide-property">
+                                            <p>30.000.000 تومان</p>
+                                        </div>
+                                        <!-- <div class="activities__slide-destination">
+                                            <p>5 اسفند 1403</p>
+                                        </div> -->
+    
+                                    </div>
+                                </div>
+                            </a>
                            </div>
                        </div>
                        <div class="swiper-slide">
                            <div class="activities__slide-container">
-                               <div class="activities__slide">
-                                   <img src="images/activities_3.jpg" alt="">
-                                   <div class="activities__slide-desc">
-                                       <!-- <div class="activities__slide-destination">
-                                           <p>منطقه کالینینگراد</p>
-                                       </div> -->
-                                       <div class="activities__slide-name">
-                                           <p>تور شهر کالینینگراد</p>
-                                       </div>
-                                       <div class="activities__slide-property">
-                                           <p>30.000.000 تومان</p>
-                                       </div>
-                                       <!-- <div class="activities__slide-destination">
-                                           <p>5 اسفند 1403</p>
-                                       </div> -->
-   
-                                   </div>
-                               </div>
+                            <a href="" class="activities__slide-link">
+                                <div class="activities__slide">
+                                    <img src="images/activities_3.jpg" alt="">
+                                    <div class="activities__slide-desc">
+                                        <!-- <div class="activities__slide-destination">
+                                            <p>منطقه کالینینگراد</p>
+                                        </div> -->
+                                        <div class="activities__slide-name">
+                                            <p>تور شهر کالینینگراد</p>
+                                        </div>
+                                        <div class="activities__slide-property">
+                                            <p>30.000.000 تومان</p>
+                                        </div>
+                                        <!-- <div class="activities__slide-destination">
+                                            <p>5 اسفند 1403</p>
+                                        </div> -->
+    
+                                    </div>
+                                </div>
+                            </a>
                            </div>
                        </div>
                        <div class="swiper-slide">
                            <div class="activities__slide-container">
-                               <div class="activities__slide">
-                                   <img src="images/activities_2.jpg" alt="">
-                                   <div class="activities__slide-desc">
-                                       <!-- <div class="activities__slide-destination">
-                                           <p>منطقه کالینینگراد</p>
-                                       </div> -->
-                                       <div class="activities__slide-name">
-                                           <p>هتل مسکو</p>
-                                       </div>
-                                       <div class="activities__slide-property">
-                                           <p>30.000.000 تومان</p>
-                                       </div>
-                                       <!-- <div class="activities__slide-destination">
-                                           <p>5 اسفند 1403</p>
-                                       </div> -->
-   
-                                   </div>
-                               </div>
+                            <a href="" class="activities__slide-link">
+                                <div class="activities__slide">
+                                    <img src="images/activities_2.jpg" alt="">
+                                    <div class="activities__slide-desc">
+                                        <!-- <div class="activities__slide-destination">
+                                            <p>منطقه کالینینگراد</p>
+                                        </div> -->
+                                        <div class="activities__slide-name">
+                                            <p>هتل مسکو</p>
+                                        </div>
+                                        <div class="activities__slide-property">
+                                            <p>30.000.000 تومان</p>
+                                        </div>
+                                        <!-- <div class="activities__slide-destination">
+                                            <p>5 اسفند 1403</p>
+                                        </div> -->
+    
+                                    </div>
+                                </div>
+                            </a>
                            </div>
                        </div>
                        <div class="swiper-slide">
                            <div class="activities__slide-container">
-                               <div class="activities__slide">
-                                   <img src="images/activities_1.jpg" alt="">
-                                   <div class="activities__slide-desc">
-                                       <!-- <div class="activities__slide-destination">
-                                           <p>منطقه کالینینگراد</p>
-                                       </div> -->
-                                       <div class="activities__slide-name">
-                                           <p>کیهان سن پترزبورگ المپیا</p>
-                                       </div>
-                                       <div class="activities__slide-property">
-                                           <p>30.000.000 تومان</p>
-                                       </div>
-                                       <!-- <div class="activities__slide-destination">
-                                           <p>5 اسفند 1403</p>
-                                       </div> -->
-   
-                                   </div>
-                               </div>
+                            <a href="" class="activities__slide-link">
+                                <div class="activities__slide">
+                                    <img src="images/activities_1.jpg" alt="">
+                                    <div class="activities__slide-desc">
+                                        <!-- <div class="activities__slide-destination">
+                                            <p>منطقه کالینینگراد</p>
+                                        </div> -->
+                                        <div class="activities__slide-name">
+                                            <p>کیهان سن پترزبورگ المپیا</p>
+                                        </div>
+                                        <div class="activities__slide-property">
+                                            <p>30.000.000 تومان</p>
+                                        </div>
+                                        <!-- <div class="activities__slide-destination">
+                                            <p>5 اسفند 1403</p>
+                                        </div> -->
+    
+                                    </div>
+                                </div>
+                            </a>
                            </div>
                        </div>
                        <div class="swiper-slide">
                            <div class="activities__slide-container">
-                               <div class="activities__slide">
-                                   <img src="images/activities_2.jpg" alt="">
-                                   <div class="activities__slide-desc">
-                                       <!-- <div class="activities__slide-destination">
-                                           <p>منطقه کالینینگراد</p>
-                                       </div> -->
-                                       <div class="activities__slide-name">
-                                           <p>هتل مسکو</p>
-                                       </div>
-                                       <div class="activities__slide-property">
-                                           <p>30.000.000 تومان</p>
-                                       </div>
-                                       <!-- <div class="activities__slide-destination">
-                                           <p>5 اسفند 1403</p>
-                                       </div> -->
-                                   </div>
-                               </div>
+                            <a href="" class="activities__slide-link">
+                                <div class="activities__slide">
+                                    <img src="images/activities_2.jpg" alt="">
+                                    <div class="activities__slide-desc">
+                                        <!-- <div class="activities__slide-destination">
+                                            <p>منطقه کالینینگراد</p>
+                                        </div> -->
+                                        <div class="activities__slide-name">
+                                            <p>هتل مسکو</p>
+                                        </div>
+                                        <div class="activities__slide-property">
+                                            <p>30.000.000 تومان</p>
+                                        </div>
+                                        <!-- <div class="activities__slide-destination">
+                                            <p>5 اسفند 1403</p>
+                                        </div> -->
+                                    </div>
+                                </div>
+                            </a>
                            </div>
                        </div>
                        </div>
@@ -928,9 +940,11 @@
 
         <div class="articles" dir="rtl">
             <div class="container">
-                <div class="articles__title title--hover">
-                    <p>مقالات ما</p>
-                </div>
+                <a href="#" class="articles__link">
+                    <div class="articles__title title--hover">
+                        <p>مقالات ما</p>
+                    </div>
+                </a>
                 <div class="articles__slider">
 
                     <!-- Swiper -->
@@ -938,6 +952,7 @@
                        <div class="swiper-wrapper">
                        <div class="swiper-slide">
                            <div class="articles__slide-container">
+                            <a href="#" class="articles__slide-link">
                                 <div class="articles__slide-content">
 
                                     <div class="articles__slide">
@@ -953,82 +968,91 @@
                                         
                                     </div>
                                 </div>
+                            </a>
                            </div>
                        </div>
                        <div class="swiper-slide">
                         <div class="articles__slide-container">
-                             <div class="articles__slide-content">
-
-                                 <div class="articles__slide">
-                                     <img src="images/slider_2.jpg" alt="">
-                                 </div>
-                                 <div class="articles__slide-desc">
-                                     <div class="articles__slide-title">
-                                         <p>منطقه کالینینگراد</p>
-                                     </div>
-                                     <div class="articles__slide-subtitle">
-                                         <p>در اینجا خلاصه ای از متن مقاله آمده است. در اینجا خلاصه ای از متن مقاله آمده است. در اینجا خلاصه ای از متن مقاله آمده است. در اینجا خلاصه ای از متن مقاله آمده است</p>
-                                     </div>
-                                     
-                                 </div>
-                             </div>
+                            <a href="#" class="articles__slide-link">
+                                <div class="articles__slide-content">
+   
+                                    <div class="articles__slide">
+                                        <img src="images/slider_2.jpg" alt="">
+                                    </div>
+                                    <div class="articles__slide-desc">
+                                        <div class="articles__slide-title">
+                                            <p>منطقه کالینینگراد</p>
+                                        </div>
+                                        <div class="articles__slide-subtitle">
+                                            <p>در اینجا خلاصه ای از متن مقاله آمده است. در اینجا خلاصه ای از متن مقاله آمده است. در اینجا خلاصه ای از متن مقاله آمده است. در اینجا خلاصه ای از متن مقاله آمده است</p>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </a>
                         </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="articles__slide-container">
-                                 <div class="articles__slide-content">
- 
-                                     <div class="articles__slide">
-                                         <img src="images/slider_1.jpg" alt="">
-                                     </div>
-                                     <div class="articles__slide-desc">
-                                         <div class="articles__slide-title">
-                                             <p>منطقه کالینینگراد</p>
-                                         </div>
-                                         <div class="articles__slide-subtitle">
-                                             <p>در اینجا خلاصه ای از متن مقاله آمده است. در اینجا خلاصه ای از متن مقاله آمده است. در اینجا خلاصه ای از متن مقاله آمده است. در اینجا خلاصه ای از متن مقاله آمده است</p>
-                                         </div>
-                                         
-                                     </div>
-                                 </div>
+                                <a href="#" class="articles__slide-link">
+                                    <div class="articles__slide-content">
+    
+                                        <div class="articles__slide">
+                                            <img src="images/slider_1.jpg" alt="">
+                                        </div>
+                                        <div class="articles__slide-desc">
+                                            <div class="articles__slide-title">
+                                                <p>منطقه کالینینگراد</p>
+                                            </div>
+                                            <div class="articles__slide-subtitle">
+                                                <p>در اینجا خلاصه ای از متن مقاله آمده است. در اینجا خلاصه ای از متن مقاله آمده است. در اینجا خلاصه ای از متن مقاله آمده است. در اینجا خلاصه ای از متن مقاله آمده است</p>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="articles__slide-container">
-                                 <div class="articles__slide-content">
- 
-                                     <div class="articles__slide">
-                                         <img src="images/slider_2.jpg" alt="">
-                                     </div>
-                                     <div class="articles__slide-desc">
-                                         <div class="articles__slide-title">
-                                             <p>منطقه کالینینگراد</p>
-                                         </div>
-                                         <div class="articles__slide-subtitle">
-                                             <p>در اینجا خلاصه ای از متن مقاله آمده است. در اینجا خلاصه ای از متن مقاله آمده است. در اینجا خلاصه ای از متن مقاله آمده است. در اینجا خلاصه ای از متن مقاله آمده است</p>
-                                         </div>
-                                         
-                                     </div>
-                                 </div>
+                                <a href="#" class="articles__slide-link">
+                                    <div class="articles__slide-content">
+    
+                                        <div class="articles__slide">
+                                            <img src="images/slider_2.jpg" alt="">
+                                        </div>
+                                        <div class="articles__slide-desc">
+                                            <div class="articles__slide-title">
+                                                <p>منطقه کالینینگراد</p>
+                                            </div>
+                                            <div class="articles__slide-subtitle">
+                                                <p>در اینجا خلاصه ای از متن مقاله آمده است. در اینجا خلاصه ای از متن مقاله آمده است. در اینجا خلاصه ای از متن مقاله آمده است. در اینجا خلاصه ای از متن مقاله آمده است</p>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="articles__slide-container">
-                                 <div class="articles__slide-content">
- 
-                                     <div class="articles__slide">
-                                         <img src="images/slider_3.jpg" alt="">
-                                     </div>
-                                     <div class="articles__slide-desc">
-                                         <div class="articles__slide-title">
-                                             <p>منطقه کالینینگراد</p>
-                                         </div>
-                                         <div class="articles__slide-subtitle">
-                                             <p>در اینجا خلاصه ای از متن مقاله آمده است. در اینجا خلاصه ای از متن مقاله آمده است. در اینجا خلاصه ای از متن مقاله آمده است. در اینجا خلاصه ای از متن مقاله آمده است</p>
-                                         </div>
-                                         
-                                     </div>
-                                 </div>
+                                <a href="#" class="articles__slide-link">
+                                    <div class="articles__slide-content">
+    
+                                        <div class="articles__slide">
+                                            <img src="images/slider_3.jpg" alt="">
+                                        </div>
+                                        <div class="articles__slide-desc">
+                                            <div class="articles__slide-title">
+                                                <p>منطقه کالینینگراد</p>
+                                            </div>
+                                            <div class="articles__slide-subtitle">
+                                                <p>در اینجا خلاصه ای از متن مقاله آمده است. در اینجا خلاصه ای از متن مقاله آمده است. در اینجا خلاصه ای از متن مقاله آمده است. در اینجا خلاصه ای از متن مقاله آمده است</p>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                    
@@ -1048,9 +1072,11 @@
 
         <div class="regions" dir="rtl">
             <div class="container">
-                <div class="regions__title title--hover">
-                    <p>مناطق روسیه</p>
-                </div>
+                <a href="#" class="regions__link">
+                    <div class="regions__title title--hover">
+                        <p>مناطق روسیه</p>
+                    </div>
+                </a>
 
                 <div class="regions__slider">
 
@@ -1059,6 +1085,7 @@
                        <div class="swiper-wrapper">
                        <div class="swiper-slide">
                            <div class="regions__slide-container">
+                            <a href="#" class="regions__slide-link"></a>
                                <div class="regions__slide">
                                    <img src="images/regions_1.jpg" alt="">
                                    <div class="regions__slide-desc">
@@ -1072,67 +1099,77 @@
                        </div>
                        <div class="swiper-slide">
                            <div class="regions__slide-container">
-                               <div class="regions__slide">
-                                   <img src="images/regions_1.jpg" alt="">
-                                   <div class="regions__slide-desc">
-                                       <div class="regions__slide-title">
-                                           <p>سفر به مورمانسک</p>
-                                       </div>
-   
-                                   </div>
-                               </div>
+                            <a href="#" class="regions__slide-link">
+                                <div class="regions__slide">
+                                    <img src="images/regions_1.jpg" alt="">
+                                    <div class="regions__slide-desc">
+                                        <div class="regions__slide-title">
+                                            <p>سفر به مورمانسک</p>
+                                        </div>
+    
+                                    </div>
+                                </div>
+                            </a>
                            </div>
                        </div>
                        <div class="swiper-slide">
                            <div class="regions__slide-container">
-                               <div class="regions__slide">
-                                   <img src="images/regions_2.jpg" alt="">
-                                   <div class="regions__slide-desc">
-                                       <div class="regions__slide-title">
-                                           <p>سفر به مورمانسک</p>
-                                       </div>
-   
-                                   </div>
-                               </div>
+                            <a href="#" class="regions__slide-link">
+                                <div class="regions__slide">
+                                    <img src="images/regions_2.jpg" alt="">
+                                    <div class="regions__slide-desc">
+                                        <div class="regions__slide-title">
+                                            <p>سفر به مورمانسک</p>
+                                        </div>
+    
+                                    </div>
+                                </div>
+                            </a>
                            </div>
                        </div>
                        <div class="swiper-slide">
                            <div class="regions__slide-container">
-                               <div class="regions__slide">
-                                   <img src="images/regions_3.jpg" alt="">
-                                   <div class="regions__slide-desc">
-                                       <div class="regions__slide-title">
-                                           <p>سفر به مورمانسک</p>
-                                       </div>
-   
-                                   </div>
-                               </div>
+                            <a href="#" class="regions__slide-link">
+                                <div class="regions__slide">
+                                    <img src="images/regions_3.jpg" alt="">
+                                    <div class="regions__slide-desc">
+                                        <div class="regions__slide-title">
+                                            <p>سفر به مورمانسک</p>
+                                        </div>
+    
+                                    </div>
+                                </div>
+                            </a>
                            </div>
                        </div>
                        <div class="swiper-slide">
                            <div class="regions__slide-container">
-                               <div class="regions__slide">
-                                   <img src="images/regions_1.jpg" alt="">
-                                   <div class="regions__slide-desc">
-                                       <div class="regions__slide-title">
-                                           <p>سفر به مورمانسک</p>
-                                       </div>
-   
-                                   </div>
-                               </div>
+                            <a href="#" class="regions__slide-link">
+                                <div class="regions__slide">
+                                    <img src="images/regions_1.jpg" alt="">
+                                    <div class="regions__slide-desc">
+                                        <div class="regions__slide-title">
+                                            <p>سفر به مورمانسک</p>
+                                        </div>
+    
+                                    </div>
+                                </div>
+                            </a>
                            </div>
                        </div>
                        <div class="swiper-slide">
                            <div class="regions__slide-container">
-                               <div class="regions__slide">
-                                   <img src="images/regions_2.jpg" alt="">
-                                   <div class="regions__slide-desc">
-                                       <div class="regions__slide-title">
-                                           <p>سفر به مورمانسک</p>
-                                       </div>
-   
-                                   </div>
-                               </div>
+                            <a href="#" class="regions__slide-link">
+                                <div class="regions__slide">
+                                    <img src="images/regions_2.jpg" alt="">
+                                    <div class="regions__slide-desc">
+                                        <div class="regions__slide-title">
+                                            <p>سفر به مورمانسک</p>
+                                        </div>
+    
+                                    </div>
+                                </div>
+                            </a>
                            </div>
                        </div>                   
                        </div>
@@ -1153,7 +1190,7 @@
             <div class="container">
                 <div class="companies__row row" dir="rtl">
                     <div class="companies__item">
-                        <a class="companies__item-container row">
+                        <a href="#" class="companies__item-container row">
                             <div class="companies__item-image">
                                 <img src="images/spbu.svg" alt="">
                                 <div class="companies__item-desc" dir="ltr">
@@ -1163,21 +1200,21 @@
                         </a>
                     </div>
                     <div class="companies__item">
-                        <a class="companies__item-container">
+                        <a href="#" class="companies__item-container">
                             <div class="companies__item-image">
                                 <img src="images/airlines.svg" alt="">
                             </div>
                         </a>
                     </div>
                     <div class="companies__item">
-                        <a class="companies__item-container">
+                        <a href="#" class="companies__item-container">
                             <div class="companies__item-image">
                                 <img src="images/railways.svg" alt="">
                             </div>
                         </a>
                     </div>
                     <div class="companies__item">
-                        <a class="companies__item-container">
+                        <a href="#" class="companies__item-container">
                             <div class="companies__item-image">
                                 <img src="images/victory.svg" alt="">
                             </div>
@@ -1517,5 +1554,45 @@
       return direction;
     }
   </script>
+
+<script>
+    window.addEventListener("DOMContentLoaded", function() {
+    [].forEach.call( document.querySelectorAll('.tel'), function(input) {
+    var keyCode;
+    function mask(event) {
+        event.keyCode && (keyCode = event.keyCode);
+        var pos = this.selectionStart;
+        if (pos < 3) event.preventDefault();
+        var matrix = "+98 ______",
+            i = 0,
+            def = matrix.replace(/\D/g, ""),
+            val = this.value.replace(/\D/g, ""),
+            new_value = matrix.replace(/[_\d]/g, function(a) {
+                return i < val.length ? val.charAt(i++) || def.charAt(i) : a
+            });
+        i = new_value.indexOf("_");
+        if (i != -1) {
+            i < 5 && (i = 3);
+            new_value = new_value.slice(0, i)
+        }
+        var reg = matrix.substr(0, this.value.length).replace(/_+/g,
+            function(a) {
+                return "\\d{1," + a.length + "}"
+            }).replace(/[+()]/g, "\\$&");
+        reg = new RegExp("^" + reg + "$");
+        if (!reg.test(this.value) || this.value.length < 5 || keyCode > 47 && keyCode < 58) this.value = new_value;
+        if (event.type == "blur" && this.value.length < 5)  this.value = ""
+    }
+
+    input.addEventListener("input", mask, false);
+    input.addEventListener("focus", mask, false);
+    input.addEventListener("blur", mask, false);
+    input.addEventListener("keydown", mask, false)
+
+  });
+
+});
+</script>
+
 </body>
 </html>
