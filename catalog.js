@@ -82,3 +82,11 @@ ranges.forEach((element) => {
 
 });
 });
+
+let burger = document.querySelector('.header__top-burger');
+let menu = document.querySelector('.header__menu-list');
+let content = document.querySelector('body');
+burger.addEventListener('click', () => {
+    menu.classList.toggle('burger--active');
+    content.classList.toggle('dark');
+});
