@@ -1,4 +1,4 @@
-// Initialize Swiper 
+// Swiper 
 
   var swiperTours = new Swiper('.tours--swiper', {
     slidesPerView: 1,
@@ -72,6 +72,23 @@
     },
   });
 
+  var swiperActivitiesDetail = new Swiper(".activitiesDetail--swiper", {
+    slidesPerView: 1.2,
+    spaceBetween: 19,
+    centeredSlides: true,
+    loop: true,
+    // pagination: {
+    //     el: ".swiper-pagination",
+    //     clickable: true,
+    // },
+    breakpoints: {
+      1280: {
+        slidesPerView: 1.75,
+        // spaceBetween: 40
+      },
+    },
+  });
+
   var swiperArticles = new Swiper('.articles--swiper', {
     slidesPerView: 1,
     direction: getDirection(),
@@ -132,7 +149,8 @@
     return direction;
   }
 
-//  Phone mask
+// Phone mask
+
   window.addEventListener("DOMContentLoaded", function() {
   [].forEach.call( document.querySelectorAll('.tel'), function(input) {
   var keyCode;
@@ -169,6 +187,8 @@
 });
 });
 
+// Burger menu
+
 let burger = document.querySelector('.header__top-burger');
 let menu = document.querySelector('.header__menu-list');
 let content = document.querySelector('body');
@@ -176,3 +196,76 @@ burger.addEventListener('click', () => {
     menu.classList.toggle('burger--active');
     content.classList.toggle('dark');
 });
+
+// Calendar
+
+if (document.querySelector('#calendar')) {
+  new AirDatepicker("#calendar", {
+    range: true,
+    multipleDatesSeparator: " - ",
+  });
+}
+
+
+// Carts dropdown
+
+let carts = document.querySelectorAll(".detail__schedule-cart");
+carts.forEach((cart) => {
+  let button = cart.querySelector(".detail__schedule-cartDropButton");
+  let content = cart.querySelector(".detail__schedule-cartContent");
+  button.addEventListener("click", () => {
+    button.classList.toggle("schedule--activeButton");
+    content.classList.toggle("schedule--active");
+  });
+});
+
+// Ranges
+
+let ranges = document.querySelectorAll(".range");
+ranges.forEach((element) => {
+  let rangeMin = 0;
+  const range = element.querySelector(".range-selected");
+  const rangeInput = element.querySelectorAll(".range-input input");
+  const rangePrice = element.querySelectorAll(".range-price input");
+
+  rangeInput.forEach((input) => {
+    input.addEventListener("input", (e) => {
+      let minRange = parseInt(rangeInput[0].value);
+      let maxRange = parseInt(rangeInput[1].value);
+      if (maxRange - minRange < rangeMin) {
+        if (e.target.className === "min") {
+          rangeInput[0].value = maxRange - rangeMin;
+        } else {
+          rangeInput[1].value = minRange + rangeMin;
+        }
+      } else {
+        rangePrice[0].value = minRange;
+        rangePrice[1].value = maxRange;
+        range.style.left = (minRange / rangeInput[0].max) * 100 + "%";
+        range.style.right =
+          100 - (maxRange / rangeInput[1].max) * 100 + "%";
+      }
+    });
+  });
+  rangePrice.forEach((input) => {
+    input.addEventListener("input", (e) => {
+      let minPrice = rangePrice[0].value;
+      let maxPrice = rangePrice[1].value;
+      if (
+        maxPrice - minPrice >= rangeMin &&
+        maxPrice <= rangeInput[1].max
+      ) {
+        if (e.target.className === "min") {
+          rangeInput[0].value = minPrice;
+          range.style.left = (minPrice / rangeInput[0].max) * 100 + "%";
+        } else {
+          rangeInput[1].value = maxPrice;
+          range.style.right =
+            100 - (maxPrice / rangeInput[1].max) * 100 + "%";
+        }
+      }
+    });
+  });
+});
+
+console.log('JavaScript ok!');
