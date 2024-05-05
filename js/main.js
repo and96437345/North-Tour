@@ -197,16 +197,6 @@ burger.addEventListener('click', () => {
     content.classList.toggle('dark');
 });
 
-// Calendar
-
-if (document.querySelector('#calendar')) {
-  new AirDatepicker("#calendar", {
-    range: true,
-    multipleDatesSeparator: " - ",
-  });
-}
-
-
 // Carts dropdown
 
 let carts = document.querySelectorAll(".detail__schedule-cart");
@@ -267,5 +257,14 @@ ranges.forEach((element) => {
     });
   });
 });
+
+// Calendar
+
+if (document.querySelector('#calendar')) {
+  new AirDatepicker("#calendar", {
+    range: true,
+    multipleDatesSeparator: " - ",
+  });
+}
 
 console.log('JavaScript ok!');
