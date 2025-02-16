@@ -258,10 +258,17 @@ ranges.forEach((element) => {
   });
 });
 
-// Calendar
+// Calendars
 
-if (document.querySelector('#calendar')) {
-  new AirDatepicker("#calendar", {
+if (document.querySelector('.calendar')) {
+  new AirDatepicker(".calendar", {
+    range: true,
+    multipleDatesSeparator: " - ",
+  });
+}
+
+if (document.querySelector('.calendar--mobile')) {
+  new AirDatepicker(".calendar--mobile", {
     range: true,
     multipleDatesSeparator: " - ",
   });

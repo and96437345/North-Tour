@@ -199,6 +199,10 @@ input[type="checkbox"] {
         text-transform: uppercase;
         margin-top: 22px;
         text-align: start;
+        color: #4BB5E6;
+        span {
+            color: #1C85B2;
+        }
     }
 }
 
@@ -454,6 +458,11 @@ input[type="checkbox"] {
         }
         & img {
             height: 100%;
+            width: 85px;
+        }
+        &-desc {
+            margin-right: 10px;
+            text-align: right;
         }
     }
     &__service-container {
@@ -516,7 +525,7 @@ input[type="checkbox"] {
     }
     &__item {
         &-image {
-            width: 89%;
+            width: 100%;
             border-radius: 10px;
             & img {
                 display: block;
@@ -528,7 +537,8 @@ input[type="checkbox"] {
             }
         }
         &-content {
-        
+            display: flex;
+            flex-direction: column;
         }
         &-desc {
             padding: 24px 24px 10px 120px;
@@ -638,9 +648,10 @@ input[type="checkbox"] {
     &__left-section {
         margin-top: -185px;
         z-index: 2;
+        width: 430px;
     }
     &__left-sectionContainer {
-        width: 412px;
+        width: 100%;
         box-sizing: border-box;
         border: 2px solid rgb(206, 229, 255);
         border-radius: 10px;
@@ -666,7 +677,7 @@ input[type="checkbox"] {
             padding: 32px 24px 19px;
             box-sizing: border-box;
             justify-content: space-between;
-            border-radius: 10px;
+            border-radius: 10px 10px 0 0;
             border-bottom: 1px solid rgb(206, 229, 255);
         }
         &-price {
@@ -707,10 +718,20 @@ input[type="checkbox"] {
     }
     &__calendarChange {
         justify-content: space-between;
-        padding: 12px 27px 12px 12px;
+        // padding: 12px 27px 12px 12px;
+        padding-right: 20px;
+        padding-left: 10px;
         border-radius: 10px;
         background: #fff;
         margin-bottom: 17px;
+    }
+    &__calendarDate {
+        height: 40px;
+        width: 100%;
+        outline: transparent;
+        border: none;
+        font-size: 20px;
+        font-weight: 400;
     }
     &__change {
         border-radius: 10px;
@@ -769,6 +790,7 @@ input[type="checkbox"] {
         justify-content: space-between;
         border-radius: 10px;
         background: rgb(255, 122, 0);
+        overflow: hidden;
         &Image {
             height: 144px;
             img {
@@ -789,6 +811,7 @@ input[type="checkbox"] {
     &__change-discountContent {
         padding: 10px 17px;
         box-sizing: border-box;
+        width: 75%;
     }
     .discount__change-desc {
         color: rgb(0, 0, 0);
@@ -985,11 +1008,13 @@ input[type="checkbox"] {
         height: 240px;
         border-radius: 10px;
         &-row {
+            flex-wrap: wrap;
             margin: 4px -5px;
         }
         &-container {
             width: 50%;
             padding: 4px 5px;
+            box-sizing: border-box;
         }
         img {
             display: block;
@@ -1019,7 +1044,8 @@ input[type="checkbox"] {
         }
         &-container {
             width: 25%;
-            padding: 0 5px;
+            padding: 4px 5px;
+            box-sizing: border-box;
         }
         img {
             display: block;
@@ -1299,6 +1325,9 @@ input[type="checkbox"] {
             font-weight: 600;
             line-height: 160%;
             text-align: right;
+            &:last-child {
+                text-align: left;
+            }
         }
         &-itemCheck {
             margin-right: 16px;
@@ -1323,7 +1352,7 @@ input[type="checkbox"] {
     &__share {
         padding: 28px 0;
         &-container {
-            border: 1px solid rgb(231, 242, 255);
+            border: 2px solid rgb(231, 242, 255);
             padding: 28px 10px 33px 10px;
             &:hover {
                 box-sizing: border-box;
@@ -1471,6 +1500,7 @@ background: rgb(255, 255, 255);
         line-height: 120%;
         text-align: right;
         max-width: 140px;
+        margin-right: 15px;
     }
     &-image {
         height: 77px;
@@ -1478,6 +1508,7 @@ background: rgb(255, 255, 255);
     }
     & img {
         height: 100%;
+        width: 85px;
     }
 }
 
@@ -1733,8 +1764,8 @@ background: rgb(255, 255, 255);
   }
   .range-selected {
     height: 100%;
-    left: 5%;
-    right: 5%;
+    left: 2%;
+    right: 2%;
     position: absolute;
     border-radius: 5px;
     background-color: #1b53c0;
@@ -2270,7 +2301,7 @@ background: rgb(255, 255, 255);
         display: flex;
         flex-direction: column;
         width: 41.2%;
-        z-index: 2;
+        z-index: 3;
         div>p {
             text-align: right;
         }
@@ -2283,6 +2314,7 @@ background: rgb(255, 255, 255);
     }
     &__label-input {
         margin-bottom: 8px;
+        margin-right: 10px;
         }
     &__input {
         box-sizing: border-box;
@@ -2316,6 +2348,10 @@ background: rgb(255, 255, 255);
     &__checkbox-row {
         flex-direction: row-reverse;
         align-items: start;
+        p {
+            display: flex;
+            flex-direction: row-reverse;
+        }
     }
     &__checkbox-custom {
         position: relative;
@@ -3139,7 +3175,10 @@ input[type="checkbox"]:checked + .send__label-input span::before {
                 padding-left: 24px;
             }
             &-image {
-                width: auto;
+                width: 35%;
+            }
+            &-content {
+                width: 65%;
             }
             &-booking {
                 flex-direction: column;
@@ -3234,6 +3273,9 @@ input[type="checkbox"]:checked + .send__label-input span::before {
             font-size: 20px;
             font-weight: 700;
             line-height: 19px;
+        }
+        &__list {
+            margin-left: 0;
         }
     }
     .service__mobile {
@@ -3601,11 +3643,19 @@ input[type="checkbox"]:checked + .send__label-input span::before {
 
 }
 @media (max-width: 576px) {
-   .catalog__list-item {
-        flex-direction: column;
-   } 
+    .catalog__list-item {
+            flex-direction: column;
+    }
     .service__mobile .service__item {
         width: 50%;
+    }
+    .catalog__item {
+        &-image {
+            width: 100%;
+        }
+        &-content {
+            width: 100%;
+        }
     }
     .catalog__item-image img {
         border-radius: 10px 10px 0 0;
@@ -3623,6 +3673,10 @@ input[type="checkbox"]:checked + .send__label-input span::before {
     }
     .hero__detail-title {
         font-size: 29px;
+    }
+    .hero__catalog-desc {
+        right: 25px;
+        bottom: 30px;
     }
     .detail__change-discountImage {
         height: 121px;
@@ -3642,6 +3696,7 @@ input[type="checkbox"]:checked + .send__label-input span::before {
     }
     .detail__costs .costs--wide {
         width: 100%;
+        justify-content: start;
     }
     .detail .discount__change-value,
     .detail .discount__change-desc {
@@ -3668,6 +3723,14 @@ input[type="checkbox"]:checked + .send__label-input span::before {
     }
     .detail__share-link {
         margin-bottom: 20px;
+    }
+    .detail .tour__bigImage-row>div {
+        width: 33.3%;
+        height: 120px;
+        padding: 4px 4px;
+        div {
+            height: 100%;
+        }
     }
 }
 @media (max-width: 412px) {
@@ -3705,10 +3768,14 @@ input[type="checkbox"]:checked + .send__label-input span::before {
             }
             &-phoneNumber {
                 font-size: 26px;
+                letter-spacing: 2px;
+                line-height: normal;
+                margin-bottom: 8px;
             }
             &-whatsAppNumber,
             &-telegramNumber {
                 font-size: 18px;
+                letter-spacing: 1px;
             }
         }
     }
@@ -3727,7 +3794,7 @@ input[type="checkbox"]:checked + .send__label-input span::before {
         &__catalog {
             &-desc {
                 right: 30px;
-                bottom: 160px;
+                bottom: 30px;
             }
             &-subtitle {
                 font-size: 20px;
@@ -3788,9 +3855,10 @@ input[type="checkbox"]:checked + .send__label-input span::before {
             padding-left: 0;
             padding-right: 0;
             border: none;
-            &:after {
-                display: none;
-            }
+            align-items: center;
+        }
+        &__content {
+            width: 98%;
         }
         &__desc {
             &-title {
@@ -3852,9 +3920,11 @@ input[type="checkbox"]:checked + .send__label-input span::before {
             &-content {
                 &__number {
                     font-size: 26px;
+                    letter-spacing: 2px;
                 }
                 & .footer--small {
                     font-size: 18px;
+                    letter-spacing: 1px;
                 }
                 &__email {
                     font-size: 16px;
@@ -3879,5 +3949,80 @@ input[type="checkbox"]:checked + .send__label-input span::before {
             }
         }
     }
-
+    .detail .tour__bigImage-row>div {
+        height: 72px;
+        div {
+            height: 100%;
+        }
+    }
+    .detail__calendarDate {
+        font-size: 16px;
+    }
+    .detail__item-price {
+        font-size: 30px;
+    }
 }
+
+/* custom checkbox styling for contact form 7 checkbox */
+span.wpcf7-list-item {
+    display: inline-block;
+    margin: 0;
+    }
+    .wpcf7 .wpcf7-list-item {
+    display: block;
+    margin-bottom: 10px;
+    }
+    .wpcf7-checkbox label {
+    position: relative;
+    cursor: pointer;
+    }
+    .wpcf7-checkbox input[type=checkbox] {
+    /*position: relative;*/
+    position: absolute;
+    visibility: hidden;
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    top: 0;
+    left: 0;
+    }
+    .wpcf7-checkbox input[type=checkbox] + span {
+    /* border: 3px solid red; */
+    }
+    .wpcf7-checkbox input[type=checkbox] + span:before {
+    display: block;
+    position: absolute;
+    content: '';
+    border-radius: 4px;
+    height: 24px;
+    width: 24px;
+    top: 0px;
+    left: 0px;
+    border: 1px solid rgb(255, 106, 0);
+    }
+    .wpcf7-checkbox input[type=checkbox] + span:after {
+    display: block;
+    position: absolute;
+    content: "\2714";
+    color: white;
+    height: 24px;
+    width: 24px;
+    border-radius: 4px;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    font-size: 18px;
+    text-align: center;
+    line-height: 30px;
+    }
+    .wpcf7-checkbox input[type=checkbox]:checked + span:before {
+        background: rgb(255, 106, 0);
+    }
+    .wpcf7-checkbox input[type=checkbox]:checked + span:after {
+    visibility: visible;
+    }
+    .wpcf7-list-item-label {
+    margin-left: 40px;
+    display: inline-block;
+    }
+    
